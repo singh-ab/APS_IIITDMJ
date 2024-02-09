@@ -1,7 +1,3 @@
-# APS_IIITDMJ
-Prototype Website of the Astronomy and Physics Society, IIITDM, Jabalpur
-This project aims to build a website for APS with several tools and utilities integrated into it.
-
 # Astronomy and Physics Society Website
 
 Welcome to the APS Website repository! This project aims to create an online platform for astronomy enthusiasts to connect, learn, and explore the wonders of the universe together.This website aims to provide resources, tools, and a space for members to engage in discussions, share observations, and participate in club activities.
