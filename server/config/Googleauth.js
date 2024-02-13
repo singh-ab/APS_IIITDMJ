@@ -4,8 +4,8 @@ const User = require("../models/User");
 
 // Define the GoogleStrategy
 passport.use(new GoogleStrategy({
-    clientID: '214576220859-2jl28ussbbhl5de8uuqll1moa72dkcob.apps.googleusercontent.com', // Use process.env to get environment variables
-    clientSecret: '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',
+    clientID: process.env.GOOGLE_CLIENT_ID, // Use process.env to get environment variables
+    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     callbackURL: "http://localhost:5000/auth/google/callback",
     scope: ['profile', 'email']
 },
