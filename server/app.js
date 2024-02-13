@@ -12,7 +12,7 @@ if (process.env.NODE_ENV !== 'production')
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin: 'http://localhost:5173', // Adjust the origin to match your client application
+    origin: process.env.CLIENT, // Adjust the origin to match your client application
     credentials: true
 }));
 app.use(session({
@@ -26,8 +26,12 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Include authentication routes
-const routes = require("./routes/GoogleOauth");
-app.use("/", routes);
+
+
+
+
+// routes
+const authroutes = require("./routes/GoogleOauth");
+app.use("/", authroutes);
 
 module.exports = app;
