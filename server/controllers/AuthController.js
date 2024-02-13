@@ -27,8 +27,11 @@ exports.Logout = (req, res, next) => {
 exports.log = (req, res) => {
     try {
         if (req.isAuthenticated()) {
+            
             res.status(200).json({
-                logged: req.user._json.email
+                logged: req.user._json.email,
+                name : req.user._json.displayName
+            
             });
         }
         else {
