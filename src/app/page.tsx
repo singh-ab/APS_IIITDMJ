@@ -133,8 +133,8 @@ export default function Home() {
       </div>
 
       <footer className="bg-teal-900">
-        <div className="max-w-8xl ml-10 py-20 mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-8xl  py-20 mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 ml-10  md:grid-cols-2 lg:grid-cols-4 gap-8">
 
             <div>
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Contact Us</h3>
@@ -145,11 +145,14 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Links</h3>
-              <ul className="mt-4 space-y-2 text-teal-400 font-normal">
+              <ul className="mt-4 grid grid-cols-2 space-y-2 text-teal-400 font-normal">
                 <li><a href="/about">About Us</a></li>
-                <li><a href="/services">Services</a></li>
+                <li><a href="/services">Sessions</a></li>
                 <li><a href="/projects">Projects</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <li><a href="/contact">Members</a></li>
+                <li><a href="/contact">Events</a></li>
+                <li><a href="/contact">Forms</a></li>
               </ul>
             </div>
             <div>
@@ -177,7 +180,7 @@ export default function Home() {
 
           </div>
           <div className="mt-8 text-center">
-            <p>&copy; 2024 APS Website. All rights reserved.</p>
+            <p>&copy; 2024 APS, All rights reserved.</p>
           </div>
         </div>
       </footer>
