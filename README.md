@@ -2,6 +2,14 @@
 
 Welcome to the APS Website repository! This project aims to create an online platform for astronomy enthusiasts to connect, learn, and explore the wonders of the universe together.This website aims to provide resources, tools, and a space for members to engage in discussions, share observations, and participate in club activities.
 
+## How to set up:
+
+1. Clone this repository to your local machine using the following command: ```git clone https://github.com/singh-ab/APS_IIITDMJ.git ```
+2. Run ```cd APS_IIITDMJ```
+3. Run ```npm install```
+4. Install dependencies: ```npm i framer-motion clsx tailwind-merge react-element-to-jsx-string```
+5. Run application: ```npm run dev```
+
 ## Features:
 
 ### 1. Events Calendar:
@@ -33,13 +41,11 @@ Welcome to the APS Website repository! This project aims to create an online pla
 - Get involved in outreach activities aimed at promoting astronomy education in schools and communities.
 - Volunteer for events such as public stargazing sessions, school presentations, etc.
 
-## Getting Started:
+## How to contribute:
 
-To contribute or set up the Astronomy Club Website locally on your machine, follow these steps:
+To contribute to the Astronomy Club Website, follow these steps:
 
 1. Clone this repository to your local machine using the following command: ```git clone https://github.com/singh-ab/APS_IIITDMJ.git ```
-
-3. Open the `index.html` file in your web browser to explore the website.
-
-4. Start contributing to the project by making improvements, adding new features, or fixing bugs.
-
+2. Check the "Issues" section for this repository and select your prefered issue to work on.
+3. After working on that isuue, raise a "Pull Request" for review.
+4. Now you are good to go. Keep contributing!!!
