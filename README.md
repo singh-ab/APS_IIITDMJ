@@ -6,9 +6,9 @@ Welcome to the APS Website repository! This project aims to create an online pla
 
 1. Clone this repository to your local machine using the following command: ```git clone https://github.com/singh-ab/APS_IIITDMJ.git ```
 2. Run ```cd APS_IIITDMJ```
-3. Run ```npm install```
-4. Install dependencies: ```npm i framer-motion clsx tailwind-merge react-element-to-jsx-string```
-5. Run application: ```npm run dev```
+3. Run ```npm install``` or if you prefer yarn, ```yarn```
+4. Install dependencies: ```npm i framer-motion clsx tailwind-merge react-element-to-jsx-string``` or ```yarn add framer-motion clsx tailwind-merge react-element-to-jsx-string``` if you're using yarn
+5. Run application: ```npm run dev``` or ```yarn run dev```
 
 ## Features:
 
