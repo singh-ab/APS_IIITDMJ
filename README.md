@@ -8,7 +8,10 @@ Welcome to the APS Website repository! This project aims to create an online pla
 2. Run ```cd APS_IIITDMJ```
 3. Run ```npm install``` or if you prefer yarn, ```yarn```
 4. Install dependencies: ```npm i framer-motion clsx tailwind-merge react-element-to-jsx-string``` or ```yarn add framer-motion clsx tailwind-merge react-element-to-jsx-string``` if you're using yarn
-5. Run application: ```npm run dev``` or ```yarn run dev```
+5. Add a `.env` file inside the main directory , and copy the content from `.env.example` .
+6. Go to clerk.com and create your account . Then from your dashboard , choose create an app and add the authentication types and choose nextjs .
+7. Copy the environment variables from the documentation and paste them inside `.env`
+8. Run application: ```npm run dev``` or ```yarn run dev```
 
 ## Features:
 
