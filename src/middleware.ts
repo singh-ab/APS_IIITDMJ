@@ -4,10 +4,13 @@ export default authMiddleware({
     publicRoutes : [
         "/",
         "/auth(.*)",
+
         "/about",
         "/contact",
         "/events",
         "/sessions"
+
+
     ],
     ignoredRoutes : [
        
