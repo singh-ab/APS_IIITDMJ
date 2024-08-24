@@ -1,9 +1,9 @@
 
 "use client";
 import React, { useState, useEffect } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navber-menu";
+import { HoveredLink, Menu, MenuItem } from "../components/ui/navber-menu";
 import { cn } from "../utils/cn";
-import About from "../components/pages/About";
+
 // import Video from "next-video"
 import styles from './page.module.css';
 import Image from 'next/image';
@@ -148,7 +148,7 @@ export default function Home() {
               <ul className="mt-4 grid grid-cols-2 space-y-2 text-teal-400 font-normal">
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/sessions">Sessions</a></li>
-                <li><a href="/projects">Projects</a></li>
+     
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/members">Members</a></li>
                 <li><a href="/events">Events</a></li>
@@ -211,8 +211,8 @@ function Navbar({ className }: { className?: string }) {
 
         <MenuItem setActive={setActive} active={active} item="More">
           <div className="flex flex-col space-y-6 text-s">
-            <HoveredLink href="/enterprise">Events</HoveredLink>
-            <HoveredLink href="/enterprise">Form</HoveredLink>
+            <HoveredLink href="/events">Events</HoveredLink>
+            <HoveredLink href="/form">Form</HoveredLink>
           </div>
         </MenuItem>
 
