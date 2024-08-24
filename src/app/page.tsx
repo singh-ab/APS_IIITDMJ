@@ -1,9 +1,9 @@
 
 "use client";
 import React, { useState, useEffect } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navber-menu";
+import { HoveredLink, Menu, MenuItem } from "../components/ui/navber-menu";
 import { cn } from "../utils/cn";
-import about from "../components/pages/about";
+// import About from "../components/pages/About";
 // import Video from "next-video"
 import styles from './page.module.css';
 import Image from 'next/image';
@@ -147,12 +147,11 @@ export default function Home() {
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Links</h3>
               <ul className="mt-4 grid grid-cols-2 space-y-2 text-teal-400 font-normal">
                 <li><a href="/about">About Us</a></li>
-                <li><a href="/services">Sessions</a></li>
-                <li><a href="/projects">Projects</a></li>
+                <li><a href="/sessions">Sessions</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><a href="/contact">Members</a></li>
-                <li><a href="/contact">Events</a></li>
-                <li><a href="/contact">Forms</a></li>
+                <li><a href="/members">Members</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/forms">Forms</a></li>
               </ul>
             </div>
             <div>
@@ -200,19 +199,19 @@ function Navbar({ className }: { className?: string }) {
     >
       <Menu setActive={setActive}>
 
-        <HoveredLink href="/hobby">Home</HoveredLink>
+        <HoveredLink href="/home">Home</HoveredLink>
 
-        <HoveredLink href="/hobby">Contact Us</HoveredLink>
+        <HoveredLink href="/contact">Contact Us</HoveredLink>
 
-        <HoveredLink href="/hobby">About Us</HoveredLink>
-        <HoveredLink href="/hobby">Sessions</HoveredLink>
-        <HoveredLink href="/hobby">Fests</HoveredLink>
-        <HoveredLink href="/hobby">Members</HoveredLink>
+        <HoveredLink href="/about">About Us</HoveredLink>
+        <HoveredLink href="/sessions">Sessions</HoveredLink>
+        <HoveredLink href="/fests">Fests</HoveredLink>
+        <HoveredLink href="/members">Members</HoveredLink>
 
         <MenuItem setActive={setActive} active={active} item="More">
           <div className="flex flex-col space-y-6 text-s">
-            <HoveredLink href="/enterprise">Events</HoveredLink>
-            <HoveredLink href="/enterprise">Form</HoveredLink>
+            <HoveredLink href="/events">Events</HoveredLink>
+            <HoveredLink href="/form">Form</HoveredLink>
           </div>
         </MenuItem>
 
