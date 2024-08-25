@@ -141,7 +141,7 @@ export default function Home() {
               <p className="mt-4 font-normal text-teal-400" >52GG+H4G, Airport Rd, PDPM IIITDM Jabalpur Campus, <br />
                 Khamaria, Jabalpur, Chakdehi, Madhya Pradesh 482005</p>
               <p className="mt-2 font-normal gray-400">Phone: 123-456-7890</p>
-              <p>Email: example@example.com</p>
+              <p>Email: astronomy@iiitdmj.ac.in</p>
             </div>
             <div>
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Links</h3>
@@ -160,8 +160,8 @@ export default function Home() {
               <ul className="mt-4 space-y-2  text-teal-400 font-normal">
                 <li><a href="https://twitter.com">Twitter</a></li>
                 <li><a href="https://facebook.com">Facebook</a></li>
-                <li><a href="https://instagram.com">Instagram</a></li>
-                <li><a href="https://linkedin.com">LinkedIn</a></li>
+                <li><a href="https://instagram.com/aps_iiitdmj">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/astronomy-and-physics-society/">LinkedIn</a></li>
               </ul>
             </div>
 

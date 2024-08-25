@@ -9,7 +9,7 @@
     "dev": "next dev & npx next-video sync -w"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.29.12",
+    "@clerk/nextjs": "^5.3.3",
     "@tabler/icons-react": "^3.3.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.10",
