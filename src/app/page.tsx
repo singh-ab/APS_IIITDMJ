@@ -141,7 +141,7 @@ export default function Home() {
               <p className="mt-4 font-normal text-teal-400" >52GG+H4G, Airport Rd, PDPM IIITDM Jabalpur Campus, <br />
                 Khamaria, Jabalpur, Chakdehi, Madhya Pradesh 482005</p>
               <p className="mt-2 font-normal gray-400">Phone: 123-456-7890</p>
-              <p>Email: example@example.com</p>
+              <p>Email: astronomy@iiitdmj.ac.in</p>
             </div>
             <div>
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Links</h3>
