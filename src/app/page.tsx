@@ -160,8 +160,8 @@ export default function Home() {
               <ul className="mt-4 space-y-2  text-teal-400 font-normal">
                 <li><a href="https://twitter.com">Twitter</a></li>
                 <li><a href="https://facebook.com">Facebook</a></li>
-                <li><a href="https://instagram.com">Instagram</a></li>
-                <li><a href="https://linkedin.com">LinkedIn</a></li>
+                <li><a href="https://instagram.com/aps_iiitdmj">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/astronomy-and-physics-society/">LinkedIn</a></li>
               </ul>
             </div>
 
