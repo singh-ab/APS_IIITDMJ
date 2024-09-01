@@ -69,7 +69,7 @@ const NavbarMobile = () => {
                     <div className="flex flex-col items-center">
                         <Link href="/" className="text-white text-lg mb-6">Home</Link>
                         <Link href="/about" className="text-white text-lg mb-6">Contact Us</Link>
-                        <Link href="/services" className="text-white text-lg mb-6">About Us</Link>
+                        <Link href="/about" className="text-white text-lg mb-6">About Us</Link>
                         <Link href="/contact" className="text-white text-lg mb-6">Sessions</Link>
                         <Link href="/contact" className="text-white text-lg mb-6">Fests</Link>
                         <Link href="/contact" className="text-white text-lg mb-6">Members</Link>
