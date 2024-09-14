@@ -1,0 +1,7 @@
+.StickyScrollRevealDemo {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    scroll-snap-type: y mandatory;
+    scroll-snap-destination: 0% 0%;
+}

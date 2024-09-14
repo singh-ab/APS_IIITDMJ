@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -24,20 +25,21 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
-    },
-    "baseUrl": "./",
-    "paths": {
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
       "@tabler/icons-react": [
         "node_modules/@tabler/icons-react/index"
       ]
-    }
+    },
+    "baseUrl": "./"
   },
   "include": [
-    "video.d.ts",
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "src/**/*",
     ".next/types/**/*.ts"
   ],
   "exclude": [

@@ -1,13 +1,11 @@
-
 "use client";
 import React, { useState, useEffect } from "react";
 import { HoveredLink, Menu, MenuItem } from "../components/ui/navber-menu";
 import { cn } from "../utils/cn";
-
 // import Video from "next-video"
 import styles from './page.module.css';
 import Image from 'next/image';
-import moonVideo from '../../public/moon.mp4';
+// import moonVideo from '../../public/moon.mp4';
 import reactElementToJSXString from "react-element-to-jsx-string";
 import { toast, Toaster } from "sonner";
 import { ButtonsCard } from "../components/ui/tailwindcss-buttons";
@@ -74,6 +72,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
 
+
       <div className="landing mb-0">
         <div className="relative w-full flex items-center justify-end top-2">
           {/* <Navbar className="top-2" /> */}
@@ -89,9 +88,9 @@ export default function Home() {
         <div className={styles.landinggroup} style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
           <div className="headingtext flex flex-col place-items-start">
             <h1 className="font-jetbrains-mono text-4xl text-white">
-              ASTRONOMY AND <br />PHYSICS SOCIETY
+              ASTRONOMY AND <br/>PHYSICS SOCIETY
             </h1>
-            <p className="text-xl text-teal-400 font-sans my-4">Indian Institute of Information Technology, <br />Design and Manufacturing Jabalpur</p>
+            <p className="text-xl text-teal-400 font-sans my-4">Indian Institute of Information Technology, <br/>Design and Manufacturing Jabalpur</p>
             <TailwindcssButtons />
           </div>
           <div className="logo ">
@@ -200,7 +199,7 @@ function Navbar({ className }: { className?: string }) {
     >
       <Menu setActive={setActive}>
 
-        <HoveredLink href="/home">Home</HoveredLink>
+        <HoveredLink href="/">Home</HoveredLink>
 
         <HoveredLink href="/contact">Contact Us</HoveredLink>
 
