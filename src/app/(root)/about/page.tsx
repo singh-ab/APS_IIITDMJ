@@ -56,22 +56,32 @@ const About = () => {
 
 
         <TracingBeamDemo />
-        
 
         <div className="section mt-20 pt-20 pb-20 pl-32 pr-32  bg-teal-900">
           <h1 className="font-jetbrains-mono text-4xl text-white pb-4">Our Efforts</h1>
+          <p className="text-gray-300">The Astronomy and Physics Society is dedicated to fostering a deeper 
+            understanding <br /> of the cosmos through engaging and interactive activities. Our club offers a variety of 
+            sessions <br /> and workshops, each designed to inspire curiosity and learning about astronomy and physics.
+          </p>
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Astronomy Sessions</h2>
-          <p className="text-gray-300">Regular sessions related to several astronomical stuffs <br />
-            Separate Discussions And knowledge sessions <br />
+          <p className="text-gray-300">Regular sessions related to Astronomy and Physics including separate discussions<br />
+            and knowledge-sharing sessions, where members can dive deeper into specific areas of interest.<br />
             Workshops like Image Processing Workshop and Telescope Workshop
+          </p>
+          <h2 className="mt-5 text-2xl mb-2 text-teal-400">Workshops</h2>
+          <p className="text-gray-300">Workshops such as the JWST Image Processing Workshop, Telescope Workshop, <br />
+             and Astrophotography Workshop where participants learn hands-on skills essential for astronomical exploration.
           </p>
 
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Observatory Sessions</h2>
-          <p className="text-gray-300">We perform Observation sessions on a regular basis. During these sessions, telescopes are used to see the Moon, nebulae, planets such as Saturn, and other celestial bodies. However, naked-eye observations and the use of binoculars are also crucial in astronomy.
+          <p className="text-gray-300">Our members frequently participate in observation sessions where we use telescopes
+             to explore <br /> the Moon, nebulae, and planets like Saturn.
+              Naked-eye observations and binocular use also play <br /> an important role in our sessions, making astronomy accessible to all.
           </p>
 
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Quizzing And Competitions</h2>
-          <p className="text-gray-300">We actively organise quizzes and other competitions like Treasure Hunts open for everyone.
+          <p className="text-gray-300">To encourage friendly competition and learning, we organize quizzes and competitions
+             such as Treasure Hunts -<br /> which is also one of our flagship events - open to anyone with an interest in the mysteries of the universe.
           </p>
         </div>
       </div>
@@ -164,7 +174,7 @@ const dummyContent = [
     description: (
       <>
         <p>Name: John Doe</p>
-        <p>Role: Coordinator</p>
+        <p>Role: Co-Coordinator</p>
         <p>Email: john.doe@example.com</p>
         <div className="flex space-x-4 mt-5">
           <a href="mailto:john.doe@example.com">
@@ -180,7 +190,7 @@ const dummyContent = [
       src: "/cocoordinator.jpg",
       alt: "Cocoordinator",
     },
-    badge: "Co-coordinator",
+    badge: "Co-Coordinator",
   },
 ];
 
