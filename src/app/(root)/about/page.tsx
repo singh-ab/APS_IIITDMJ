@@ -67,16 +67,11 @@ const About = () => {
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Astronomy Sessions</h2>
           <p className="text-gray-300">Regular sessions related to Astronomy and Physics including separate discussions<br />
             and knowledge-sharing sessions, where members can dive deeper into specific areas of interest.<br />
-            Workshops like Image Processing Workshop and Telescope Workshop
+            
           </p>
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Workshops</h2>
           <p className="text-gray-300">Workshops such as the JWST Image Processing Workshop, Telescope Workshop, <br />
              and Astrophotography Workshop where participants learn hands-on skills essential for astronomical exploration.
-          </p>
-
-          <h2 className="mt-5 text-2xl mb-2 text-teal-400">Workshops</h2>
-          <p className="text-gray-300">Workshops such as the JWST Image Processing Workshop, Telescope Workshop, <br />
-            and Astrophotography Workshop where participants learn hands-on skills essential for astronomical exploration.
           </p>
 
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Observatory Sessions</h2>
@@ -117,9 +112,9 @@ const About = () => {
               <div>
                 <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Social Media</h3>
                 <ul className="mt-4 space-y-2  text-teal-400 font-normal">
-                  <li><a href="https://facebook.com">Facebook</a></li>
-                  <li><a href="https://instagram.com">Instagram</a></li>
-                  <li><a href="https://linkedin.com">LinkedIn</a></li>
+                  <li><a href="https://instagram.com/aps_iiitdmj">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/company/astronomy-and-physics-society/">LinkedIn</a></li>
+                  <li><a href="https://www.youtube.com/@AstronomyandPhysicsSociety">YouTube</a></li>
                 </ul>
               </div>
 
@@ -138,7 +133,7 @@ const About = () => {
 
             </div>
             <div className="mt-8 text-center">
-              <p>&copy; 2024 APS, All rights reserved.</p>
+              <p>&copy; 2024 APS | All rights reserved.</p>
             </div>
           </div>
         </footer>

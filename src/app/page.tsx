@@ -159,9 +159,9 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Social Media</h3>
               <ul className="mt-4 space-y-2  text-teal-400 font-normal">
-                <li><a href="https://facebook.com">Facebook</a></li>
                 <li><a href="https://instagram.com/aps_iiitdmj">Instagram</a></li>
                 <li><a href="https://www.linkedin.com/company/astronomy-and-physics-society/">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@AstronomyandPhysicsSociety">YouTube</a></li>
               </ul>
             </div>
 
@@ -180,7 +180,7 @@ export default function Home() {
 
           </div>
           <div className="mt-8 text-center">
-            <p>&copy; 2024 APS, All rights reserved.</p>
+            <p>&copy; 2024 APS | All rights reserved.</p>
           </div>
         </div>
       </footer>
