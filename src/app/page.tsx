@@ -13,6 +13,7 @@ import NavbarMobile from "src/components/ui/navber-mobile";
 import InfiniteMarquee from "src/components/ui/marquee";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 import {
+  IconArrowAutofitContent,
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
   IconBoxAlignTopLeft,
@@ -30,6 +31,7 @@ const imageUrls = [
   "/4.jpg",
   "/5.jpg",
   "/6.jpg",
+  "/7.jpg",
 ];
 
 function shuffleArray(array: any[]) {
@@ -88,9 +90,9 @@ export default function Home() {
         <div className={styles.landinggroup} style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
           <div className="headingtext flex flex-col place-items-start">
             <h1 className="font-jetbrains-mono text-4xl text-white">
-              ASTRONOMY AND <br/>PHYSICS SOCIETY
+              ASTRONOMY AND <br />PHYSICS SOCIETY
             </h1>
-            <p className="text-xl text-teal-400 font-sans my-4">Indian Institute of Information Technology, <br/>Design and Manufacturing Jabalpur</p>
+            <p className="text-xl text-teal-400 font-sans my-4">Indian Institute of Information Technology, <br />Design and Manufacturing Jabalpur</p>
             <TailwindcssButtons />
           </div>
           <div className="logo ">
@@ -100,7 +102,7 @@ export default function Home() {
       </div>
 
       <div className="section1 pt-20 pb-10 pl-20 pr-20 mt-0" style={{
-        backgroundImage: `url("7.jpg")`, backgroundSize: 'cover', backgroundPosition: 'center'
+        backgroundImage: `url("8.jpg")`, backgroundSize: 'cover', backgroundPosition: 'center'
       }}>
         <h1 className="font-jetbrains-mono text-4xl text-white text-center">
           RECENT EVENTS
@@ -116,14 +118,14 @@ export default function Home() {
         <div className="aboutgroup bg-gray-900 mb-16">
           <div className={styles.aboutgroup}>
             <div className="abouttext  pt-20 pb-10 pl-10 pr-20">
-              <h1 className="font-jetbrains-mono text-4xl text-white ">
+                <h1 className="font-jetbrains-mono text-4xl text-white">
                 ABOUT US
-              </h1>
+                </h1>
               <p className="text-gray-400  font-normal mt-7">The Astronomy and Physics Society is a student-run society under the Gymkhana of the IIITDM Jabalpur. The society aims to promote the knowledge of Astronomy and Physics among students and to provide a platform for students to showcase their talents and skills in these fields. The society organizes various events, workshops, and sessions throughout the year to help students learn and explore the wonders of the universe. The society also participates in various inter-college competitions and fests to represent the institute and showcase the talent of its members. The society is open to all students who have an interest in Astronomy and Physics and is a great place to meet like-minded individuals and learn new things.</p>
             </div>
             <div className={styles.aboutimage}>
 
-              <Image className="rounded-md  mt-5 mb-10 mr-20" src="/about.jpg" alt="about" width={4000} height={4000} />
+              <Image className="rounded-md  mt-5 mb-5 mr-20" src="/team.jpg" alt="about" width={4000} height={4000} />
 
             </div>
           </div>
@@ -139,16 +141,16 @@ export default function Home() {
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Contact Us</h3>
               <p className="mt-4 font-normal text-teal-400" >52GG+H4G, Airport Rd, PDPM IIITDM Jabalpur Campus, <br />
                 Khamaria, Jabalpur, Chakdehi, Madhya Pradesh 482005</p>
-              <p className="mt-2 font-normal gray-400">Phone: 123-456-7890</p>
-              <p>Email: example@example.com</p>
+              {/*UNDER DEVELOPMENT PHASE <p className="mt-2 font-normal gray-400">Phone: 123-456-7890</p> */}
+              <p>Email: astronomy@iiitdmj.ac.in</p>
             </div>
             <div>
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Links</h3>
               <ul className="mt-4 grid grid-cols-2 space-y-2 text-teal-400 font-normal">
+              
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/sessions">Sessions</a></li>
-     
-                <li><a href="/contact">Contact</a></li>
+                {/* <li><a href="/contact">Contact</a></li>  */}
                 <li><a href="/members">Members</a></li>
                 <li><a href="/events">Events</a></li>
                 <li><a href="/forms">Forms</a></li>
@@ -157,7 +159,6 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Social Media</h3>
               <ul className="mt-4 space-y-2  text-teal-400 font-normal">
-                <li><a href="https://twitter.com">Twitter</a></li>
                 <li><a href="https://facebook.com">Facebook</a></li>
                 <li><a href="https://instagram.com">Instagram</a></li>
                 <li><a href="https://linkedin.com">LinkedIn</a></li>
@@ -200,20 +201,19 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
 
         <HoveredLink href="/">Home</HoveredLink>
-
-        <HoveredLink href="/contact">Contact Us</HoveredLink>
-
+        {/* <HoveredLink href="/contact">Contact Us</HoveredLink> */}
         <HoveredLink href="/about">About Us</HoveredLink>
         <HoveredLink href="/sessions">Sessions</HoveredLink>
         <HoveredLink href="/fests">Fests</HoveredLink>
         <HoveredLink href="/members">Members</HoveredLink>
-
-        <MenuItem setActive={setActive} active={active} item="More">
+        <HoveredLink href="/events">Events</HoveredLink>
+        <HoveredLink href="/form">Form</HoveredLink>
+        {/* <MenuItem setActive={setActive} active={active} item="More">
           <div className="flex flex-col space-y-6 text-s">
             <HoveredLink href="/events">Events</HoveredLink>
             <HoveredLink href="/form">Form</HoveredLink>
           </div>
-        </MenuItem>
+        </MenuItem> */}
 
       </Menu>
     </div>
@@ -256,6 +256,7 @@ export function BentoGridDemo() {
           title={item.title}
           description={item.description}
           header={item.header}
+          
           // icon={item.icon}
           className={i === 3 || i === 6 ? "md:col-span-2" : ""}
         />
@@ -264,41 +265,62 @@ export function BentoGridDemo() {
   );
 }
 
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500"></div>
+
+
+const Skeletonone = () => (
+  <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
+    <Image src="/1.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+  </div>
+);
+
+const Skeletontwo = () => (
+  <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
+    <Image src="/2.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+  </div>
+);
+
+const Skeletonthree = () => (
+  <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
+    <Image src="/3.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+  </div>
+);
+
+const Skeletonfour = () => (
+  <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
+    <Image src="/4.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+  </div>
+);
+
+const Skeletonfive = () => (
+  <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
+    <Image src="/5.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+  </div>
 );
 
 const items = [
   {
-    title: "The Dawn of Innovation",
+    title: "Astro Trivia",
     description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
-    // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    header: <Skeletonone />,
   },
   {
-    title: "The Digital Revolution",
+    title: "Telescope Sessions",
     description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
-    // icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    header: <Skeletontwo />,
   },
   {
-    title: "The Art of Design",
+    title: "Astrophotoraphy Workshop",
     description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-    // icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    header: <Skeletonthree />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
-    // icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    title: "The Astro Treasure Hunt",
+    description: "Understand the impact of effective communication in our lives.",
+    header: <Skeletonfour />,
   },
   {
-    title: "The Pursuit of Knowledge",
+    title: "JWST Workshop",
     description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
-    // icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+    header: <Skeletonfive />,
   },
-
 ];

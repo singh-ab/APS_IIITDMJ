@@ -2,7 +2,9 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -13,6 +15,10 @@
 ::-webkit-scrollbar {
   width: 8px;
   /* Width of the scrollbar */
+}
+
+.h1 {
+  font: "jetbrains-mono";
 }
 
 ::-webkit-scrollbar-track {
@@ -38,11 +44,17 @@
   }
 }
 
+.font-jetbrains-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
+  overflow-x: hidden;
 }
 
 @layer utilities {
