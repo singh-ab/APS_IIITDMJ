@@ -33,7 +33,7 @@ const config: Config = {
       },
     },
   },
-
+  variants: {},
   plugins: [],
 };
 
