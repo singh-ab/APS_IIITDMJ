@@ -237,7 +237,7 @@ const dummyContent = [
     title: "Alok Rai",
     description: (
       <>
-        <p>Name: John Doe</p>
+        {/* <p>Name: John Doe</p> */}
         <p>Role: Co-Coordinator</p>
         <p>Email: john.doe@example.com</p>
         <div className="flex space-x-4 mt-5">

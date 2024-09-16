@@ -34,8 +34,8 @@ const Members = () => {
       name: "Abhay Singh",
       description: "Coordinator",
       linkedin: "https://www.linkedin.com/in/singhabhay1/",
-      twitter: "https://x.com/THEBLACKEYES09",
-      instagram: "https://instagram.com/johndoe",
+      // twitter: "https://x.com/THEBLACKEYES09",
+      instagram: "http://instagram.com/mostlyastro",
       gmail: "mailto:21bec003@iiitdmj.ac.in",
       image: "/coordinator.jpg"
     },
@@ -43,92 +43,75 @@ const Members = () => {
       name: "Shuvam Patra",
       description: "Graphic and Media Lead",
       linkedin: "https://www.linkedin.com/in/shuvam-patra-157b50229/",
-      twitter: "https://twitter.com/johndoe",
+      twitter: "https://x.com/THEBLACKEYES09",
       instagram: "https://www.instagram.com/blackeyesandblue09/",
       gmail: "mailto:shuvampatra2003@gmail.com",
       image: "/shuvam.jpg"
     },
     {
-      name: "John Doe",
-      description: "Software Engineer",
-      linkedin: "https://linkedin.com/in/johndoe",
-      twitter: "https://twitter.com/johndoe",
-      instagram: "https://instagram.com/johndoe",
-      gmail: "mailto:johndoe@gmail.com",
-      image: "/path/to/image3.jpg"
+      name: "Abhinav Kumar",
+      description: "Telescope Operator Lead",
+      linkedin: "https://www.linkedin.com/in/abhinav-kumar-8b6008247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      // twitter: "https://twitter.com/johndoe",
+      instagram: "https://www.instagram.com/i.g_abhinav?igsh=OGt2cnJ4cGluZnFs",
+      gmail: "mailto:igabhinav.2003@gmail.com",
+      image: "/abhinav.jpg"
     },
     {
-      name: "John Doe",
-      description: "Software Engineer",
-      linkedin: "https://linkedin.com/in/johndoe",
-      twitter: "https://twitter.com/johndoe",
-      instagram: "https://instagram.com/johndoe",
-      gmail: "mailto:johndoe@gmail.com",
-      image: "/path/to/image4.jpg"
+      name: "Haritha Murukutla",
+      description: "Core Team Member",
+      linkedin: "http://www.linkedin.com/in/haritha-murukutla-a6b48722a",
+      // twitter: "https://twitter.com/johndoe",
+      instagram: "https://www.instagram.com/mysti_thoughts?igsh=MTFpN2NiMm9vNzN4MA==",
+      gmail: "mailto:hareethamurukutla@gmail.com",
+      image: "/harita.jpg"
     },
     {
-      name: "John Doe",
-      description: "Software Engineer",
-      linkedin: "https://linkedin.com/in/johndoe",
-      twitter: "https://twitter.com/johndoe",
-      instagram: "https://instagram.com/johndoe",
-      gmail: "mailto:johndoe@gmail.com",
-      image: "/path/to/image5.jpg"
+      name: "Gaurav Manjhi",
+      description: "Core Team Member",
+      linkedin: "https://www.linkedin.com/in/gaurav-manjhi/",
+      // twitter: "https://twitter.com/johndoe",
+      instagram: "https://www.instagram.com/gauravmanjhi07?utm_source=qr&igsh=MWJibG04eG1zMXlxbg==",
+      gmail: "mailto:gauravmanjhi2002@gmail.com",
+      image: "/gaurav.jpg"
     },
     {
-      name: "John Doe",
-      description: "Software Engineer",
-      linkedin: "https://linkedin.com/in/johndoe",
-      twitter: "https://twitter.com/johndoe",
-      instagram: "https://instagram.com/johndoe",
-      gmail: "mailto:johndoe@gmail.com",
-      image: "/path/to/image6.jpg"
+      name: "Aditya Gupta",
+      description: "Core Team Member",
+      linkedin: "https://www.linkedin.com/in/aditya-gupta-1b4aa4257/",
+      // twitter: "https://twitter.com/johndoe",
+      instagram: "https://www.instagram.com/adi.ayt?igsh=djY4OHcxNGI0cmF6",
+      gmail: "mailto:guptaaditya1801@gmail.com",
+      image: "/aditya.jpg"
     },
     {
-      name: "John Doe",
-      description: "Software Engineer",
-      linkedin: "https://linkedin.com/in/johndoe",
-      twitter: "https://twitter.com/johndoe",
-      instagram: "https://instagram.com/johndoe",
-      gmail: "mailto:johndoe@gmail.com",
-      image: "/path/to/image7.jpg"
+      name: "Abhishek Gupta",
+      description: "Core Team Member",
+      linkedin: "https://www.linkedin.com/in/abhishek-gupta-584530228/",
+      // twitter: "https://twitter.com/johndoe",
+      // instagram: "https://instagram.com/johndoe",
+      gmail: "mailto:abhishekgupta020702@gmail.com",
+      image: "/abhishek.jpg"
     },
     {
-      name: "John Doe",
-      description: "Software Engineer",
-      linkedin: "https://linkedin.com/in/johndoe",
-      twitter: "https://twitter.com/johndoe",
-      instagram: "https://instagram.com/johndoe",
-      gmail: "mailto:johndoe@gmail.com",
-      image: "/path/to/image8.jpg"
+      name: "Alok Rai",
+      description: "Co-Coordinator",
+      linkedin: "http://linkedin.com/in/alok-rai158",
+      // twitter: "https://twitter.com/johndoe",
+      instagram: "https://www.instagram.com/158alokrai?igsh=bm9nbXp1eW84aHhs",
+      gmail: "mailto:22bec010@iiitdmj.ac.in",
+      image: "/cocoordinator.jpg"
     },
-    {
-      name: "John Doe",
-      description: "Software Engineer",
-      linkedin: "https://linkedin.com/in/johndoe",
-      twitter: "https://twitter.com/johndoe",
-      instagram: "https://instagram.com/johndoe",
-      gmail: "mailto:johndoe@gmail.com",
-      image: "/path/to/image9.jpg"
-    },
-    {
-      name: "John Doe",
-      description: "Software Engineer",
-      linkedin: "https://linkedin.com/in/johndoe",
-      twitter: "https://twitter.com/johndoe",
-      instagram: "https://instagram.com/johndoe",
-      gmail: "mailto:johndoe@gmail.com",
-      image: "/path/to/image10.jpg"
-    },
-    {
-      name: "John Doe",
-      description: "Software Engineer",
-      linkedin: "https://linkedin.com/in/johndoe",
-      twitter: "https://twitter.com/johndoe",
-      instagram: "https://instagram.com/johndoe",
-      gmail: "mailto:johndoe@gmail.com",
-      image: "/path/to/image11.jpg"
-    },
+    // {
+    //   name: "John Doe",
+    //   description: "Software Engineer",
+    //   linkedin: "https://linkedin.com/in/johndoe",
+    //   twitter: "https://twitter.com/johndoe",
+    //   instagram: "https://instagram.com/johndoe",
+    //   gmail: "mailto:johndoe@gmail.com",
+    //   image: "/path/to/image9.jpg"
+    // },
+    
   ];
 
   return (
