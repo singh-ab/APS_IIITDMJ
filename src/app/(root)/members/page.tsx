@@ -5,6 +5,7 @@ import { cn } from "../../../utils/cn";
 import NavbarMobile from "src/components/ui/navber-mobile";
 import Image from 'next/image';
 import styles from './page.module.css';
+import { ButtonsCard } from "../../../components/ui/tailwindcss-buttons";
 
 const Members = () => {
 
@@ -111,7 +112,7 @@ const Members = () => {
     //   gmail: "mailto:johndoe@gmail.com",
     //   image: "/path/to/image9.jpg"
     // },
-    
+
   ];
 
   return (
@@ -177,6 +178,19 @@ const Members = () => {
           ))}
         </div>
       </div>
+      <div className="abouttext flex flex-row justify-center">
+        <div className="pt-20 pb-20 pl-32 pr-32 w-1/2">
+          <h1 className="font-jetbrains-mono text-4xl text-white pb-4">WANNA JOIN US?</h1>
+          <p className="text-teal-400 mb-6">Wanna be a part of The Astronomy And Physics Society? Don't worry. Here we are giving you the opportunity!!!
+          </p>
+          <TailwindcssButtons/>
+        </div>
+        <div className="bg-cover flex align-middle relative  w-1/2">
+          <Image className="mr-20" src="/3.jpg" alt="about" layout="fill" objectFit="cover" />
+        </div>
+      </div>
+
+
       <footer className="bg-teal-900">
         <div className="max-w-8xl  py-20 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 ml-10  md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -194,7 +208,7 @@ const Members = () => {
 
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/sessions">Sessions</a></li>
-                {/* <li><a href="/contact">Contact</a></li> */}
+                <li><a href="/form">Form</a></li>
                 <li><a href="/members">Members</a></li>
                 <li><a href="/events">Events</a></li>
                 <li><a href="/forms">Forms</a></li>
@@ -256,5 +270,29 @@ function Navbar({ className }: { className?: string }) {
     </div>
   );
 }
+
+//landing button component starts here
+export function TailwindcssButtons() {
+
+  return (
+    <div >
+      {buttons.map((button, idx) => (
+        <ButtonsCard key={idx}>
+          {button.component}
+        </ButtonsCard>
+      ))}
+    </div>
+  );
+}
+export const buttons = [
+  {
+    component: (
+      <button className="shadow-[0_0_0_3px_teal-400_inset] px-6 py-2 bg-transparent border border-teal-400 dark:border-teal-400 dark:text-teal-400 text-teal-400 font-bold transform hover:-translate-y-1 transition duration-400 hover:border-white hover:text-white">
+        Join Us
+      </button>
+    ),
+  },
+]
+//landing button component ends here
 
 export default Members
