@@ -269,58 +269,58 @@ export function BentoGridDemo() {
 
 const Skeletonone = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/1.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image src="/trivia.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
   </div>
 );
 
 const Skeletontwo = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/2.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image src="/telescope.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
   </div>
 );
 
 const Skeletonthree = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/3.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image src="/astrophoto.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
   </div>
 );
 
 const Skeletonfour = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/4.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image src="/ath2.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
   </div>
 );
 
 const Skeletonfive = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/5.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image src="/jwst.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
   </div>
 );
 
 const items = [
   {
     title: "Astro Trivia",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    description: "Test your knowledge of the cosmos and beyond.",
     header: <Skeletonone />,
   },
   {
     title: "Telescope Sessions",
-    description: "Dive into the transformative power of technology.",
+    description: "Learn the art of stargazing and telescope operation.",
     header: <Skeletontwo />,
   },
   {
-    title: "Astrophotoraphy Workshop",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "Astrophotography Workshop",
+    description: "Capture the beauty of the night sky with your camera.",
     header: <Skeletonthree />,
   },
   {
     title: "The Astro Treasure Hunt",
-    description: "Understand the impact of effective communication in our lives.",
+    description: "Embark on a journey to find the hidden treasures of the universe.",
     header: <Skeletonfour />,
   },
   {
     title: "JWST Workshop",
-    description: "Join the quest for understanding and enlightenment.",
+    description: "Learn to process and analyze data from the James Webb Space Telescope.",
     header: <Skeletonfive />,
   },
 ];

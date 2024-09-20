@@ -1,13 +1,15 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 const Forms = () => {
-  return (
+  const router = useRouter()
 
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: 'black' }}>
-      <img src="underdev.png" alt="Under Development" style={{ width: '50%' }} />
-    </div>
+  useEffect(() => {
+    router.push('https://forms.gle/zx9KBwpZjsxb9Ku39') // Replace with the URL you want to redirect to
+  }, [router])
 
-  )
+  return null
 }
 
 export default Forms
