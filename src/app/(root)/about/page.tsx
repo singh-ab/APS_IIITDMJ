@@ -33,6 +33,46 @@ const About = () => {
     return isMobile ? <NavbarMobile /> : <Navbar />;
   };
 
+  const members = [
+    {
+      name: "Abhay Singh",
+      description: "Overall Project Lead",
+      linkedin: "https://www.linkedin.com/in/singhabhay1/",
+      // twitter: "https://x.com/THEBLACKEYES09",
+      instagram: "http://instagram.com/mostlyastro",
+      gmail: "mailto:21bec003@iiitdmj.ac.in",
+      image: "/coordinator.jpg"
+    },
+    {
+      name: "Shuvam Patra",
+      description: "UI/UX and Fronted Developer",
+      linkedin: "https://www.linkedin.com/in/shuvam-patra-157b50229/",
+      twitter: "https://x.com/THEBLACKEYES09",
+      instagram: "https://www.instagram.com/blackeyesandblue09/",
+      gmail: "mailto:shuvampatra2003@gmail.com",
+      image: "/shuvam.jpg"
+    },
+    {
+      name: "Abhinav Kumar",
+      description: "Backend and Optimisation",
+      linkedin: "https://www.linkedin.com/in/abhinav-kumar-8b6008247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      // twitter: "https://twitter.com/johndoe",
+      instagram: "https://www.instagram.com/i.g_abhinav?igsh=OGt2cnJ4cGluZnFs",
+      gmail: "mailto:igabhinav.2003@gmail.com",
+      image: "/abhinav.jpg"
+    },
+    // {
+    //   name: "John Doe",
+    //   description: "Software Engineer",
+    //   linkedin: "https://linkedin.com/in/johndoe",
+    //   twitter: "https://twitter.com/johndoe",
+    //   instagram: "https://instagram.com/johndoe",
+    //   gmail: "mailto:johndoe@gmail.com",
+    //   image: "/path/to/image9.jpg"
+    // },
+
+  ];
+
   return (
     <div className={styles.main}>
       <div className="relative w-full flex items-center justify-end top-2">
@@ -43,13 +83,13 @@ const About = () => {
       </div>
 
       <div className="mainsection">
-        <div className="abouttext  bg-teal-900 flex flex-row justify-center"> {/* Modified line */}
-          <div className="pt-20 pb-20 pl-32 pr-32 w-1/2"> {/* Modified line */}
-            <h1 className="font-jetbrains-mono text-4xl text-white ">The Astronomy And Physics Society</h1>
+        <div className="abouttext  bg-teal-900 flex flex-row justify-center"> 
+          <div className="pt-20 pb-20 pl-32 pr-32 w-1/2">
+            <h1 className="font-jetbrains-mono text-4xl text-white ">THE ASTRONOMY AND PHYSICS SOCIETY</h1>
 
             <p className="mt-6 text-teal-400">We are the Astronomy and Physics Society of IIITDM Jabalpur. We are a group of many astro-enthusiasts under the Gymkhana of the IIITDM Jabalpur. Here, we attempt to bring about an interest and awareness in the field of Astronomy and Space Research. All along the we have been promoting amateur astronomy through talks, competetions and shows.</p>
           </div>
-          <div className="bg-cover flex align-middle relative  w-1/2"> {/* Modified line */}
+          <div className="bg-cover flex align-middle relative  w-1/2"> 
             <Image className="mr-20" src="/aboutimg.jpg" alt="about" layout="fill" objectFit="cover" />
           </div>
         </div>
@@ -59,7 +99,7 @@ const About = () => {
 
 
         <div className="section mt-20 pt-20 pb-20 pl-32 pr-32  bg-teal-900">
-          <h1 className="font-jetbrains-mono text-4xl text-white pb-4">Our Efforts</h1>
+          <h1 className="font-jetbrains-mono text-4xl text-white pb-10">OUR EFFORTS</h1>
           <p className="text-gray-300">The Astronomy and Physics Society is dedicated to fostering a deeper
             understanding <br /> of the cosmos through engaging and interactive activities. Our club offers a variety of
             sessions <br /> and workshops, each designed to inspire curiosity and learning about astronomy and physics.
@@ -67,11 +107,11 @@ const About = () => {
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Astronomy Sessions</h2>
           <p className="text-gray-300">Regular sessions related to Astronomy and Physics including separate discussions<br />
             and knowledge-sharing sessions, where members can dive deeper into specific areas of interest.<br />
-            
+
           </p>
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Workshops</h2>
           <p className="text-gray-300">Workshops such as the JWST Image Processing Workshop, Telescope Workshop, <br />
-             and Astrophotography Workshop where participants learn hands-on skills essential for astronomical exploration.
+            and Astrophotography Workshop where participants learn hands-on skills essential for astronomical exploration.
           </p>
 
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Observatory Sessions</h2>
@@ -84,6 +124,58 @@ const About = () => {
           <p className="text-gray-300">To encourage friendly competition and learning, we organize quizzes and competitions
             such as Treasure Hunts -<br /> which is also one of our flagship events - open to anyone with an interest in the mysteries of the universe.
           </p>
+        </div>
+
+        <div style={{
+          backgroundImage: 'url(/9.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          padding: '60px',
+          backgroundAttachment: 'fixed',
+          backgroundRepeat: 'no-repeat',
+          backgroundPositionY: '50%',
+          transition: 'background-position 0.5s ease',
+          position: 'relative',
+          backgroundColor: 'rgba(0, 0, 0, 0.5)'
+        }}>
+
+          <h1 className="font-jetbrains-mono text-4xl text-white text-center pb-10">
+            WEBSITE DEVELOPED BY
+          </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 ml-28 mr-28  ">
+            {members.map((member, index) => (
+              <div key={index} className="bg-gray-600 shadow-md rounded-lg p-4 backdrop-blur-md bg-opacity-30 border-2 border-white/[0.2] ">
+                <div className="header h-72 bg-gray-200 rounded-md mb-4 backdrop-blur-md bg-opacity-60">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
+                  />
+                </div>
+                {/* <div className="relative w-full h-full">
+                
+              </div> */}
+                <h2 className="font-jetbrains-mono font-bold text-neutral-200 dark:text-neutral-200 mb-2 mt-2">{member.name}</h2>
+                <p className="font-sans font-normal text-teal-400 text-xs dark:text-neutral-300">{member.description}</p>
+                <div className="flex space-x-4 mt-4 mb-4">
+                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="mr-2">
+                    <img src="linkedin.png" alt="LinkedIn" className="w-4 h-4" />
+                  </a>
+                  <a href={member.twitter} target="_blank" rel="noopener noreferrer" className="mr-2">
+                    <img src="x.png" alt="Twitter" className="w-4 h-4" />
+                  </a>
+                  <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="mr-2">
+                    <img src="instagram.png" alt="Instagram" className="w-4 h-4" />
+                  </a>
+                  <a href={member.gmail} target="_blank" rel="noopener noreferrer" className="mr-2">
+                    <img src="/gmail.png" alt="Gmail" className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         <footer className="">
@@ -103,7 +195,7 @@ const About = () => {
 
                   <li><a href="/about">About Us</a></li>
                   <li><a href="/sessions">Sessions</a></li>
-                  {/* <li><a href="/contact">Contact</a></li> */}
+                  <li><a href="/form">Form</a></li>
                   <li><a href="/members">Members</a></li>
                   <li><a href="/events">Events</a></li>
                   <li><a href="/forms">Forms</a></li>
