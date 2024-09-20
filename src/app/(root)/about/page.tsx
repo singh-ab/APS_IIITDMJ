@@ -298,11 +298,32 @@ export function TracingBeamDemo() {
 
 const dummyContent = [
   {
+    title: "Dr. Amit Vishwakarma",
+    description: (
+      <>
+        <p>FIC/S&T Counsellor<br /></p>
+        <p>Email: amitv@iiitdmj.ac.in</p>
+        <div className="flex space-x-4 mt-5">
+          <a href="mailto:amitv@iiitdmj.ac.in">
+            <img src="/gmail.png" alt="Gmail" className="w-6 " />
+          </a>
+          <a href="">
+            <img src="/linkedin.png" alt="LinkedIn" className="w-6 " />
+          </a>
+        </div>
+      </>
+    ),
+    image: {
+      src: "/fic.jpg",
+      alt: "Coordinator",
+    },
+    badge: "Faculty In-Charge",
+  },
+  {
     title: "Abhay Singh",
     description: (
       <>
-        <p>Current Coordinator of the club. <br />
-          since: 2023</p>
+        <p>Coordinator<br /></p>
         <p>Email: 21bec003@iiitdmj.ac.in</p>
         <div className="flex space-x-4 mt-5">
           <a href="mailto:21bec003@iiitdmj.ac.in">
@@ -326,9 +347,9 @@ const dummyContent = [
       <>
         {/* <p>Name: John Doe</p> */}
         <p>Role: Co-Coordinator</p>
-        <p>Email: john.doe@example.com</p>
+        <p>Email: 22bec010@iiitdmj.ac.in</p>
         <div className="flex space-x-4 mt-5">
-          <a href="mailto:john.doe@example.com">
+          <a href="mailto:22bec010@iiitdmj.ac.in">
             <img src="/gmail.png" alt="Gmail" className="w-6 " />
           </a>
           <a href="https://www.linkedin.com/">
