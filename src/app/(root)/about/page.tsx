@@ -41,7 +41,7 @@ const About = () => {
       // twitter: "https://x.com/THEBLACKEYES09",
       instagram: "http://instagram.com/mostlyastro",
       gmail: "mailto:21bec003@iiitdmj.ac.in",
-      image: "/coordinator.jpg"
+      // image: "/coordinator.jpg"
     },
     {
       name: "Shuvam Patra",
@@ -50,7 +50,7 @@ const About = () => {
       twitter: "https://x.com/THEBLACKEYES09",
       instagram: "https://www.instagram.com/blackeyesandblue09/",
       gmail: "mailto:shuvampatra2003@gmail.com",
-      image: "/shuvam.jpg"
+      // image: "/shuvam.jpg"
     },
     {
       name: "Abhinav Kumar",
@@ -59,7 +59,7 @@ const About = () => {
       // twitter: "https://twitter.com/johndoe",
       instagram: "https://www.instagram.com/i.g_abhinav?igsh=OGt2cnJ4cGluZnFs",
       gmail: "mailto:igabhinav.2003@gmail.com",
-      image: "/abhinav.jpg"
+      // image: "/abhinav.jpg"
     },
     // {
     //   name: "John Doe",
@@ -145,7 +145,7 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 ml-28 mr-28  ">
             {members.map((member, index) => (
               <div key={index} className="bg-gray-600 shadow-md rounded-lg p-4 backdrop-blur-md bg-opacity-30 border-2 border-white/[0.2] ">
-                <div className="header h-72 bg-gray-200 rounded-md mb-4 backdrop-blur-md bg-opacity-60">
+                {/* <div className="header h-72 bg-gray-200 rounded-md mb-4 backdrop-blur-md bg-opacity-60">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -153,7 +153,7 @@ const About = () => {
                     objectFit="cover"
                     className="rounded-md"
                   />
-                </div>
+                </div> */}
                 {/* <div className="relative w-full h-full">
                 
               </div> */}
