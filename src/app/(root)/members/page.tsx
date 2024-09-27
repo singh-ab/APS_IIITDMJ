@@ -145,7 +145,9 @@ const Members = () => {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  ">
           {members.map((member, index) => (
-            <div key={index} className="bg-gray-600 shadow-md rounded-lg p-4 backdrop-blur-md bg-opacity-30 border-2 border-white/[0.2] ">
+            <div 
+            key={index} 
+            className="bg-gray-600 shadow-md rounded-lg p-4 backdrop-blur-md bg-opacity-30 border-2 border-white/[0.2] ">
               <div className="header h-72 bg-gray-200 rounded-md mb-4 backdrop-blur-md bg-opacity-60">
                 <Image
                   src={member.image}
@@ -286,10 +288,11 @@ export function TailwindcssButtons() {
 }
 export const buttons = [
   {
-    component: (
+    component: (<a href="https://forms.gle/zx9KBwpZjsxb9Ku39">
       <button className="shadow-[0_0_0_3px_teal-400_inset] px-6 py-2 bg-transparent border border-teal-400 dark:border-teal-400 dark:text-teal-400 text-teal-400 font-bold transform hover:-translate-y-1 transition duration-400 hover:border-white hover:text-white">
-        Join Us
+        Be A Member
       </button>
+      </a>
     ),
   },
 ]
