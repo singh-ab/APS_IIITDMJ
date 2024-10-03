@@ -41,7 +41,7 @@ const About = () => {
       // twitter: "https://x.com/THEBLACKEYES09",
       instagram: "http://instagram.com/mostlyastro",
       gmail: "mailto:21bec003@iiitdmj.ac.in",
-      // image: "/coordinator.jpg"
+      image: "/coordinator.jpg"
     },
     {
       name: "Shuvam Patra",
@@ -50,7 +50,7 @@ const About = () => {
       twitter: "https://x.com/THEBLACKEYES09",
       instagram: "https://www.instagram.com/blackeyesandblue09/",
       gmail: "mailto:shuvampatra2003@gmail.com",
-      // image: "/shuvam.jpg"
+      image: "/shuvam.jpg"
     },
     {
       name: "Abhinav Kumar",
@@ -59,7 +59,7 @@ const About = () => {
       // twitter: "https://twitter.com/johndoe",
       instagram: "https://www.instagram.com/i.g_abhinav?igsh=OGt2cnJ4cGluZnFs",
       gmail: "mailto:igabhinav.2003@gmail.com",
-      // image: "/abhinav.jpg"
+      image: "/abhinav.jpg"
     },
     // {
     //   name: "John Doe",
@@ -98,98 +98,82 @@ const About = () => {
         <TracingBeamDemo />
 
 
-        <div  style={{
+        <div className="section mt-20 pt-20 pb-20 pl-32 pr-32  bg-teal-900">
+          <h1 className="font-jetbrains-mono text-4xl text-white pb-10">OUR EFFORTS</h1>
+          <p className="text-gray-300">The Astronomy and Physics Society is dedicated to fostering a deeper
+            understanding <br /> of the cosmos through engaging and interactive activities. Our club offers a variety of
+            sessions <br /> and workshops, each designed to inspire curiosity and learning about astronomy and physics.
+          </p>
+          <h2 className="mt-5 text-2xl mb-2 text-teal-400">Astronomy Sessions</h2>
+          <p className="text-gray-300">Regular sessions related to Astronomy and Physics including separate discussions<br />
+            and knowledge-sharing sessions, where members can dive deeper into specific areas of interest.<br />
+
+          </p>
+          <h2 className="mt-5 text-2xl mb-2 text-teal-400">Workshops</h2>
+          <p className="text-gray-300">Workshops such as the JWST Image Processing Workshop, Telescope Workshop, <br />
+            and Astrophotography Workshop where participants learn hands-on skills essential for astronomical exploration.
+          </p>
+
+          <h2 className="mt-5 text-2xl mb-2 text-teal-400">Observatory Sessions</h2>
+          <p className="text-gray-300">Our members frequently participate in observation sessions where we use telescopes
+            to explore <br /> the Moon, nebulae, and planets like Saturn.
+            Naked-eye observations and binocular use also play <br /> an important role in our sessions, making astronomy accessible to all.
+          </p>
+
+          <h2 className="mt-5 text-2xl mb-2 text-teal-400">Quizzing And Competitions</h2>
+          <p className="text-gray-300">To encourage friendly competition and learning, we organize quizzes and competitions
+            such as Treasure Hunts -<br /> which is also one of our flagship events - open to anyone with an interest in the mysteries of the universe.
+          </p>
+        </div>
+
+        <div style={{
           backgroundImage: 'url(/9.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          padding: '60px',
           backgroundAttachment: 'fixed',
           backgroundRepeat: 'no-repeat',
           backgroundPositionY: '50%',
           transition: 'background-position 0.5s ease',
           position: 'relative',
           backgroundColor: 'rgba(0, 0, 0, 0.5)'
-        }}
-        className="section mt-20 pt-20 pb-20 pl-32 pr-32 text-balance">
-          <h1 className="font-jetbrains-mono text-4xl text-white pb-10">OUR EFFORTS</h1>
-          <p className="text-gray-300">The Astronomy and Physics Society is dedicated to fostering a deeper
-            understanding of the cosmos through engaging and   interactive activities. Our club offers a variety of sessions and workshops, each designed to inspire curiosity and learning about astronomy and physics.
-          </p>
-          <h2 className="mt-5 text-2xl mb-2 text-teal-400">Astronomy Sessions</h2>
-          <p className="text-gray-300">Regular sessions related to Astronomy and Physics including separate discussions
-            and knowledge-sharing sessions, where members can dive deeper into specific areas of interest.
+        }}>
 
-          </p>
-          <h2 className="mt-5 text-2xl mb-2 text-teal-400">Workshops</h2>
-          <p className="text-gray-300">Workshops such as the JWST Image Processing Workshop, Telescope Workshop, 
-            and Astrophotography Workshop where participants learn hands-on skills essential for astronomical exploration.
-          </p>
-
-          <h2 className="mt-5 text-2xl mb-2 text-teal-400">Observatory Sessions</h2>
-          <p className="text-gray-300">Our members frequently participate in observation sessions where we use telescopes
-            to explore  the Moon, nebulae, and planets like Saturn.
-            Naked-eye observations and binocular use also play  an important role in our sessions, making astronomy accessible to all.
-          </p>
-
-          <h2 className="mt-5 text-2xl mb-2 text-teal-400">Quizzing And Competitions</h2>
-          <p className="text-gray-300">To encourage friendly competition and learning, we organize quizzes and competitions
-            such as Treasure Hunts - which is also one of our flagship events - open to anyone with an interest in the mysteries of the universe.
-          </p>
-        </div>
-
-        <div
-        // style={{
-        //   backgroundImage: 'url(/9.jpg)',
-        //   backgroundSize: 'cover',
-        //   backgroundPosition: 'center',
-        //   padding: '60px',
-        //   backgroundAttachment: 'fixed',
-        //   backgroundRepeat: 'no-repeat',
-        //   backgroundPositionY: '50%',
-        //   transition: 'background-position 0.5s ease',
-        //   position: 'relative',
-        //   backgroundColor: 'rgba(0, 0, 0, 0.5)'
-        // }}
-        className=" bg-teal-900"
-        >
-
-          <h1 className="font-jetbrains-mono text-4xl text-white text-center pb-10 pt-20">
+          <h1 className="font-jetbrains-mono text-4xl text-white text-center pb-10">
             WEBSITE DEVELOPED BY
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 ml-28 mr-28  pb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 ml-28 mr-28  ">
             {members.map((member, index) => (
-                <div 
-                key={index} 
-                className="bg-slate-900 shadow-md rounded-lg p-4 backdrop-blur-md bg-opacity-70 border-2 border-slate-200/[0.4] transition-transform transform hover:scale-105 "
-                >
-                {/* <div className="header h-72 bg-gray-200 rounded-md mb-4 backdrop-blur-md bg-opacity-60">
+              <div key={index} className="bg-gray-600 shadow-md rounded-lg p-4 backdrop-blur-md bg-opacity-30 border-2 border-white/[0.2] ">
+                <div className="header h-72 bg-gray-200 rounded-md mb-4 backdrop-blur-md bg-opacity-60">
                   <Image
-                  src={member.image}
-                  alt={member.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md"
+                    src={member.image}
+                    alt={member.name}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
                   />
-                </div> */}
+                </div>
                 {/* <div className="relative w-full h-full">
                 
-                </div> */}
+              </div> */}
                 <h2 className="font-jetbrains-mono font-bold text-neutral-200 dark:text-neutral-200 mb-2 mt-2">{member.name}</h2>
                 <p className="font-sans font-normal text-teal-400 text-xs dark:text-neutral-300">{member.description}</p>
                 <div className="flex space-x-4 mt-4 mb-4">
                   <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="mr-2">
-                  <img src="linkedin.png" alt="LinkedIn" className="w-4 h-4" />
+                    <img src="linkedin.png" alt="LinkedIn" className="w-4 h-4" />
                   </a>
                   <a href={member.twitter} target="_blank" rel="noopener noreferrer" className="mr-2">
-                  <img src="x.png" alt="Twitter" className="w-4 h-4" />
+                    <img src="x.png" alt="Twitter" className="w-4 h-4" />
                   </a>
                   <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="mr-2">
-                  <img src="instagram.png" alt="Instagram" className="w-4 h-4" />
+                    <img src="instagram.png" alt="Instagram" className="w-4 h-4" />
                   </a>
                   <a href={member.gmail} target="_blank" rel="noopener noreferrer" className="mr-2">
-                  <img src="/gmail.png" alt="Gmail" className="w-4 h-4" />
+                    <img src="/gmail.png" alt="Gmail" className="w-4 h-4" />
                   </a>
                 </div>
-                </div>
+              </div>
             ))}
           </div>
         </div>
