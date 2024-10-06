@@ -131,7 +131,25 @@ export default function Home() {
         <InfiniteMarquee />
       </div>
 
-      
+      <div className="about">
+        <div className="aboutgroup bg-gray-900 mb-16">
+          <div className={styles.aboutgroup}>
+            <div className="abouttext  pt-20 pb-10 pl-10 pr-20">
+              <h1 className="font-jetbrains-mono text-4xl text-white ">
+                ABOUT US
+              </h1>
+              <p className="text-gray-400  font-normal mt-7">The Astronomy and Physics Society is a student-run society under the Gymkhana of the IIITDM Jabalpur. The society aims to promote the knowledge of Astronomy and Physics among students and to provide a platform for students to showcase their talents and skills in these fields. The society organizes various events, workshops, and sessions throughout the year to help students learn and explore the wonders of the universe. The society also participates in various inter-college competitions and fests to represent the institute and showcase the talent of its members. The society is open to all students who have an interest in Astronomy and Physics and is a great place to meet like-minded individuals and learn new things.</p>
+            </div>
+            <div className={styles.aboutimage}>
+
+              <Image className="rounded-md  mt-5 mb-10 mr-20" src="/team.jpg" alt="about" width={4000} height={4000} />
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <footer className="bg-teal-900">
         <div className="max-w-8xl  py-20 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 ml-10  md:grid-cols-2 lg:grid-cols-4 gap-8">

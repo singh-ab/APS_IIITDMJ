@@ -1,0 +1,32 @@
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 206px;
+    overflow-x: hidden;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+.track > h1 {
+    margin: 20px 0;
+    font-size: 8rem;
+    font-family: Antonio;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f4955c;
+    text-transform: uppercase;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

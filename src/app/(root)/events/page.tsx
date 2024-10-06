@@ -84,7 +84,7 @@ const Events = () => {
       </div>
       <div className="logo">
         <Image
-          src="/aboutbanner.jpg"
+          src="/events.png"
           alt="banner"
           width={1000}
           height={1000}
@@ -93,7 +93,7 @@ const Events = () => {
       </div>
 
       <div className="mainsection">
-        <div className="abouttext  bg-teal-900 flex flex-row justify-center">
+        <div className="abouttext  bg-slate-800 flex flex-row justify-center">
           <div className="pt-20 pb-20 pl-32 pr-32 w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Telescope Session
@@ -118,10 +118,10 @@ const Events = () => {
             />
           </div>
         </div>
-        <br/>
+        
         {/* ---------------------------------------------------- */}
-        <div className="abouttext  bg-teal-900 flex flex-row justify-center">
-          
+        <div className="abouttext mt-0  bg-slate-800 flex flex-row justify-center">
+
           <div className="bg-cover flex align-middle relative  w-1/2">
             <Image
               className="mr-20"
@@ -146,8 +146,8 @@ const Events = () => {
             </p>
           </div>
         </div>
-        <br/>
-        <div className="abouttext  bg-teal-900 flex flex-row justify-center">
+        
+        <div className="abouttext  bg-slate-800 flex flex-row justify-center">
           <div className="pt-20 pb-20 pl-32 pr-32 w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Astrophotography
@@ -172,11 +172,11 @@ const Events = () => {
             />
           </div>
         </div>
-        <br/>
-{/* -------------------------------------------------------------------------------- */}
-       
-
         
+        {/* -------------------------------------------------------------------------------- */}
+
+
+
         <footer className="">
           <div className="max-w-8xl  py-20 mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 ml-10  md:grid-cols-2 lg:grid-cols-4 gap-8">
