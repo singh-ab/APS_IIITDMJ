@@ -59,7 +59,15 @@ const Events = () => {
 
 
         {/* ---------------------------------------------------- */}
-
+        <div className="under-development">
+          <Image
+            src="/underdev.png"
+            alt="Under Development"
+            width={500}
+            height={500}
+            layout="responsive"
+          />
+        </div>
         {/* -------------------------------------------------------------------------------- */}
 
         <footer className="">
