@@ -183,7 +183,7 @@ const Members = () => {
       <div className="abouttext flex flex-row justify-center">
         <div className="pt-20 pb-20 pl-32 pr-32 w-1/2">
           <h1 className="font-jetbrains-mono text-4xl text-white pb-4">WANNA JOIN US?</h1>
-          <p className="text-teal-400 mb-6">Wanna be a part of The Astronomy And Physics Society? Don't worry. Here we are giving you the opportunity!!!
+          <p className="text-teal-400 mb-6">Wanna be a part of The Astronomy And Physics Society? Don&apos;t worry. Here we are giving you the opportunity!!!
           </p>
           <TailwindcssButtons/>
         </div>
