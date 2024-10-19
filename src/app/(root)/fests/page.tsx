@@ -46,7 +46,7 @@ const Events = () => {
       </div>
       <div className="logo">
         <Image
-          src="/aboutbanner.jpg"
+          src="/fests.jpg"
           alt="banner"
           width={1000}
           height={1000}
@@ -54,56 +54,16 @@ const Events = () => {
         />
       </div>
 
-      <div className="mainsection">
-        <div
-          className="section1 pt-20 pb-10 pl-20 pr-20 mt-0"
-          style={{
-            backgroundImage: `url("8.jpg")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <h1 className="font-jetbrains-mono text-4xl text-white text-center">
-            Techkriti IITK
-          </h1>
-          <BentoGridDemo />
-        </div>
-        <div
-          className="section1 pt-20 pb-10 pl-20 pr-20 mt-0"
-          style={{
-            backgroundImage: `url("8.jpg")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <h1 className="font-jetbrains-mono text-4xl text-white text-center">
-            Technex IIT-BHU
-          </h1>
-          <BentoGridDemo />
+        <div className="under-development">
+          <Image
+            src="/underdev.png"
+            alt="Under Development"
+            width={500}
+            height={500}
+            layout="responsive"
+          />
         </div>
 
-        <div
-          className="section1 pt-20 pb-10 pl-20 pr-20 mt-0"
-          style={{
-            backgroundImage: `url("8.jpg")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <h1 className="font-jetbrains-mono text-4xl text-white text-center">
-            Cogni IITR
-          </h1>
-          <BentoGridDemo />
-        </div>
-
-        <div className="marquee pt-6 pb-6 font-bold font-jetbrains-mono text-4xl text-teal-400 bg-gray-900">
-          <InfiniteMarquee />
-        </div>
-
-    
-        {/* ---------------------------------------------------- */}
-
-        {/* -------------------------------------------------------------------------------- */}
 
         <footer className="">
           <div className="max-w-8xl  py-20 mx-auto px-4 sm:px-6 lg:px-8">
@@ -189,7 +149,6 @@ const Events = () => {
           </div>
         </footer>
       </div>
-    </div>
   );
 };
 
