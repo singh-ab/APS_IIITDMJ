@@ -269,7 +269,7 @@ export function BentoGridDemo() {
 
 const Skeletonone = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/trivia.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image src="/trivia.jpeg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
   </div>
 );
 
