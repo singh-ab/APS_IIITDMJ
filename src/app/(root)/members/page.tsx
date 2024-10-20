@@ -83,7 +83,7 @@ const Members = () => {
       // twitter: "https://twitter.com/johndoe",
       instagram: "https://www.instagram.com/adi.ayt?igsh=djY4OHcxNGI0cmF6",
       gmail: "mailto:guptaaditya1801@gmail.com",
-      image: "/aditya.jpg"
+      image: "/aditya.jpeg"
     },
     {
       name: "Abhishek Gupta",
