@@ -275,7 +275,7 @@ const Skeletonone = () => (
 
 const Skeletontwo = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/telescope.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image src="/telescope.jpeg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
   </div>
 );
 
@@ -287,7 +287,7 @@ const Skeletonthree = () => (
 
 const Skeletonfour = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/ath2.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image src="/ath2.jpeg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
   </div>
 );
 
