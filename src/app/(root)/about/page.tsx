@@ -75,21 +75,30 @@ const About = () => {
 
   return (
     <div className={styles.main}>
-      <div className="relative w-full flex items-center justify-end top-2">
+      {/* <div className="relative w-full flex items-center justify-end top-2"> */}
+      <div className="relative w-full flex items-center justify-end">
         {renderNavbar()}
       </div>
-      <div className="logo">
-        <Image src="/aboutbanner.jpg" alt="banner" width={1000} height={1000} layout="responsive" />
+      {/* <div className="logo"> */}
+      <div className="logo relative -mt-5 z-10">
+        {/* <Image src="/aboutbanner.jpg" alt="banner" width={1000} height={1000} layout="responsive" /> */}
+        <Image
+          src="/aboutbanner.jpg"
+          alt="banner"
+          width={1000}
+          height={1000}
+          layout="responsive"
+          className="relative"
+        />
       </div>
 
       <div className="mainsection">
-        <div className="abouttext  bg-teal-900 flex flex-row justify-center"> 
-          <div className="pt-20 pb-20 pl-32 pr-32 w-1/2">
+      <div className="abouttext bg-teal-900 flex flex-col md:flex-row justify-center"> 
+          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">THE ASTRONOMY AND PHYSICS SOCIETY</h1>
-
             <p className="mt-6 text-teal-400">We are the Astronomy and Physics Society of IIITDM Jabalpur. We are a group of many astro-enthusiasts under the Gymkhana of the IIITDM Jabalpur. Here, we attempt to bring about an interest and awareness in the field of Astronomy and Space Research. All along the we have been promoting amateur astronomy through talks, competetions and shows.</p>
           </div>
-          <div className="bg-cover flex align-middle relative  w-1/2"> 
+          <div className="bg-cover flex align-middle relative w-full md:w-1/2"> 
             <Image className="mr-20" src="/aboutimg.jpg" alt="about" layout="fill" objectFit="cover" />
           </div>
         </div>
@@ -109,8 +118,8 @@ const About = () => {
           position: 'relative',
           backgroundColor: 'rgba(0, 0, 0, 0.5)'
         }}
-        className="section mt-20 pt-20 pb-20 pl-32 pr-32 text-balance">
-          <h1 className="font-jetbrains-mono text-4xl text-white pb-10">OUR EFFORTS</h1>
+        className="section mt-10 md:mt-20 pt-10 md:pt-20 pb-10 md:pb-20 px-4 md:pl-32 md:pr-32 text-balance">
+          <h1 className="font-jetbrains-mono text-3xl md:text-4xl text-white pb-10">OUR EFFORTS</h1>
           <p className="text-gray-300">The Astronomy and Physics Society is dedicated to fostering a deeper
             understanding of the cosmos through engaging and   interactive activities. Our club offers a variety of sessions and workshops, each designed to inspire curiosity and learning about astronomy and physics.
           </p>
@@ -155,7 +164,7 @@ const About = () => {
           <h1 className="font-jetbrains-mono text-4xl text-white text-center pb-10 pt-20">
             WEBSITE DEVELOPED BY
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 ml-28 mr-28  pb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-4 md:ml-28 md:mr-28 pb-10">
             {members.map((member, index) => (
                 <div 
                 key={index} 
@@ -196,7 +205,7 @@ const About = () => {
 
         <footer className="">
           <div className="max-w-8xl  py-20 mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 ml-10  md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
 
               <div>
                 <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Contact Us</h3>
