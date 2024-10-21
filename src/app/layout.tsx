@@ -1,38 +1,26 @@
-import type { Metadata } from "next";
+"use client";
+
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "../../public/aps.png";
+import LoaderWrapper from '../components/LoaderWrapper'; // Adjust the path if needed
+import { Suspense } from 'react';
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "APS IIITDMJ",
-  description: "Astronomy And Physics Society of IIITDM Jabalpur",
-  icons: {
-    icon: [
-      {
-        media: "(prefers-color-scheme: light)",
-        url: "../../public/aps.png",
-        href: "../../public/aps.png",
-      },
-      {
-        media: "(prefers-color-scheme: dark)",
-        url: "../../public/aps.png",
-        href: "../../public/aps.png",
-      },
-    ],
-  },
-};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
     <html lang="en">
-        <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Suspense fallback={<div>Loading...</div>}>
+          <LoaderWrapper>
+            {children}
+          </LoaderWrapper>
+        </Suspense>
+      </body>
     </html>
   );
 }
