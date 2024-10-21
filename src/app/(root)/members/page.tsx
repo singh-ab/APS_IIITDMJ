@@ -117,12 +117,12 @@ const Members = () => {
 
   return (
     <div className="main">
-      <div className="relative w-full flex items-center justify-end top-2">
+      <div className="relative w-full flex items-center justify-end">
         {renderNavbar()}
       </div>
 
-      <div className="logo">
-        <Image src="/membersbanner.png" alt="banner" width={1000} height={1000} layout="responsive" />
+      <div className="logo relative -mt-5 z-10">
+        <Image src="/membersbanner.png" alt="banner" width={1000} height={1000} layout="responsive" className="relative"/>
       </div>
 
 
@@ -143,7 +143,7 @@ const Members = () => {
         <h1 className="font-jetbrains-mono text-4xl text-white text-center pb-10">
           THE CREW
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-4 md:ml-28 md:mr-28 pb-10">
           {members.map((member, index) => (
             <div 
             key={index} 
@@ -180,14 +180,14 @@ const Members = () => {
           ))}
         </div>
       </div>
-      <div className="abouttext flex flex-row justify-center">
-        <div className="pt-20 pb-20 pl-32 pr-32 w-1/2">
+      <div className="abouttext  flex flex-col md:flex-row justify-center"> 
+          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
           <h1 className="font-jetbrains-mono text-4xl text-white pb-4">WANNA JOIN US?</h1>
           <p className="text-teal-400 mb-6">Wanna be a part of The Astronomy And Physics Society? Don&apos;t worry. Here we are giving you the opportunity!!!
           </p>
           <TailwindcssButtons/>
         </div>
-        <div className="bg-cover flex align-middle relative  w-1/2">
+        <div className="bg-cover flex align-middle relative w-full md:w-1/2">
           <Image className="mr-20" src="/3.jpg" alt="about" layout="fill" objectFit="cover" />
         </div>
       </div>
@@ -195,7 +195,8 @@ const Members = () => {
 
       <footer className="bg-teal-900">
         <div className="max-w-8xl  py-20 mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 ml-10  md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
+
 
             <div>
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Contact Us</h3>

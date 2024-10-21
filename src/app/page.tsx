@@ -135,7 +135,8 @@ export default function Home() {
 
       <footer className="bg-teal-900">
         <div className="max-w-8xl  py-20 mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 ml-10  md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
+
 
             <div>
               <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Contact Us</h3>
