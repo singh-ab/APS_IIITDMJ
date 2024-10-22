@@ -41,16 +41,20 @@ const Events = () => {
 
   return (
     <div className={styles.main}>
-      <div className="relative w-full flex items-center justify-end top-2">
+      {/* <div className="relative w-full flex items-center justify-end top-2"> */}
+      <div className="relative w-full flex items-center justify-end">
         {renderNavbar()}
       </div>
-      <div className="logo">
+      {/* <div className="logo"> */}
+      <div className="logo relative -mt-5 z-10">
+        {/* <Image src="/aboutbanner.jpg" alt="banner" width={1000} height={1000} layout="responsive" /> */}
         <Image
-          src="/fests.jpg"
+          src="/aboutbanner.jpg"
           alt="banner"
           width={1000}
           height={1000}
           layout="responsive"
+          className="relative"
         />
       </div>
 
@@ -64,8 +68,6 @@ const Events = () => {
           />
         </div>
 
-
-        
       </div>
   );
 };

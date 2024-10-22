@@ -79,22 +79,26 @@ const Events = () => {
 
   return (
     <div className={styles.main}>
-      <div className="relative w-full flex items-center justify-end top-2">
+      {/* <div className="relative w-full flex items-center justify-end top-2"> */}
+      <div className="relative w-full flex items-center justify-end">
         {renderNavbar()}
       </div>
-      <div className="logo">
+      {/* <div className="logo"> */}
+      <div className="logo relative -mt-5 z-10">
+        {/* <Image src="/aboutbanner.jpg" alt="banner" width={1000} height={1000} layout="responsive" /> */}
         <Image
           src="/aboutbanner.jpg"
           alt="banner"
           width={1000}
           height={1000}
           layout="responsive"
+          className="relative"
         />
       </div>
 
       <div className="mainsection">
-        <div className="abouttext  bg-teal-900 flex flex-row justify-center">
-          <div className="pt-20 pb-20 pl-32 pr-32 w-1/2">
+      <div className="abouttext bg-teal-900 flex flex-col md:flex-row justify-center"> 
+      <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Telescope Session
             </h1>
@@ -108,7 +112,7 @@ const Events = () => {
               competetions and shows.
             </p>
           </div>
-          <div className="bg-cover flex align-middle relative  w-1/2">
+          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
             <Image
               className="mr-20"
               src="/aboutimg.jpg"
@@ -119,9 +123,10 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext  bg-teal-900 flex flex-row justify-center">
+        <div className="abouttext bg-teal-900 flex flex-col md:flex-row justify-center">
 
-          <div className="bg-cover flex align-middle relative  w-1/2">
+
+        <div className="bg-cover flex align-middle relative w-full md:w-1/2">
             <Image
               className="mr-20"
               src="/aboutimg.jpg"
@@ -130,7 +135,7 @@ const Events = () => {
               objectFit="cover"
             />
           </div>
-          <div className="pt-20 pb-20 pl-32 pr-32 w-1/2">
+          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               JWST Workshop
             </h1>
@@ -146,8 +151,8 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext  bg-teal-900 flex flex-row justify-center">
-          <div className="pt-20 pb-20 pl-32 pr-32 w-1/2">
+        <div className="abouttext bg-teal-900 flex flex-col md:flex-row justify-center"> 
+      <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Astrophotography
             </h1>
@@ -162,7 +167,7 @@ const Events = () => {
             </p>
           </div>
 
-          <div className="bg-cover flex align-middle relative  w-1/2">
+          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
             <Image
               className="mr-20"
               src="/aboutimg.jpg"
@@ -172,7 +177,6 @@ const Events = () => {
             />
           </div>
         </div>
-
 
       </div>
     </div>
