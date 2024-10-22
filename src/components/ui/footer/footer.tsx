@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './Footer.module.css'; // Ensure the path is correct
+import styles from './footer.module.css'; 
 
 const Footer = () => {
   return (
@@ -12,7 +12,6 @@ const Footer = () => {
               52GG+H4G, Airport Rd, PDPM IIITDM Jabalpur Campus, <br />
               Khamaria, Jabalpur, Chakdehi, Madhya Pradesh 482005
             </p>
-            {/*UNDER DEVELOPMENT PHASE <p className="mt-2 font-normal gray-400">Phone: 123-456-7890</p> */}
             <p>Email: astronomy@iiitdmj.ac.in</p>
           </div>
           <div>
