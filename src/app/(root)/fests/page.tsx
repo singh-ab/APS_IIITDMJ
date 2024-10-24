@@ -49,7 +49,7 @@ const Events = () => {
       <div className="logo relative -mt-5 z-10">
         {/* <Image src="/aboutbanner.jpg" alt="banner" width={1000} height={1000} layout="responsive" /> */}
         <Image
-          src="/aboutbanner.jpg"
+          src="/fests.jpg"
           alt="banner"
           width={1000}
           height={1000}

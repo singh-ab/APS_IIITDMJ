@@ -4,7 +4,7 @@ import styles from './footer.module.css';
 const Footer = () => {
   return (
     <footer className={`bg-teal-900 ${styles.footer}`}> {/* Apply the CSS class */}
-      <div className="max-w-8xl py-4 mx-auto px-4 sm:px-6 lg:px-8"> {/* Reduced padding */}
+      <div className="max-w-8xl py-12 mx-auto px-4 sm:px-6 lg:px-8"> {/* Reduced padding */}
         <div className="grid grid-cols-1 ml-10 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Contact Us</h3>
