@@ -87,7 +87,7 @@ const Events = () => {
       <div className="logo relative -mt-5 z-10">
         {/* <Image src="/aboutbanner.jpg" alt="banner" width={1000} height={1000} layout="responsive" /> */}
         <Image
-          src="/aboutbanner.jpg"
+          src="/events.png"
           alt="banner"
           width={1000}
           height={1000}
@@ -97,7 +97,7 @@ const Events = () => {
       </div>
 
       <div className="mainsection">
-      <div className="abouttext bg-teal-900 flex flex-col md:flex-row justify-center"> 
+      <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center"> 
       <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Telescope Session
@@ -123,7 +123,7 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-teal-900 flex flex-col md:flex-row justify-center">
+        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
 
 
         <div className="bg-cover flex align-middle relative w-full md:w-1/2">
@@ -151,7 +151,7 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-teal-900 flex flex-col md:flex-row justify-center"> 
+        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center"> 
       <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Astrophotography
