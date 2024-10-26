@@ -1,9 +1,9 @@
 # Astronomy and Physics Society Website
 
-Welcome to the APS Website repository! This project aims to create an online platform for astronomy enthusiasts to connect, learn, and explore the wonders of the universe together.This website aims to provide resources, tools, and a space for members to engage in discussions, share observations, and participate in club activities.
+Welcome to the APS Website repository! This project aims to create an intuitive, responsive website for the Astronomy and Physics Society, IIITDM Jabalpur. We also aim to make it an online platform for astronomy enthusiasts to connect, learn, and explore the wonders of the universe together. This website aims to provide resources, tools, and a space for members to engage in discussions, share observations, and participate in club activities.
 ##
 <div align="center">
-<img src="https://hacktoberfest.com/_next/static/media/opengraph.9dc60c9d.png" alt="HACTOBERFEST" alt="Hacktoberfest 2024" width="80%"> </div>
+<img src="https://hacktoberfest.com/_next/static/media/opengraph.9dc60c9d.png" alt="HACKTOBERFEST" alt="Hacktoberfest 2024" width="80%"> </div>
 
 ## How to set up:
 
@@ -11,10 +11,7 @@ Welcome to the APS Website repository! This project aims to create an online pla
 2. Run ```cd APS_IIITDMJ```
 3. Run ```npm install``` or if you prefer yarn, ```yarn```
 4. Install dependencies: ```npm i framer-motion clsx tailwind-merge react-element-to-jsx-string``` or ```yarn add framer-motion clsx tailwind-merge react-element-to-jsx-string``` if you're using yarn
-5. Add a `.env` file inside the main directory , and copy the content from `.env.example` .
-6. Go to clerk.com and create your account . Then from your dashboard , choose create an app and add the authentication types and choose nextjs .
-7. Copy the environment variables from the documentation and paste them inside `.env`
-8. Run application: ```npm run dev``` or ```yarn run dev```
+5. Run application: ```npm run dev``` or ```yarn run dev```
 
 ## Features:
 
@@ -49,9 +46,4 @@ Welcome to the APS Website repository! This project aims to create an online pla
 
 ## How to contribute:
 
-To contribute to the Astronomy Club Website, follow these steps:
-
-1. Clone this repository to your local machine using the following command: ```git clone https://github.com/singh-ab/APS_IIITDMJ.git ```
-2. Check the "Issues" section for this repository and select your prefered issue to work on.
-3. After working on that isuue, raise a "Pull Request" for review.
-4. Now you are good to go. Keep contributing!!!
+To contribute to the APS Website, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for detailed instructions.
