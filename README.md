@@ -2,7 +2,8 @@
 
 Welcome to the APS Website repository! This project aims to create an online platform for astronomy enthusiasts to connect, learn, and explore the wonders of the universe together.This website aims to provide resources, tools, and a space for members to engage in discussions, share observations, and participate in club activities.
 ##
-<img src="https://hacktoberfest.com/_next/static/media/opengraph.9dc60c9d.png" alt="HACTOBERFEST" alt="Hacktoberfest 2024" width="80%" align="center">
+<div align="center">
+<img src="https://hacktoberfest.com/_next/static/media/opengraph.9dc60c9d.png" alt="HACTOBERFEST" alt="Hacktoberfest 2024" width="80%"> </div>
 ## How to set up:
 
 1. Clone this repository to your local machine using the following command: ```git clone https://github.com/singh-ab/APS_IIITDMJ.git ```
