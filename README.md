@@ -4,6 +4,7 @@ Welcome to the APS Website repository! This project aims to create an online pla
 ##
 <div align="center">
 <img src="https://hacktoberfest.com/_next/static/media/opengraph.9dc60c9d.png" alt="HACTOBERFEST" alt="Hacktoberfest 2024" width="80%"> </div>
+
 ## How to set up:
 
 1. Clone this repository to your local machine using the following command: ```git clone https://github.com/singh-ab/APS_IIITDMJ.git ```
