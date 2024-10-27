@@ -79,7 +79,7 @@ function Navbar({ className }: { className?: string }) {
         <HoveredLink href="/">Home</HoveredLink>
         {/* <HoveredLink href="/contact">Contact Us</HoveredLink> */}
         <HoveredLink href="/about">About Us</HoveredLink>
-        <HoveredLink href="/sessions">Sessions</HoveredLink>
+        
         <HoveredLink href="/fests">Fests</HoveredLink>
         <HoveredLink href="/members">Members</HoveredLink>
         <HoveredLink href="/events">Events</HoveredLink>
