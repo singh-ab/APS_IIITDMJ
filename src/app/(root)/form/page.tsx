@@ -7,6 +7,7 @@ import NavbarMobile from "src/components/ui/navber-mobile";
 import Image from 'next/image';
 import styles from './page.module.css';
 import { ButtonsCard } from "../../../components/ui/tailwindcss-buttons";
+import { Navbar } from '@/components/ui/Navbar';
 
 const Forms = () => {
   const router = useRouter()
@@ -69,30 +70,6 @@ const Forms = () => {
   // }, [router])
 
   // return null
-}
-
-function Navbar({ className }: { className?: string }) {
-  const [active, setActive] = useState<string | null>(null);
-  return (
-    <div className={cn("fixed top-5 inset-x-20 max-w-2xl mx-auto z-30 mb-10", className)}>
-      <Menu setActive={setActive}>
-        <HoveredLink href="/">Home</HoveredLink>
-        {/* <HoveredLink href="/contact">Contact Us</HoveredLink> */}
-        <HoveredLink href="/about">About Us</HoveredLink>
-        
-        <HoveredLink href="/fests">Fests</HoveredLink>
-        <HoveredLink href="/members">Members</HoveredLink>
-        <HoveredLink href="/events">Events</HoveredLink>
-        <HoveredLink href="/form">Form</HoveredLink>
-        {/* <MenuItem setActive={setActive} active={active} item="More">
-          <div className="flex flex-col space-y-6 text-s">
-            <HoveredLink href="/events">Events</HoveredLink>
-            <HoveredLink href="/form">Form</HoveredLink>
-          </div>
-        </MenuItem> */}
-      </Menu>
-    </div>
-  );
 }
 
 //landing button component starts here
