@@ -156,6 +156,7 @@ function Navbar({ className }: { className?: string }) {
         <HoveredLink href="/members">Members</HoveredLink>
         <HoveredLink href="/events">Events</HoveredLink>
         <HoveredLink href="/form">Form</HoveredLink>
+        <HoveredLink href="/gallery">Gallery</HoveredLink>
         {/* <MenuItem setActive={setActive} active={active} item="More">
           <div className="flex flex-col space-y-6 text-s">
             <HoveredLink href="/events">Events</HoveredLink>

@@ -1,0 +1,82 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace; /* Use the same font as in the component */
+    color: white;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    position: fixed;
+    top: 5px;
+    left: 20px; /* Adjusted for left inset */
+    right: 20px; /* Adjusted for right inset */
+    max-width: 1200px; /* Adjust as needed */
+    z-index: 30;
+  }
+  
+  .navbar a {
+    color: teal; /* Change this to match your design */
+    text-decoration: none;
+    margin-right: 20px; /* Space between links */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: white; /* Hover color */
+  }
+  
+  /* Main container styles */
+  .mainContainer {
+    background-image: url('/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+  }
+  
+  /* Overlay styles for the main content */
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Gallery title styles */
+  .galleryTitle {
+    font-size: 2.5rem; /* Adjust font size */
+    margin-bottom: 1rem;
+  }
+  
+  /* Sub-title styles */
+  .gallerySubtitle {
+    color: #38b2ac; /* Teal color */
+    margin-bottom: 1.5rem; /* Space below subtitle */
+  }
+  
+  /* Image grid styles */
+  .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 1rem; /* Space between images */
+    padding: 1rem;
+  }
+  
+  /* Individual image styles */
+  .imageGrid img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.5rem; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+  }
+  
+  .imageGrid img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
