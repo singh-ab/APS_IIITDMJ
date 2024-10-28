@@ -1,58 +1,10 @@
 /* page.module.css */
 
-.mainContainer {
-    background-image: url('/background.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    color: white;
-    position: relative;
-  }
-  
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.6); 
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 2rem;
-  }
-  
-  .galleryTitle {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    margin-top: 100px;
-  }
-  
-  .gallerySubtitle {
-    color: #38b2ac;
-    margin-bottom: 1.5rem;
-  }
-  .imageGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 1.5rem; /* Increased space between images */
-    padding: 1rem;
-  }
-  
-  .imageWrapper {
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    border: 2px solid white;
-    border-radius: 8px;
-  }
-  
-  .imageWrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
 
-  .imageWrapper img:hover {
-    transform: scale(1.05);
-  }
-  
+.text-white {
+  color: #ffffff;
+}
+
+.text-teal-300 {
+  color: #38b2ac;
+}

@@ -4,9 +4,55 @@ import React, { useState, useEffect } from "react";
 import { HoveredLink, Menu } from "../../../components/ui/navber-menu";
 import { cn } from "../../../utils/cn";
 import NavbarMobile from "../../../components/ui/navber-mobile";
-import Image from "next/image";
-import styles from "./page.module.css";
+import { LayoutGrid } from "../../../components/ui/layout-grid";
+import styles from "./page.module.css"; // Adjust the path as necessary
 
+// Define your skeleton components for the cards
+const SkeletonOne = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">JWST Session</p>
+      <p className="font-normal text-base text-neutral-200">
+      JWST session explores groundbreaking discoveries in astronomy, showcasing its capability to observe distant galaxies, study exoplanets, and unravel the mysteries of the universe..
+      </p>
+    </div>
+  );
+};
+
+const SkeletonTwo = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">Moon Serenity</p>
+      <p className="font-normal text-base text-neutral-200">
+      Observing the moon through the telescope revealed its stunning surface details, showcasing a breathtaking landscape of craters and maria that left everyone in awe.
+      </p>
+    </div>
+  );
+};
+
+const SkeletonThree = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">Telescope Session</p>
+      <p className="font-normal text-base text-neutral-200">
+      The telescope session offered participants a unique opportunity to observe celestial bodies up close, deepening their understanding of astronomy and the wonders of the universe.
+      </p>
+    </div>
+  );
+};
+
+const SkeletonFour = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">JIGYASA 2023</p>
+      <p className="font-normal text-base text-neutral-200">
+      Jigyasa 2023 at IIITDM Jabalpur was a vibrant and engaging event that brought together students and faculty to showcase innovative projects, foster collaboration, and ignite curiosity in various fields of technology and research..
+      </p>
+    </div>
+  );
+};
+
+// Main Gallery Component
 const Gallery = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -21,30 +67,45 @@ const Gallery = () => {
     };
   }, []);
 
-  const renderNavbar = () => (isMobile ? <NavbarMobile /> : <Navbar className="" />);
+  const renderNavbar = () => (isMobile ? <NavbarMobile /> : <Navbar />);
 
-  const images = ["/g1.jpg", "/g2.jpg", "/g3.jpg", "/g4.jpg", "/g5.jpg", "/g6.jpg", "/g7.jpg"];
+  // Define your cards data
+  const cards = [
+    {
+      id: 1,
+      content: <SkeletonOne />,
+      className: "md:col-span-2",
+      thumbnail: "/n1.png",
+    },
+    {
+      id: 2,
+      content: <SkeletonTwo />,
+      className: "col-span-1",
+      thumbnail: "/p2.png",
+    },
+    {
+      id: 3,
+      content: <SkeletonThree />,
+      className: "col-span-1",
+      thumbnail: "/p3.png",
+    },
+    {
+      id: 4,
+      content: <SkeletonFour />,
+      className: "md:col-span-2",
+      thumbnail: "/n2.png",
+    },
+  ];
 
   return (
-    <div className={styles.mainContainer}>
-      <div className="relative w-full flex items-center justify-end top-2">
-        {renderNavbar()}
-      </div>
-      <div className={styles.overlay}>
-        <h1 className={styles.galleryTitle}>Gallery</h1>
-        <h3 className={styles.gallerySubtitle}>Astronomy and Physics Society Memories</h3>
-        <div className={styles.imageGrid}>
-          {images.map((src, index) => (
-            <div key={index} className={styles.imageWrapper}>
-              <Image src={src} alt={`Gallery image ${index + 1}`} width={300} height={200} className="object-cover rounded-lg" />
-            </div>
-          ))}
-        </div>
-      </div>
+    <div className="h-screen py-20 w-full">
+      {renderNavbar()}
+      <LayoutGrid cards={cards} />
     </div>
   );
 };
 
+// Navbar Component
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
@@ -62,4 +123,5 @@ function Navbar({ className }: { className?: string }) {
   );
 }
 
+// Export the Gallery component as default
 export default Gallery;
