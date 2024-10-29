@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className={`bg-teal-900 ${styles.footer}`}>
       <div className="max-w-8xl py-12 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 ml-10 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 ml-8 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Contact Us</h3>
             <p className="mt-4 font-normal text-teal-400">
@@ -56,7 +56,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="text-center">
+          <div className="text-center flex justify-center pr-5">
             <div className="logo transform hover:scale-105 transition duration-300">
               <Image src="/footsticker.png" alt="logo" width={200} height={200} className={`${styles.rotate} transition duration-300`} />
             </div>
