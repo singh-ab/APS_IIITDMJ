@@ -52,6 +52,41 @@ const SkeletonFour = () => {
   );
 };
 
+const SkeletonFive = () => (
+  <div>
+    <p className="font-bold md:text-4xl text-xl text-white">Treasure Hunt</p>
+    <p className="font-normal text-base text-neutral-200">
+    Join us for the APS Treasure Hunt, where adventure meets discovery in a race to uncover hidden gems
+    </p>
+  </div>
+);
+const SkeletonSix = () => (
+  <div>
+    <p className="font-bold md:text-4xl text-xl text-white">Image data Workshop</p>
+    <p className="font-normal text-base text-neutral-200">
+     Learn how to process data from the JWST tpo create your own amazing set of universe
+    </p>
+  </div>
+);
+
+const SkeletonSeven = () => (
+  <div>
+    <p className="font-bold md:text-4xl text-xl text-white">Astro Quiz</p>
+    <p className="font-normal text-base text-neutral-200">
+    Test your cosmic knowledge at the APS Astro Quiz Session and discover the wonders of the universe
+    </p>
+  </div>
+);
+
+const SkeletonEight = () => (
+  <div>
+    <p className="font-bold md:text-4xl text-xl text-white">Mars Case Study </p>
+    <p className="font-normal text-base text-neutral-200">
+    Participate in the Mars Case Study Competition, where teams tackle real-world challenges of Martian exploration and innovation.
+    </p>
+  </div>
+);
+
 // Main Gallery Component
 const Gallery = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -95,13 +130,54 @@ const Gallery = () => {
       className: "md:col-span-2",
       thumbnail: "/n2.png",
     },
+    {
+      id: 5,
+      content: <SkeletonFive />,
+      className: "col-span-1",
+      thumbnail: "/n5.png",
+    },
+    {
+      id: 6,
+      content: <SkeletonSix />,
+      className: "md:col-span-2",
+      thumbnail: "/n6.png",
+    },
+    {
+      id: 7,
+      content: <SkeletonSeven />,
+      className: "md:col-span-2",
+      thumbnail: "/n7.png",
+    },
+    {
+      id: 8,
+      content: <SkeletonEight />,
+      className: "col-span-1",
+      thumbnail: "/n8.png",
+    },
   ];
 
   return (
+    <>
+    <div className="h-8 py-20 w-full mt-5">
+      {renderNavbar()}
+      {/* Header Text */}
+      <div className="text-center mb-4">
+        <h1 className="text-4xl font-bold text-white">APS Memories</h1>
+        <p className="text-lg text-neutral-300">Click on images to explore more.</p>
+      </div>
+      {/* Layout Grid */}
+      <LayoutGrid cards={cards} />
+    </div>
+
+
+
+
+
     <div className="h-screen py-20 w-full">
       {renderNavbar()}
       <LayoutGrid cards={cards} />
     </div>
+    </>
   );
 };
 

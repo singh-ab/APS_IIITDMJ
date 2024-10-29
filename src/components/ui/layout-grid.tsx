@@ -65,8 +65,8 @@ const ImageComponent = ({ card }: { card: Card }) => {
     <motion.img
       layoutId={`image-${card.id}-image`}
       src={card.thumbnail}
-      height="500"
-      width="500"
+      height="900"
+      width="900"
       className={cn(
         "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
       )}
