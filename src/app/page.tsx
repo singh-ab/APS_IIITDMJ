@@ -140,12 +140,6 @@ export default function Home() {
 //body
 
 
-
-//navbar starts here
-
-// navbar ends here
-
-
 //landing button component starts here
 export function TailwindcssButtons() {
 
