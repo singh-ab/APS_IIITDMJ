@@ -2,16 +2,41 @@
 
 Welcome to the APS Website repository! This project aims to create an intuitive, responsive website for the Astronomy and Physics Society, IIITDM Jabalpur. We also aim to make it an online platform for astronomy enthusiasts to connect, learn, and explore the wonders of the universe together. This website aims to provide resources, tools, and a space for members to engage in discussions, share observations, and participate in club activities.
 ##
-<div align="center">
-<img src="https://hacktoberfest.com/_next/static/media/opengraph.9dc60c9d.png" alt="HACKTOBERFEST" alt="Hacktoberfest 2024" width="80%"> </div>
 
 ## How to set up:
 
-1. Clone this repository to your local machine using the following command: ```git clone https://github.com/singh-ab/APS_IIITDMJ.git ```
-2. Run ```cd APS_IIITDMJ```
-3. Run ```npm install``` or if you prefer yarn, ```yarn```
-4. Install dependencies: ```npm i framer-motion clsx tailwind-merge react-element-to-jsx-string``` or ```yarn add framer-motion clsx tailwind-merge react-element-to-jsx-string``` if you're using yarn
-5. Run application: ```npm run dev``` or ```yarn run dev```
+1. Clone this repository to your local machine using the following command:
+ ```bash
+ git clone https://github.com/singh-ab/APS_IIITDMJ.git
+```
+2. Navigate into the project directory:
+```bash
+cd APS_IIITDMJ
+```
+3.Install the dependencies:
+```bash
+npm install
+```
+or if you prefer yarn,
+```bash
+yarn
+```
+4. Install additional packages:
+```bash
+npm i framer-motion clsx tailwind-merge react-element-to-jsx-string
+```
+ or if you're using yarn
+ ```bash
+ yarn add framer-motion clsx tailwind-merge react-element-to-jsx-string
+```
+5. Run application:
+ ```bash
+npm run dev
+```
+or 
+```bash
+yarn run dev
+```
 
 ## Features:
 
