@@ -29,12 +29,11 @@ const Footer = () => {
           <div className="sm:pl-0 md:pl-0 lg:pl-16 pl-0">
             <h3 className="text-2xl font-jetbrains-mono font-bold text-white">Links</h3>
             <ul className="mt-2 space-y-2 text-teal-400 font-normal grid grid-cols-2 gap-x-9" >
-              <Link href="/about" className='hover:text-teal-200 transition duration-300 flex items-end'>About Us</Link>
-              <Link href="/form" className='hover:text-teal-200 transition duration-300'>Form</Link>
+              <Link href="/contact" className='hover:text-teal-200 transition duration-300 flex items-end'>Contact</Link>
+              <Link href="/join" className='hover:text-teal-200 transition duration-300'>Join</Link>
               <Link href="/events" className='hover:text-teal-200 transition duration-300'>Events</Link>
               <Link href="/fests" className='hover:text-teal-200 transition duration-300'>Fests</Link>
               <Link href="/members" className='hover:text-teal-200 transition duration-300'>Members</Link>
-              <Link href="/contact" className='hover:text-teal-200 transition duration-300'>Contact</Link>
             </ul>
           </div>
           <div className='sm:pl-0 md:pl-0 lg:pl-16 pl-0'>

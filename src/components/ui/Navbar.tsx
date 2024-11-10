@@ -12,20 +12,12 @@ export const Navbar=({ className }: { className?: string })=> {
         <Menu setActive={setActive}>
   
           <HoveredLink href="/">Home</HoveredLink>
-          {/* <HoveredLink href="/contact">Contact Us</HoveredLink> */}
-          <HoveredLink href="/about">About Us</HoveredLink>
-         
+          <HoveredLink href="/contact">Contact</HoveredLink>
           <HoveredLink href="/fests">Fests</HoveredLink>
           <HoveredLink href="/members">Members</HoveredLink>
           <HoveredLink href="/events">Events</HoveredLink>
-          <HoveredLink href="/form">Form</HoveredLink>
-          {/* <MenuItem setActive={setActive} active={active} item="More">
-            <div className="flex flex-col space-y-6 text-s">
-              <HoveredLink href="/events">Events</HoveredLink>
-              <HoveredLink href="/form">Form</HoveredLink>
-            </div>
-          </MenuItem> */}
-  
+          <HoveredLink href="/join">Join</HoveredLink>
+
         </Menu>
       </div>
     );
