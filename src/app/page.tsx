@@ -65,10 +65,10 @@ export default function Home() {
 
         <div className={styles.landinggroup}>
           <div className={styles.headingtext}>
-            <h1 className="font-jetbrains-mono text-4xl text-white">
-              ASTRONOMY AND <br />PHYSICS SOCIETY
+            <h1 className="font-jetbrains-mono text-4xl text-white text-balance">
+              ASTRONOMY AND <br /> PHYSICS SOCIETY
             </h1>
-            <p className="text-xl text-teal-400 font-sans my-4">Indian Institute of Information Technology, <br />Design and Manufacturing Jabalpur</p>
+            <p className="text-xl text-teal-400 font-sans my-4 text-balance">Indian Institute of Information Technology, Design and Manufacturing Jabalpur</p>
             <TailwindcssButtons />
           </div>
           <div className={styles.logo}>

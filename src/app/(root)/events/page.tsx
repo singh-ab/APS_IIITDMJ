@@ -21,7 +21,7 @@ const Events = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 720); // Set isMobile based on viewport width
+      setIsMobile(window.innerWidth <= 720); 
     };
 
     handleResize();
