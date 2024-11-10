@@ -74,7 +74,7 @@ const NavbarMobile = () => {
                         <Link href="/fests" className="text-white text-lg mb-6">Fests</Link>
                         <Link href="/members" className="text-white text-lg mb-6">Members</Link>
                         <Link href="/events" className="text-white text-lg mb-6">Events</Link>
-                        <Link href="/form" className="text-white text-lg mb-6">Form</Link>
+                        <Link href="/form" className="text-white text-lg mb-6">Join</Link>
                     </div>
                 </div>
             )}
