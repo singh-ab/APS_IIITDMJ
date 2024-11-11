@@ -9,6 +9,7 @@ import NavbarMobile from "src/components/ui/navber-mobile";
 import InfiniteMarquee from "src/components/ui/marquee";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 import { Navbar } from "@/components/ui/Navbar";
+import Button from "@/components/button";
 
 const imageUrls = [
   "/1.jpg",
@@ -69,7 +70,7 @@ export default function Home() {
               ASTRONOMY AND <br /> PHYSICS SOCIETY
             </h1>
             <p className="text-xl text-teal-400 font-sans my-4 text-balance">Indian Institute of Information Technology, Design and Manufacturing Jabalpur</p>
-            <TailwindcssButtons />
+            <Button>Be A Member</Button>
           </div>
           <div className={styles.logo}>
             <Image src="/logo1.png" alt="logo" width={300} height={300} />
@@ -110,28 +111,6 @@ export default function Home() {
     </main>
   );
 }
-
-export function TailwindcssButtons() {
-  return (
-    <div>
-      {buttons.map((button, idx) => (
-        <ButtonsCard key={idx}>
-          {button.component}
-        </ButtonsCard>
-      ))}
-    </div>
-  );
-}
-
-export const buttons = [
-  {
-    component: (
-      <button className="shadow-[0_0_0_3px_teal-400_inset] px-6 py-2 bg-transparent border border-teal-400 dark:border-teal-400 dark:text-teal-400 text-teal-400 font-bold transform hover:-translate-y-1 transition duration-400 hover:border-white hover:text-white">
-        Be A Member
-      </button>
-    ),
-  },
-];
 
 export function BentoGridDemo() {
   return (
