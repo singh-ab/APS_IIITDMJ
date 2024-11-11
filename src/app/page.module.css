@@ -60,9 +60,9 @@
   .landinggroup {
     flex-direction: column;
     align-items: left;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    margin-top: 30vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-top: 40vh;
     text-align: left;
   }
 
@@ -75,6 +75,17 @@
   .headingtext {
     width: 100%; 
     align-items: left; 
+  }
+}
+
+@media (max-width: 515px) {
+  .landinggroup {
+    flex-direction: column;
+    align-items: left;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-top: 30vh;
+    text-align: left;
   }
 }
 
