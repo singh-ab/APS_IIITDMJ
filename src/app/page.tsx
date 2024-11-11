@@ -9,6 +9,7 @@ import NavbarMobile from "src/components/ui/navber-mobile";
 import InfiniteMarquee from "src/components/ui/marquee";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 import { Navbar } from "@/components/ui/Navbar";
+import Button from "@/components/button";
 
 const imageUrls = [
   "/1.jpg",
@@ -69,7 +70,7 @@ export default function Home() {
               ASTRONOMY AND <br /> PHYSICS SOCIETY
             </h1>
             <p className="text-xl text-teal-400 font-sans my-4 text-balance">Indian Institute of Information Technology, Design and Manufacturing Jabalpur</p>
-            <TailwindcssButtons />
+            <Button>Be A Member</Button>
           </div>
           <div className={styles.logo}>
             <Image src="/logo1.png" alt="logo" width={300} height={300} />
