@@ -51,3 +51,5 @@ elements/*
 !elements/*.js
 !elements/*.ts
 public/_next-video
+
+.vscode/
