@@ -78,7 +78,7 @@
   }
 }
 
-@media (max-width: 515px) {
+/* @media (max-width: 515px) {
   .landinggroup {
     flex-direction: column;
     align-items: left;
@@ -87,7 +87,7 @@
     margin-top: 30vh;
     text-align: left;
   }
-}
+} */
 
 .content {
   margin: 0;
