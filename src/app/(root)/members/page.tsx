@@ -185,11 +185,13 @@ const Members = () => {
         </div>
       </div>
       <div className="abouttext  flex flex-col md:flex-row justify-center">
-        <div className=" pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
-          <h1 className="font-jetbrains-mono text-4xl text-white pb-4 ">WANNA JOIN US?</h1>
-          <p className="text-teal-400 mb-6 ">Wanna be a part of The Astronomy And Physics Society? Don&apos;t worry. Here we are giving you the opportunity!!!
-          </p>
-          <Button onClick={()=>router.push('https://forms.gle/zx9KBwpZjsxb9Ku39')}>Be A Member</Button>
+        <div className="pt-20 pb-20 px-12 md:pl-32 md:pr-32 md:w-1/2">
+          <h1 className="font-jetbrains-mono text-4xl text-white pb-4">WANNA JOIN US?</h1>
+          <p className="text-teal-400 mb-6">Wanna be a part of The Astronomy And Physics Society? Don&apos;t worry. Here we are giving you the opportunity!!!</p>
+          <Button onClick={() => router.push('https://forms.gle/zx9KBwpZjsxb9Ku39')}>Be A Member</Button>
+        </div>
+        <div className="bg-cover flex align-middle relative w-full md:w-1/2 px-4 md:px-0">
+          <Image className="mr-20" src="/3.jpg" alt="about" layout="fill" objectFit="cover" />
         </div>
         <div className="bg-cover flex align-middle relative w-full md:w-1/2">
           <Image className="mr-20" src="/3.jpg" alt="about" layout="fill" objectFit="cover" />

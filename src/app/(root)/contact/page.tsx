@@ -62,16 +62,6 @@ const About = () => {
       gmail: "mailto:igabhinav.2003@gmail.com",
       // image: "/abhinav.jpg"
     },
-    // {
-    //   name: "John Doe",
-    //   description: "Software Engineer",
-    //   linkedin: "https://linkedin.com/in/johndoe",
-    //   twitter: "https://twitter.com/johndoe",
-    //   instagram: "https://instagram.com/johndoe",
-    //   gmail: "mailto:johndoe@gmail.com",
-    //   image: "/path/to/image9.jpg"
-    // },
-
   ];
 
   return (
@@ -94,12 +84,12 @@ const About = () => {
       </div>
 
       <div className="mainsection">
-      <div className="abouttext bg-teal-900 flex flex-col md:flex-row justify-center"> 
+        <div className="abouttext bg-teal-900 flex flex-col md:flex-row justify-center pr-8 pl-8 md:p-0">
           <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">THE ASTRONOMY AND PHYSICS SOCIETY</h1>
             <p className="mt-6 text-teal-400">We are the Astronomy and Physics Society of IIITDM Jabalpur. We are a group of many astro-enthusiasts under the Gymkhana of the IIITDM Jabalpur. Here, we attempt to bring about an interest and awareness in the field of Astronomy and Space Research. All along the we have been promoting amateur astronomy through talks, competetions and shows.</p>
           </div>
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2"> 
+          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
             <Image className="mr-20" src="/aboutimg.jpg" alt="about" layout="fill" objectFit="cover" />
           </div>
         </div>
@@ -108,7 +98,7 @@ const About = () => {
         <TracingBeamDemo />
 
 
-        <div  style={{
+        <div style={{
           backgroundImage: 'url(/9.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -119,27 +109,24 @@ const About = () => {
           position: 'relative',
           backgroundColor: 'rgba(0, 0, 0, 0.5)'
         }}
-        className="section mt-10 md:mt-20 pt-10 md:pt-20 pb-10 md:pb-20 px-4 md:pl-32 md:pr-32 text-balance">
+          className="section mt-10 md:mt-20 pt-10 md:pt-20 pb-10 md:pb-20 md:pl-32 md:pr-32 text-balance px-12 md:px-32">
           <h1 className="font-jetbrains-mono text-3xl md:text-4xl text-white pb-10">OUR EFFORTS</h1>
           <p className="text-gray-300">The Astronomy and Physics Society is dedicated to fostering a deeper
-            understanding of the cosmos through engaging and   interactive activities. Our club offers a variety of sessions and workshops, each designed to inspire curiosity and learning about astronomy and physics.
+            understanding of the cosmos through engaging and interactive activities. Our club offers a variety of sessions and workshops, each designed to inspire curiosity and learning about astronomy and physics.
           </p>
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Astronomy Sessions</h2>
           <p className="text-gray-300">Regular sessions related to Astronomy and Physics including separate discussions
             and knowledge-sharing sessions, where members can dive deeper into specific areas of interest.
-
           </p>
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Workshops</h2>
-          <p className="text-gray-300">Workshops such as the JWST Image Processing Workshop, Telescope Workshop, 
+          <p className="text-gray-300">Workshops such as the JWST Image Processing Workshop, Telescope Workshop,
             and Astrophotography Workshop where participants learn hands-on skills essential for astronomical exploration.
           </p>
-
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Observatory Sessions</h2>
           <p className="text-gray-300">Our members frequently participate in observation sessions where we use telescopes
-            to explore  the Moon, nebulae, and planets like Saturn.
-            Naked-eye observations and binocular use also play  an important role in our sessions, making astronomy accessible to all.
+            to explore the Moon, nebulae, and planets like Saturn.
+            Naked-eye observations and binocular use also play an important role in our sessions, making astronomy accessible to all.
           </p>
-
           <h2 className="mt-5 text-2xl mb-2 text-teal-400">Quizzing And Competitions</h2>
           <p className="text-gray-300">To encourage friendly competition and learning, we organize quizzes and competitions
             such as Treasure Hunts - which is also one of our flagship events - open to anyone with an interest in the mysteries of the universe.
@@ -147,59 +134,47 @@ const About = () => {
         </div>
 
         <div
-        // style={{
-        //   backgroundImage: 'url(/9.jpg)',
-        //   backgroundSize: 'cover',
-        //   backgroundPosition: 'center',
-        //   padding: '60px',
-        //   backgroundAttachment: 'fixed',
-        //   backgroundRepeat: 'no-repeat',
-        //   backgroundPositionY: '50%',
-        //   transition: 'background-position 0.5s ease',
-        //   position: 'relative',
-        //   backgroundColor: 'rgba(0, 0, 0, 0.5)'
-        // }}
-        className=" bg-teal-900"
+          // style={{
+          //   backgroundImage: 'url(/9.jpg)',
+          //   backgroundSize: 'cover',
+          //   backgroundPosition: 'center',
+          //   padding: '60px',
+          //   backgroundAttachment: 'fixed',
+          //   backgroundRepeat: 'no-repeat',
+          //   backgroundPositionY: '50%',
+          //   transition: 'background-position 0.5s ease',
+          //   position: 'relative',
+          //   backgroundColor: 'rgba(0, 0, 0, 0.5)'
+          // }}
+          className=" bg-teal-900"
         >
 
-          <h1 className="font-jetbrains-mono text-4xl text-white text-center pb-10 pt-20">
+          <h1 className="font-jetbrains-mono text-4xl text-white text-center pb-10 pt-20 text-balance">
             WEBSITE DEVELOPED BY
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-4 md:ml-28 md:mr-28 pb-10">
             {members.map((member, index) => (
-                <div 
-                key={index} 
-                className="bg-slate-900 shadow-md rounded-lg p-4 backdrop-blur-md bg-opacity-70 border-2 border-slate-200/[0.4] transition-transform transform hover:scale-105 "
-                >
-                {/* <div className="header h-72 bg-gray-200 rounded-md mb-4 backdrop-blur-md bg-opacity-60">
-                  <Image
-                  src={member.image}
-                  alt={member.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md"
-                  />
-                </div> */}
-                {/* <div className="relative w-full h-full">
-                
-                </div> */}
+              <div
+                key={index}
+                className="bg-slate-900 shadow-md rounded-lg p-4 backdrop-blur-md bg-opacity-70 border-2 border-slate-200/[0.4] transition-transform transform hover:scale-105 mx-4 sm:mx-0"
+              >
                 <h2 className="font-jetbrains-mono font-bold text-neutral-200 dark:text-neutral-200 mb-2 mt-2">{member.name}</h2>
                 <p className="font-sans font-normal text-teal-400 text-xs dark:text-neutral-300">{member.description}</p>
                 <div className="flex space-x-4 mt-4 mb-4">
                   <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="mr-2">
-                  <img src="linkedin.png" alt="LinkedIn" className="w-4 h-4" />
+                    <img src="linkedin.png" alt="LinkedIn" className="w-4 h-4" />
                   </a>
                   <a href={member.twitter} target="_blank" rel="noopener noreferrer" className="mr-2">
-                  <img src="x.png" alt="Twitter" className="w-4 h-4" />
+                    <img src="x.png" alt="Twitter" className="w-4 h-4" />
                   </a>
                   <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="mr-2">
-                  <img src="instagram.png" alt="Instagram" className="w-4 h-4" />
+                    <img src="instagram.png" alt="Instagram" className="w-4 h-4" />
                   </a>
                   <a href={member.gmail} target="_blank" rel="noopener noreferrer" className="mr-2">
-                  <img src="/gmail.png" alt="Gmail" className="w-4 h-4" />
+                    <img src="/gmail.png" alt="Gmail" className="w-4 h-4" />
                   </a>
                 </div>
-                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -217,7 +192,7 @@ export function TracingBeamDemo() {
     <TracingBeam className="px-6 mt-20">
       <div className="max-w-2xl mx-auto antialiased pt-5 pb-5 relative">
         {dummyContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-15 flex">
+          <div key={`content-${index}`} className="mb-15 flex flex-col md:flex-row px-8 md:px-0">
             <div className="flex-1">
               <h2 className="bg-teal-900 text-white rounded-full text-sm w-fit px-6 py-1 mb-4">
                 {item.badge}
@@ -235,7 +210,7 @@ export function TracingBeamDemo() {
                   alt={item.image.alt}
                   height={1000}
                   width={1000}
-                  className="rounded-lg mb-10 object-cover"
+                  className="rounded-lg mb-10 object-cover mt-5 md:mt-0"
                 />
               )}
             </div>
@@ -296,7 +271,7 @@ const dummyContent = [
     description: (
       <>
         {/* <p>Name: John Doe</p> */}
-        <p>Role: Co-Coordinator</p>
+        <p>Co-Coordinator</p>
         <p>Email: 22bec010@iiitdmj.ac.in</p>
         <div className="flex space-x-4 mt-5">
           <a href="mailto:22bec010@iiitdmj.ac.in">
