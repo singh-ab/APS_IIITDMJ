@@ -72,7 +72,7 @@ const Events = () => {
           <div className="bg-cover flex align-middle relative w-full md:w-1/2">
             <Image
               className="mr-20"
-              src="/telescopeevent.jpeg"
+              src="/telescope.jpeg"
               alt="about"
               layout="fill"
               objectFit="cover"
