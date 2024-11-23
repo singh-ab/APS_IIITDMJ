@@ -19,3 +19,11 @@
       transform: rotate(360deg);
     }
   }
+
+ 
+  @media (max-width: 768px) {
+    .mainsection {
+      padding-left: 3vh;
+      padding-right: 3vh;
+    }
+  }
