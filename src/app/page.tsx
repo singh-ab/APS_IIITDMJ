@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { useRouter } from 'next/navigation';
 import { HoveredLink, Menu, MenuItem } from "../components/ui/navber-menu";
 import { cn } from "../utils/cn";
 import styles from './page.module.css';
@@ -31,6 +32,7 @@ function shuffleArray(array: any[]) {
 }
 
 export default function Home() {
+  const router = useRouter();
   const [backgroundImage, setBackgroundImage] = useState("");
   const [isMobile, setIsMobile] = useState(false);
 
@@ -70,7 +72,7 @@ export default function Home() {
               ASTRONOMY AND <br /> PHYSICS SOCIETY
             </h1>
             <p className="text-xl text-teal-400 font-sans my-4 text-balance">Indian Institute of Information Technology, Design and Manufacturing Jabalpur</p>
-            <Button>Be A Member</Button>
+            <Button onClick={()=>router.push('./join')}>Be a Member</Button>
           </div>
           <div className={styles.logo}>
             <Image src="/logo1.png" alt="logo" width={300} height={300} />
