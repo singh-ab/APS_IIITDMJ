@@ -1,29 +1,16 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { useRouter } from 'next/navigation';
 import { HoveredLink, Menu, MenuItem } from "../components/ui/navber-menu";
 import { cn } from "../utils/cn";
-// import Video from "next-video"
 import styles from './page.module.css';
 import Image from 'next/image';
-import reactElementToJSXString from "react-element-to-jsx-string";
-import { toast, Toaster } from "sonner";
 import { ButtonsCard } from "../components/ui/tailwindcss-buttons";
 import NavbarMobile from "src/components/ui/navber-mobile";
 import InfiniteMarquee from "src/components/ui/marquee";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
-import {
-  IconArrowAutofitContent,
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
 import { Navbar } from "@/components/ui/Navbar";
-import Link from "next/link";
-
+import Button from "@/components/button";
 
 const imageUrls = [
   "/1.jpg",
@@ -44,15 +31,14 @@ function shuffleArray(array: any[]) {
   return shuffledArray;
 }
 
-//body
 export default function Home() {
-
+  const router = useRouter();
   const [backgroundImage, setBackgroundImage] = useState("");
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 720); // Set isMobile based on viewport width
+      setIsMobile(window.innerWidth <= 720);
     };
 
     handleResize();
@@ -64,39 +50,31 @@ export default function Home() {
     };
   }, []);
 
-  // Function to render Navbar or NavbarMobile based on viewport width
   const renderNavbar = () => {
     return isMobile ? <NavbarMobile /> : <Navbar />;
   };
+
   useEffect(() => {
     const shuffledImages = shuffleArray(imageUrls);
     setBackgroundImage(shuffledImages[0]);
   }, []);
+
   return (
     <main className={styles.main}>
-
-
-      <div className="landing mb-0">
+      <div className={styles.landing} style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="relative w-full flex items-center justify-end top-2">
-          {/* <Navbar className="top-2" /> */}
           {renderNavbar()}
         </div>
-        {/* <NavbarMobile /> */}
 
-
-        {/* backgroumd image */}
-        <Image src={backgroundImage} alt="" className={styles.background} width={3000} height={3000} />
-
-        {/* landing text group */}
-        <div className={styles.landinggroup} style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
-          <div className="headingtext flex flex-col place-items-start">
-            <h1 className="font-jetbrains-mono text-4xl text-white">
-              ASTRONOMY AND <br />PHYSICS SOCIETY
+        <div className={styles.landinggroup}>
+          <div className={styles.headingtext}>
+            <h1 className="font-jetbrains-mono text-4xl text-white text-balance">
+              ASTRONOMY AND <br /> PHYSICS SOCIETY
             </h1>
-            <p className="text-xl text-teal-400 font-sans my-4">Indian Institute of Information Technology, <br />Design and Manufacturing Jabalpur</p>
-            <TailwindcssButtons />
+            <p className="text-xl text-teal-400 font-sans my-4 text-balance">Indian Institute of Information Technology, Design and Manufacturing Jabalpur</p>
+            <Button onClick={()=>router.push('./join')}>Be a Member</Button>
           </div>
-          <div className="logo ">
+          <div className={styles.logo}>
             <Image src="/logo1.png" alt="logo" width={300} height={300} />
           </div>
         </div>
@@ -118,81 +96,64 @@ export default function Home() {
       <div className="about">
         <div className="aboutgroup bg-gray-900 mb-16">
           <div className={styles.aboutgroup}>
-            <div className="abouttext  pt-20 pb-10 pl-10 pr-20">
-                <h1 className="font-jetbrains-mono text-4xl text-white">
+            <div className="abouttext pt-20 pb-10 pl-10 pr-20">
+              <h1 className="font-jetbrains-mono text-4xl text-white">
                 ABOUT US
-                </h1>
-              <p className="text-gray-400 font-normal
-              mt-7">The Astronomy and Physics Society is a student-run society under the Gymkhana of the IIITDM Jabalpur. The society aims to promote the knowledge of Astronomy and Physics among students and to provide a platform for students to showcase their talents and skills in these fields. The society organizes various events, workshops, and sessions throughout the year to help students learn and explore the wonders of the universe. The society also participates in various inter-college competitions and fests to represent the institute and showcase the talent of its members. The society is open to all students who have an interest in Astronomy and Physics and is a great place to meet like-minded individuals and learn new things.</p>
+              </h1>
+              <p className="text-gray-400 font-normal mt-7">
+                The Astronomy and Physics Society is a student-run society under the Gymkhana of the IIITDM Jabalpur. The society aims to promote the knowledge of Astronomy and Physics among students and to provide a platform for students to showcase their talents and skills in these fields. The society organizes various events, workshops, and sessions throughout the year to help students learn and explore the wonders of the universe. The society also participates in various inter-college competitions and fests to represent the institute and showcase the talent of its members. The society is open to all students who have an interest in Astronomy and Physics and is a great place to meet like-minded individuals and learn new things.
+              </p>
             </div>
             <div className={styles.aboutimage}>
-
-              <Image className="rounded-md  mt-5 mb-5 mr-20" src="/team.jpg" alt="about" width={4000} height={4000} />
-
+              <Image className="rounded-md mt-5 mb-5 mr-20" src="/team.jpg" alt="about" width={4000} height={4000} />
             </div>
           </div>
-
         </div>
       </div>
-
-    </main >
+    </main>
   );
 }
-//body
 
+// export function TailwindcssButtons() {
+//   return (
+//     <div>
+//       {buttons.map((button, idx) => (
+//         <ButtonsCard key={idx}>
+//           {button.component}
+//         </ButtonsCard>
+//       ))}
+//     </div>
+//   );
+// }
 
+// export const buttons = [
+//   {
+//     component: (
+//       <button
+//         className="shadow-[0_0_0_3px_teal-400_inset] px-6 py-2 bg-transparent border border-teal-400 dark:border-teal-400 dark:text-teal-400 text-teal-400 font-bold transform hover:-translate-y-1 transition duration-400 hover:border-white hover:text-white"
+//         onClick={() => window.location.href = '/join'}
+//       >
+//         Be A Member
+//       </button>
+//     ),
+//   },
+// ];
 
-//navbar starts here
-
-// navbar ends here
-
-
-//landing button component starts here
-export function TailwindcssButtons() {
-
-  return (
-    <div >
-      {buttons.map((button, idx) => (
-        <ButtonsCard key={idx}>
-          {button.component}
-        </ButtonsCard>
-      ))}
-    </div>
-  );
-}
-export const buttons = [
-  {
-    component: (
-      <Link href="/form">
-        <button className="shadow-[0_0_0_3px_teal-400_inset] px-6 py-2 bg-transparent border border-teal-400 dark:border-teal-400 dark:text-teal-400 text-teal-400 font-bold transform hover:-translate-y-1 transition duration-400 hover:border-white hover:text-white">
-          Be A Member
-        </button>
-      </Link>
-    ),
-  },
-]
-//landing button component ends here
-
-//bento grid component starts here
 export function BentoGridDemo() {
   return (
-    <BentoGrid className="max-w-7xl mx-auto mt-8 mb-8 ">
+    <BentoGrid className="max-w-7xl mx-auto mt-8 mb-8">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
           title={item.title}
           description={item.description}
           header={item.header}
-          
-          // icon={item.icon}
           className={i === 3 || i === 6 ? "md:col-span-2" : ""}
         />
       ))}
     </BentoGrid>
   );
 }
-
-
 
 const Skeletonone = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">

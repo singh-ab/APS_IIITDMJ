@@ -7,6 +7,8 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import { ButtonsCard } from "../../../components/ui/tailwindcss-buttons";
 import { Navbar } from "@/components/ui/Navbar";
+import { useRouter } from "next/navigation";
+import Button from "@/components/button";
 
 const Members = () => {
 
@@ -25,6 +27,7 @@ const Members = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  const router=useRouter();
 
   // Function to render Navbar or NavbarMobile based on viewport width
   const renderNavbar = () => {
@@ -123,7 +126,7 @@ const Members = () => {
       </div>
 
       <div className="logo relative -mt-5 z-10">
-        <Image src="/membersbanner.png" alt="banner" width={1000} height={1000} layout="responsive" className="relative"/>
+        <Image src="/membersbanner.png" alt="banner" width={1000} height={1000} layout="responsive" className="relative" />
       </div>
 
 
@@ -146,9 +149,9 @@ const Members = () => {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-4 md:ml-28 md:mr-28 pb-10">
           {members.map((member, index) => (
-            <div 
-            key={index} 
-            className="bg-gray-600 shadow-md rounded-lg p-4 backdrop-blur-md bg-opacity-30 border-2 border-white/[0.2] ">
+            <div
+              key={index}
+              className="bg-gray-600 shadow-md rounded-lg p-4 backdrop-blur-md bg-opacity-30 border-2 border-white/[0.2] ">
               <div className="header h-72 bg-gray-200 rounded-md mb-4 backdrop-blur-md bg-opacity-60">
                 <Image
                   src={member.image}
@@ -181,12 +184,14 @@ const Members = () => {
           ))}
         </div>
       </div>
-      <div className="abouttext  flex flex-col md:flex-row justify-center"> 
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+      <div className="abouttext  flex flex-col md:flex-row justify-center">
+        <div className="pt-20 pb-20 px-12 md:pl-32 md:pr-32 md:w-1/2">
           <h1 className="font-jetbrains-mono text-4xl text-white pb-4">WANNA JOIN US?</h1>
-          <p className="text-teal-400 mb-6">Wanna be a part of The Astronomy And Physics Society? Don&apos;t worry. Here we are giving you the opportunity!!!
-          </p>
-          <TailwindcssButtons/>
+          <p className="text-teal-400 mb-6">Wanna be a part of The Astronomy And Physics Society? Don&apos;t worry. Here we are giving you the opportunity!!!</p>
+          <Button onClick={() => router.push('https://forms.gle/zx9KBwpZjsxb9Ku39')}>Be A Member</Button>
+        </div>
+        <div className="bg-cover flex align-middle relative w-full md:w-1/2 px-4 md:px-0">
+          <Image className="mr-20" src="/3.jpg" alt="about" layout="fill" objectFit="cover" />
         </div>
         <div className="bg-cover flex align-middle relative w-full md:w-1/2">
           <Image className="mr-20" src="/3.jpg" alt="about" layout="fill" objectFit="cover" />
@@ -197,30 +202,5 @@ const Members = () => {
     </div>
   );
 };
-
-//landing button component starts here
-export function TailwindcssButtons() {
-
-  return (
-    <div >
-      {buttons.map((button, idx) => (
-        <ButtonsCard key={idx}>
-          {button.component}
-        </ButtonsCard>
-      ))}
-    </div>
-  );
-}
-export const buttons = [
-  {
-    component: (<a href="https://forms.gle/zx9KBwpZjsxb9Ku39">
-      <button className="shadow-[0_0_0_3px_teal-400_inset] px-6 py-2 bg-transparent border border-teal-400 dark:border-teal-400 dark:text-teal-400 text-teal-400 font-bold transform hover:-translate-y-1 transition duration-400 hover:border-white hover:text-white">
-        Be A Member
-      </button>
-      </a>
-    ),
-  },
-]
-//landing button component ends here
 
 export default Members

@@ -2,10 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* padding-bottom: 4rem; */
   min-height: 100vh;
   overflow: hidden;
-  /* background-color: #111827; */
 }
 
 .title {
@@ -20,37 +18,76 @@
   background: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
 }
 
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
+.landing {
+  position: relative;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  filter: brightness(70%);
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .landinggroup {
-  margin-left: 20vh;
-  margin-right: 20vh;
+  position: relative;
+  z-index: 1; 
+  padding: 40px 100px 40px 100px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap-reverse;
-  flex-direction: row;
-  margin-top: 31%;
-  /* margin-bottom: 6%; */
-  padding-bottom: 6rem;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 50px; 
+}
+
+.headingtext {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
   .landinggroup {
-    margin-left: 5vh;
-    margin-right: 5vh;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 3vh;
+    margin-right: 3vh;
     margin-top: 30vh;
+    text-align: left;
+  }
+
+  .logo {
+    order: -1; 
+    justify-content: left;
+    width: 100%; 
+  }
+
+  .headingtext {
+    width: 100%; 
+    align-items: left; 
   }
 }
+
+/* @media (max-width: 515px) {
+  .landinggroup {
+    flex-direction: column;
+    align-items: left;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-top: 30vh;
+    text-align: left;
+  }
+} */
 
 .content {
   margin: 0;
@@ -87,10 +124,9 @@
 }
 
 .aboutgroup {
+  margin-left: 10vh;
+  margin-right: 10vh;
   display: flex;
-  margin-top: 8vh;
-  margin-left: 11vh;
-  margin-right: 11vh;
   align-items: center;
 }
 
@@ -127,5 +163,16 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(70%);
 }
 

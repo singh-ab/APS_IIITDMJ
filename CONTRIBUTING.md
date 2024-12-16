@@ -7,7 +7,7 @@ Thank you for considering contributing to APS_IIITDMJ! We welcome contributions 
 ### Working on Issues
 Try to avoid working randomly on issues. We request that you work in a systematic manner. If you want to work on an issue, either get the issue assigned to you from the owner/maintainer or ask the development team to assign it to you. If the issue does not exist, open the issue or get it opened.
 
-### Beginner Guidelines
+### Guidelines
 
 #### Git Guidelines for Beginners
 
@@ -16,6 +16,7 @@ Try to avoid working randomly on issues. We request that you work in a systemati
 3. **Use Branches**: Always create a new branch for each feature or bug fix. This keeps your main branch clean and makes it easier to manage changes.
 4. **Pull Regularly**: Regularly pull changes from the main repository to keep your branch up-to-date and avoid conflicts (Important!).
 5. **Review Before Committing**: Always review your changes before committing to ensure you are not including unintended modifications.
+6. **One Issue One PR**: Please create separate pull requests for each issue. If you find a bug somewhere while working, open a new issue and then push it separately.
 
 #### Common Mistakes to Avoid
 
@@ -36,10 +37,19 @@ We welcome suggestions for new features or improvements. Please open an issue an
 
 ### Submitting Pull Requests
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
+2. Create a new branch
+ ```bash
+ git checkout -b feature/your-feature-name.
+```
 3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature/your-feature-name`).
+4. Commit your changes
+ ```bash
+ git commit -m 'Add some feature'
+```
+5. Push to the branch
+```bash
+git push origin feature/your-feature-name
+```
 6. Open a pull request.
 
 ### Code Style
