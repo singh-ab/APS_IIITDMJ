@@ -59,10 +59,23 @@ const Outreach = () => {
       <div className="relative w-full flex items-center justify-end">
         {renderNavbar()}
       </div>
+
+      <div className="logo relative -mt-5 z-10">
+        {/* <Image src="/aboutbanner.jpg" alt="banner" width={1000} height={1000} layout="responsive" /> */}
+        <Image
+          src="/outreach.jpg"
+          alt="banner"
+          width={1000}
+          height={1000}
+          layout="responsive"
+          className="relative"
+        />
+      </div>
+
       <BackgroundBeamsWithCollision>
       <div>
 
-        <div className={styles.headingbox} style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
+        <div className={styles.headingbox} >
           <div className="headingtext flex flex-col place-items-start">
             <h1 className="font-jetbrains-mono text-4xl text-white">
               ASTRONOMY AND <br />PHYSICS SOCIETY
@@ -78,26 +91,65 @@ const Outreach = () => {
               We are the Astronomy and Physics Society of IIITDM Jabalpur. We are a group of many astro-enthusiasts under the Gymkhana of the IIITDM Jabalpur. Here, we attempt to bring about an interest and awareness in the field of Astronomy and Space Research. All along the we have been promoting amateur astronomy through talks, competetions and shows.
         </p>
 
+        <div className={styles.bottomsection}>
+          <h1 className={styles.head}>
+            Reach Out to Us
+          </h1>
+
+          <div className={styles.databox}>
+            {
+              contact_information.map((item) =>(
+                <Datacard 
+                  name={item.name}
+                  designation={item.designation}
+                  email={item.email}
+                  phonenumber={item.phone}
+                />
+              ))
+            }
+
+          </div>
+        </div>
       </div>
       </BackgroundBeamsWithCollision>
+        
+      <div style={{backgroundColor:'black', paddingBottom:'4vh', marginTop:'0px'}}>
+        <div className={styles.AboutSection}>
+          <h1 className={styles.head} style={{paddingTop:'2vh',marginTop:'0vh',color:'rgb(45, 212, 191)'}}>
+              What we do
+          </h1>
+          <div style={{marginLeft:'1vh', marginTop:'1vh', marginBottom:'3vh'}}>
+          Immerse yourself in a vibrant community of learners and explore the wonders of the universe. From captivating discussions to hands-on experiments, our engaging sessions and workshops are designed to ignite your curiosity and deepen your understanding of astronomy and physics.
+          </div>
 
-      <div className={styles.divider}>Isme kuch acha sa, pls koi bhi</div>
-
-      <div className={styles.databox}>
-
-        {
-          contact_information.map((item) =>(
-            <Datacard 
-              name={item.name}
-              designation={item.designation}
-              email={item.email}
-              phonenumber={item.phone}
+          <div style={{display:'flex', justifyContent:'space-between'}}>
+            <ul style={{listStyleType:'disc', marginLeft:'5vh', fontSize:'20px'}}>
+              <li>Telescope sessions</li>
+              <li>Physics Workshops</li>
+              <li>Quizzing</li>
+              <li>
+                <a href="/events" style={{color:'rgb(45, 212, 191)'}}>know more...</a>
+              </li>
+            </ul>
+          
+          <div style={{marginRight:'15vh'}}>
+            <Image
+            src="/outreachAstronaut.avif"
+            alt="img"
+            width={150}
+            height={150}
+            className="relative"
             />
-          ))
-        }
+          </div>
+
+          </div>
+
+        
+        </div>
 
       </div>
     </div>
+
   )
 }
 

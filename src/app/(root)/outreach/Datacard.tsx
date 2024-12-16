@@ -6,12 +6,17 @@ function Datacard(props: { name: string; designation: string; email: string; pho
   return (
 
     <div className={styles.datacard}>
-      <p className={styles.namestyle}>
-        {props.name}
-      </p>
-      <p>Desig: {props.designation}<br/></p>
-      <p>Email: {props.email}</p>
-      <p>Phone: {props.phonenumber}</p>
+      <div>
+        <p className={styles.namestyle}>
+          {props.name}
+        </p>
+        <p>Desig: {props.designation}<br/></p>
+        <p>Email: {props.email}</p>
+        <p>Phone: {props.phonenumber}</p>
+      </div>
+      <div className={styles.ImgData}>
+        Image
+      </div>
     </div>
   )
 }

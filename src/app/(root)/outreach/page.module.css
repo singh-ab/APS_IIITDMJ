@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap-reverse;
   flex-direction: row;
-  margin-top: 5%;
+  margin-top: 0px;
   /* margin-bottom: 6%; */
   padding-bottom: 3rem;
 }
@@ -23,29 +23,51 @@
 
 .databox{
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
   justify-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   
 }
 
 
 .datacard{
-  padding-left: 3rem;
+  padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
 
-  max-width: 40%;
+  max-width: 45%;
   min-width: 30%;
 
   border-width: 3px;
   border-color: teal;
   border-radius: 10px;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.ImgData{
+  margin-right: 1rem;
+}
+
+.bottomsection{
+  margin-left: 15vh;
+  margin-right: 30vh;
+}
+
+.head{
+  font: 'jetbrains-mono'; 
+  color: white;  
+  font-size: 40px;
+  margin-top: 2rem;
 
 }
 
@@ -56,4 +78,7 @@
   padding-bottom: 10px;
 }
 
-
+.AboutSection{
+  background-color: black;
+  margin-left: 15vh;
+}
