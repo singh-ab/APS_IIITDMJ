@@ -99,7 +99,8 @@ const Outreach = () => {
           <div className={styles.databox}>
             {
               contact_information.map((item) =>(
-                <Datacard 
+                <Datacard
+                  key={item.id} 
                   name={item.name}
                   designation={item.designation}
                   email={item.email}
