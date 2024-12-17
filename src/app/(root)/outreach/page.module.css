@@ -1,0 +1,84 @@
+.headingbox{
+  margin-left: 15vh;
+  margin-right: 30vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  margin-top: 0px;
+  /* margin-bottom: 6%; */
+  padding-bottom: 3rem;
+}
+
+.aboutclub{
+  font-size: large;
+  margin-left: 15vh;
+  margin-right: 30vh;
+}
+
+.divider{
+  background-color: black;
+}
+
+
+
+.databox{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-items: center;
+  justify-content: space-between;
+  
+}
+
+
+.datacard{
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+  max-width: 45%;
+  min-width: 30%;
+
+  border-width: 3px;
+  border-color: teal;
+  border-radius: 10px;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.ImgData{
+  margin-right: 1rem;
+}
+
+.bottomsection{
+  margin-left: 15vh;
+  margin-right: 30vh;
+}
+
+.head{
+  font: 'jetbrains-mono'; 
+  color: white;  
+  font-size: 40px;
+  margin-top: 2rem;
+
+}
+
+.namestyle{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(45, 212, 191);
+  padding-bottom: 10px;
+}
+
+.AboutSection{
+  background-color: black;
+  margin-left: 15vh;
+}
