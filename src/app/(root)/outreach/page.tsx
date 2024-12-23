@@ -96,11 +96,12 @@ const Outreach = () => {
             Jabalpur. All along the we have been promoting amateur astronomy
             through talks, competitions and shows. <br />
             Do you want to organize a workshop or a session on Astronomy or
-            Physics? We're here to help you out.
+            Physics? We&apos;re here to help you out.
             <br />
-            Whether you're a student, a teacher, a parent we have something for
-            everyone. We even organize telescope sessions and physics workshops
-            for other institutes, schools, organizations and companies.
+            Whether you&apos;re a student, a teacher, a parent we have something
+            for everyone. We even organize telescope sessions and physics
+            workshops for other institutes, schools, organizations and
+            companies.
             <div className={styles.workshopSection}></div>
           </p>
 
