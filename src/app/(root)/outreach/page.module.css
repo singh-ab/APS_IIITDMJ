@@ -1,4 +1,4 @@
-.headingbox{
+.headingbox {
   margin-left: 15vh;
   margin-right: 30vh;
   display: flex;
@@ -8,19 +8,22 @@
   padding-bottom: 3rem;
 }
 
-.aboutclub{
+.aboutclub {
   font-size: large;
   margin-left: 15vh;
   margin-right: 30vh;
 }
 
-.divider{
+.divider {
   background-color: black;
 }
 
+.AboutSection {
+  background-color: #171d22;
+  margin-left: 15vh;
+}
 
-
-.databox{
+.databox {
   margin-top: 2rem;
   margin-bottom: 1rem;
 
@@ -30,26 +33,16 @@
 
   justify-items: center;
   justify-content: space-between;
-  
 }
 
-
-
-.bottomsection{
+.bottomsection {
   margin-left: 15vh;
   margin-right: 30vh;
 }
 
-.head{
-  font: 'jetbrains-mono'; 
-  color: white;  
+.head {
+  font: "jetbrains-mono";
+  color: white;
   font-size: 40px;
   margin-top: 2rem;
-
-}
-
-
-.AboutSection{
-  background-color: black;
-  margin-left: 15vh;
 }
