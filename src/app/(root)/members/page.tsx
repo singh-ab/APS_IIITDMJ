@@ -99,6 +99,15 @@ const Members = () => {
       image: "/abhishek.jpg"
     },
     {
+      name: "Pallavi Sarkar",
+      description: "Core Team Member",
+      linkedin: "https://www.linkedin.com/in/pallavi-sarkar-ds/",
+      // twitter: "https://twitter.com/johndoe",
+      // instagram: "https://www.instagram.com/158alokrai?igsh=bm9nbXp1eW84aHhs",
+      // gmail: "mailto:22bec010@iiitdmj.ac.in",
+      image: "/pallavi.jpg"
+    },
+    {
       name: "Alok Rai",
       description: "Co-Coordinator",
       linkedin: "http://linkedin.com/in/alok-rai158",
@@ -191,9 +200,6 @@ const Members = () => {
           <Button onClick={() => router.push('https://forms.gle/zx9KBwpZjsxb9Ku39')}>Be A Member</Button>
         </div>
         <div className="bg-cover flex align-middle relative w-full md:w-1/2 px-4 md:px-0">
-          <Image className="mr-20" src="/3.jpg" alt="about" layout="fill" objectFit="cover" />
-        </div>
-        <div className="bg-cover flex align-middle relative w-full md:w-1/2">
           <Image className="mr-20" src="/3.jpg" alt="about" layout="fill" objectFit="cover" />
         </div>
       </div>

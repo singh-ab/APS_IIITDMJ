@@ -13,7 +13,7 @@ function Datacard(props: {
         <p className={styles.namestyle}>{props.name}</p>
         <p>
           Designation: {props.designation}
-          <br />
+          
         </p>
         <p>Email: {props.email}</p>
         <p>Phone: {props.phonenumber}</p>
