@@ -9,7 +9,7 @@ const NavbarMobile = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4">
+    <nav className="flex items-center justify-between p-4" >
       <div className="flex items-center">
         {/* <h1 className="text-white text-2xl">Logo</h1> */}
       </div>
