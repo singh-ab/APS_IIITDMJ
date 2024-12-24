@@ -72,7 +72,7 @@ const Outreach = () => {
         />
       </div>
 
-      <BackgroundBeamsWithCollision>
+      <div className="flex flex-col lg:flex-row pb-16  ml-10 mr-10 md:ml-32 md:mr-20">
         <div>
           <div className={styles.headingbox}>
             <div className="headingtext flex flex-col place-items-start">
@@ -90,15 +90,12 @@ const Outreach = () => {
             </div>
           </div>
 
-          <p className={styles.aboutclub}>
+          <p className=" text-balance">
             We are the Astronomy and Physics Society of IIITDM Jabalpur. We are
             a group of many astro-enthusiasts under the Gymkhana of the IIITDM
             Jabalpur. All along the we have been promoting amateur astronomy
-            through talks, competitions and shows. <br />
-            Do you want to organize a workshop or a session on Astronomy or
-            Physics? We&apos;re here to help you out.
-            <br />
-            Whether you&apos;re a student, a teacher, a parent we have something
+            through talks, competitions and shows.Do you want to organize a workshop or a session on Astronomy or
+            Physics? We&apos;re here to help you out. Whether you&apos;re a student, a teacher, a parent we have something
             for everyone. We even organize telescope sessions and physics
             workshops for other institutes, schools, organizations and
             companies.
@@ -106,74 +103,56 @@ const Outreach = () => {
           </p>
 
           <div className={styles.bottomsection}>
-            <h1 className={styles.head}>Reach Out to Us</h1>
+            <h1 className="font-jetbrains-mono text-4xl text-white pt-20">REACH OUT TO US</h1>
 
-            <div className={styles.databox}>
+
+            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-8 mt-8 ">
               {contact_information.map((item) => (
-                <Datacard
-                  key={item.id}
+                <div key={item.id} className="bg-gray-800  rounded-lg shadow-md">
+                  <Datacard
                   name={item.name}
                   designation={item.designation}
                   email={item.email}
                   phonenumber={item.phone}
-                />
+                  />
+                </div>
               ))}
             </div>
           </div>
         </div>
-      </BackgroundBeamsWithCollision>
 
-      <div
-        style={{
-          backgroundColor: "#171d22",
-          paddingBottom: "4vh",
-          marginTop: "0px",
-        }}
-      >
-        <div className={styles.AboutSection}>
-          <h1
-            className={styles.head}
-            style={{
-              paddingTop: "2vh",
-              marginTop: "0vh",
-              color: "rgb(45, 212, 191)",
-            }}
-          >
-            What We Do
-          </h1>
-          <div
-            style={{ marginLeft: "1vh", marginTop: "1vh", marginBottom: "3vh" }}
-          >
-            From captivating discussions to hands-on experiments, our engaging
-            sessions and workshops are designed to ignite your curiosity and
-            deepen your understanding of astronomy and physics. We can organize
-            a variety of activities tailored to your needs.
-          </div>
+        <div className="pb-4 mt-20 mb-0 lg:ml-6  lg:mt-48 lg:mb-48 lg:mr-20 bg-teal-950 p-10 rounded-lg">
+          <div className="block">
+            <h1 className="font-jetbrains-mono text-4xl text-white">
+              WHAT WE DO
+            </h1>
+            <div className="mt-6 text-balance">
+              From captivating discussions to hands-on experiments, our engaging
+              sessions and workshops are designed to ignite your curiosity and
+              deepen your understanding of astronomy and physics. We can organize
+              a variety of activities tailored to your needs.
+            </div>
 
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <ul
-              style={{
-                listStyleType: "disc",
-                marginLeft: "5vh",
-                fontSize: "20px",
-              }}
-            >
-              <li>Telescope Sessions</li>
-              <li>Physics Workshops</li>
-              <li>Astronomy Quizzes</li>
-              <li>Stargazing Nights</li>
-              <li>Guest Lectures by Experts</li>
-              <li>Hands-on Experiments</li>
-              <li>
-                <a href="/events" style={{ color: "rgb(45, 212, 191)" }}>
-                  Know more
-                </a>
-              </li>
-            </ul>
+            <div className="flex flex-col mt-6">
+              <ul className="mt-6 text-balance list-disc list-inside mb-6">
+          <li>Physics Workshops</li>
+          <li>Astronomy Quizzes</li>
+          <li>Stargazing Nights</li>
+          <li>Guest Lectures by Experts</li>
+          <li>Hands-on Experiments</li>
+          <li>
+            <a href="/events" style={{ color: "rgb(45, 212, 191)" }}>
+              Know more
+            </a>
+          </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+
+    </div >
   );
 };
 
