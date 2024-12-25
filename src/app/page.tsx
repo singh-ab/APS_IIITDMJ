@@ -63,7 +63,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.landing} style={{ backgroundImage: `url(${backgroundImage})` }}>
 
-      <div className="flex flex-col justify-between h-full">
+      <div className="flex flex-col justify-between h-full w-full">
 
         <div className="realtive w-full flex items-center justify-end top-5 z-10">
           {renderNavbar()}
