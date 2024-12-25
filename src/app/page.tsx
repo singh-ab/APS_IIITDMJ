@@ -63,7 +63,9 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.landing} style={{ backgroundImage: `url(${backgroundImage})` }}>
 
-        <div className="fixed w-full flex items-center justify-end top-5 z-10">
+      <div className="flex flex-col justify-between h-full">
+
+        <div className="realtive w-full flex items-center justify-end top-5 z-10">
           {renderNavbar()}
         </div>
         
@@ -79,6 +81,8 @@ export default function Home() {
             <Image src="/logo1.png" alt="logo" width={300} height={300} />
           </div>
         </div>
+
+      </div>
 
       </div>
       <div className="section1 pt-20 pb-10 pl-20 pr-20 mt-0" style={{
