@@ -65,7 +65,7 @@ export default function Home() {
 
       <div className="flex flex-col justify-between h-full w-full">
 
-        <div className="realtive w-full flex items-center justify-end top-5 z-10">
+        <div className="realtive w-full flex items-center justify-end top-5">
           {renderNavbar()}
         </div>
         
