@@ -1,14 +1,7 @@
 .datacard{
-    padding-left: 2rem;
+    padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
-  
-    max-width: 45%;
-    min-width: 30%;
-  
-    border-width: 3px;
-    border-color: teal;
-    border-radius: 10px;
   
     display:flex;
     justify-content: space-between;

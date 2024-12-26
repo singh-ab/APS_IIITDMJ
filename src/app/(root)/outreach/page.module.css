@@ -1,48 +1,16 @@
 .headingbox {
-  margin-left: 15vh;
-  margin-right: 30vh;
   display: flex;
   flex-wrap: wrap-reverse;
   flex-direction: row;
-  margin-top: 0px;
-  padding-bottom: 3rem;
-}
-
-.aboutclub {
-  font-size: large;
-  margin-left: 15vh;
-  margin-right: 30vh;
-}
-
-.divider {
-  background-color: black;
-}
-
-.AboutSection {
-  background-color: #171d22;
-  margin-left: 15vh;
-}
-
-.databox {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  justify-items: center;
   justify-content: space-between;
+  margin-top: 105px;
+  padding-bottom: 2vh;
 }
+
 
 .bottomsection {
-  margin-left: 15vh;
-  margin-right: 30vh;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.head {
-  font: "jetbrains-mono";
-  color: white;
-  font-size: 40px;
-  margin-top: 2rem;
-}
+
