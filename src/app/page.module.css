@@ -24,7 +24,7 @@
   height: 100vh; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; 
+  justify-content: flex-start; 
   align-items: center;
   background-size: cover;
   background-position: center;
@@ -62,8 +62,9 @@
     align-items: left;
     margin-left: 3vh;
     margin-right: 3vh;
-    margin-top: 30vh;
+    /* margin-top: 30vh; */
     text-align: left;
+    z-index: 10;
   }
 
   .logo {
