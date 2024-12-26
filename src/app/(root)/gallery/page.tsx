@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { Navbar } from "@/components/ui/Navbar";
 import NavbarMobile from "../../../components/ui/navber-mobile";
 import { HoveredLink, Menu } from "../../../components/ui/navber-menu";
 import { cn } from "../../../utils/cn";
@@ -20,7 +21,9 @@ const Gallery = () => {
     };
   }, []);
 
-  const renderNavbar = () => (isMobile ? <NavbarMobile /> : <Navbar className="" />);
+  const renderNavbar = () => {
+    return isMobile ? <NavbarMobile /> : <Navbar />;
+  };
 
   // Image data with captions
   const images = [
@@ -29,7 +32,6 @@ const Gallery = () => {
       src: "/n1.png",
       alt: "JWST Session",
       title: "JWST Session",
-      
     },
     {
       id: 2,
@@ -42,7 +44,6 @@ const Gallery = () => {
       src: "/p3.png",
       alt: "Telescope Session",
       title: "Telescope Session",
-      
     },
     {
       id: 4,
@@ -81,16 +82,25 @@ const Gallery = () => {
       <div className="gallery-container min-h-screen w-full flex flex-col mt-5">
         {renderNavbar()}
         <div className="text-center mb-8 mt-20">
-          <h1 className="text-5xl font-bold text-white mb-8 mt-10">APS Memories</h1>
-          
+          <h1 className="text-5xl font-bold text-white mb-8 mt-10">
+            APS Memories
+          </h1>
         </div>
         <div className="gallery-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
           {images.map((image) => (
-            <div key={image.id} className="gallery-item relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-              <img src={image.src} alt={image.alt} className="gallery-image w-full h-full object-cover rounded-xl" />
+            <div
+              key={image.id}
+              className="gallery-item relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="gallery-image w-full h-full object-cover rounded-xl"
+              />
               <div className="caption absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-xl">
-                <p className="caption-title text-xl font-semibold">{image.title}</p>
-                
+                <p className="caption-title text-xl font-semibold">
+                  {image.title}
+                </p>
               </div>
             </div>
           ))}
@@ -155,19 +165,28 @@ const Gallery = () => {
         /* Responsive grid for different screen sizes */
         @media (min-width: 640px) {
           .gallery-grid {
-            grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+            grid-template-columns: repeat(
+              2,
+              1fr
+            ); /* 2 columns for small screens */
           }
         }
 
         @media (min-width: 768px) {
           .gallery-grid {
-            grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+            grid-template-columns: repeat(
+              3,
+              1fr
+            ); /* 3 columns for medium screens */
           }
         }
 
         @media (min-width: 1024px) {
           .gallery-grid {
-            grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            grid-template-columns: repeat(
+              4,
+              1fr
+            ); /* 4 columns for large screens */
           }
         }
       `}</style>
@@ -175,23 +194,4 @@ const Gallery = () => {
   );
 };
 
-// Navbar Component
-function Navbar({ className }: { className?: string }) {
-  const [active, setActive] = useState<string | null>(null);
-  return (
-    <div className={cn("fixed top-5 inset-x-20 max-w-2xl mx-auto z-30", className)}>
-      <Menu setActive={setActive}>
-        <HoveredLink href="/">Home</HoveredLink>
-        <HoveredLink href="/about">About Us</HoveredLink>
-        <HoveredLink href="/fests">Fests</HoveredLink>
-        <HoveredLink href="/members">Members</HoveredLink>
-        <HoveredLink href="/events">Events</HoveredLink>
-        <HoveredLink href="/form">Form</HoveredLink>
-        <HoveredLink href="/gallery">Gallery</HoveredLink>
-      </Menu>
-    </div>
-  );
-}
-
-// Export the Gallery component as default
 export default Gallery;
