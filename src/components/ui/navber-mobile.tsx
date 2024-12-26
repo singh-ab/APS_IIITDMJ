@@ -89,6 +89,9 @@ const NavbarMobile = () => {
             <Link href="/outreach" className="text-white text-lg mb-6">
               Outreach
             </Link>
+            <Link href="/gallery" className="text-white text-lg mb-6">
+              Gallery
+            </Link>
           </div>
         </div>
       )}

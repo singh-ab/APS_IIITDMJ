@@ -62,10 +62,13 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.landing} style={{ backgroundImage: `url(${backgroundImage})` }}>
-        <div className="relative w-full flex items-center justify-end top-2">
+
+      <div className="flex flex-col justify-between h-full w-full">
+
+        <div className="realtive w-full flex items-center justify-end top-5">
           {renderNavbar()}
         </div>
-
+        
         <div className={styles.landinggroup}>
           <div className={styles.headingtext}>
             <h1 className="font-jetbrains-mono text-4xl text-white text-balance">
@@ -78,8 +81,10 @@ export default function Home() {
             <Image src="/logo1.png" alt="logo" width={300} height={300} />
           </div>
         </div>
+
       </div>
 
+      </div>
       <div className="section1 pt-20 pb-10 pl-20 pr-20 mt-0" style={{
         backgroundImage: `url("8.jpg")`, backgroundSize: 'cover', backgroundPosition: 'center'
       }}>
@@ -113,7 +118,6 @@ export default function Home() {
     </main>
   );
 }
-
 // export function TailwindcssButtons() {
 //   return (
 //     <div>

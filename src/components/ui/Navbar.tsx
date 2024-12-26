@@ -17,6 +17,7 @@ export const Navbar = ({ className }: { className?: string }) => {
         <HoveredLink href="/events">Events</HoveredLink>
         <HoveredLink href="/join">Join</HoveredLink>
         <HoveredLink href="/outreach">Outreach</HoveredLink>
+        <HoveredLink href="/gallery">Gallery</HoveredLink>
       </Menu>
     </div>
   );
