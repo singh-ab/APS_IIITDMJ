@@ -116,17 +116,19 @@ const Gallery = () => {
         {selectedImage && (
           <div className="fixed inset-0 bg-black bg-opacity-85  flex items-center justify-center z-50">
             <div className="relative  p-4 rounded-lg max-w-3xl w-full">
-              <button
-                className="absolute top-4 -right-6 text-white text-4xl"
+                <button
+                className="absolute top-4 right-4 text-white text-4xl"
                 onClick={() => setSelectedImage(null)}
-              >
+                >
                 &times;
-              </button>
-              <img
-                src={selectedImage.src}
-                alt={selectedImage.alt}
-                className="w-full h-auto object-contain"
-              />
+                </button>
+                <div className="flex justify-center">
+                <img
+                  src={selectedImage.src}
+                  alt={selectedImage.alt}
+                  className="w-5/6 object-contain"
+                />
+                </div>
               <div className="text-center mt-4">
                 <h2 className="text-xl font-bold font-jetbrains-mono">{selectedImage.title}</h2>
               </div>
