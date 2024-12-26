@@ -1,91 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import NavbarMobile from "../../../components/ui/navber-mobile";
 import { HoveredLink, Menu } from "../../../components/ui/navber-menu";
 import { cn } from "../../../utils/cn";
-import NavbarMobile from "../../../components/ui/navber-mobile";
-import { LayoutGrid } from "../../../components/ui/layout-grid";
-import styles from "./page.module.css"; // Adjust the path as necessary
-
-// Define your skeleton components for the cards
-const SkeletonOne = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">JWST Session</p>
-      <p className="font-normal text-base text-neutral-200">
-      JWST session explores groundbreaking discoveries in astronomy, showcasing its capability to observe distant galaxies, study exoplanets, and unravel the mysteries of the universe..
-      </p>
-    </div>
-  );
-};
-
-const SkeletonTwo = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">Moon Serenity</p>
-      <p className="font-normal text-base text-neutral-200">
-      Observing the moon through the telescope revealed its stunning surface details, showcasing a breathtaking landscape of craters and maria that left everyone in awe.
-      </p>
-    </div>
-  );
-};
-
-const SkeletonThree = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">Telescope Session</p>
-      <p className="font-normal text-base text-neutral-200">
-      The telescope session offered participants a unique opportunity to observe celestial bodies up close, deepening their understanding of astronomy and the wonders of the universe.
-      </p>
-    </div>
-  );
-};
-
-const SkeletonFour = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">JIGYASA 2023</p>
-      <p className="font-normal text-base text-neutral-200">
-      Jigyasa 2023 at IIITDM Jabalpur was a vibrant and engaging event that brought together students and faculty to showcase innovative projects, foster collaboration, and ignite curiosity in various fields of technology and research..
-      </p>
-    </div>
-  );
-};
-
-const SkeletonFive = () => (
-  <div>
-    <p className="font-bold md:text-4xl text-xl text-white">Treasure Hunt</p>
-    <p className="font-normal text-base text-neutral-200">
-    Join us for the APS Treasure Hunt, where adventure meets discovery in a race to uncover hidden gems
-    </p>
-  </div>
-);
-const SkeletonSix = () => (
-  <div>
-    <p className="font-bold md:text-4xl text-xl text-white">Image data Workshop</p>
-    <p className="font-normal text-base text-neutral-200">
-     Learn how to process data from the JWST tpo create your own amazing set of universe
-    </p>
-  </div>
-);
-
-const SkeletonSeven = () => (
-  <div>
-    <p className="font-bold md:text-4xl text-xl text-white">Astro Quiz</p>
-    <p className="font-normal text-base text-neutral-200">
-    Test your cosmic knowledge at the APS Astro Quiz Session and discover the wonders of the universe
-    </p>
-  </div>
-);
-
-const SkeletonEight = () => (
-  <div>
-    <p className="font-bold md:text-4xl text-xl text-white">Mars Case Study </p>
-    <p className="font-normal text-base text-neutral-200">
-    Participate in the Mars Case Study Competition, where teams tackle real-world challenges of Martian exploration and innovation.
-    </p>
-  </div>
-);
 
 // Main Gallery Component
 const Gallery = () => {
@@ -102,81 +20,157 @@ const Gallery = () => {
     };
   }, []);
 
-  const renderNavbar = () => (isMobile ? <NavbarMobile /> : <Navbar />);
+  const renderNavbar = () => (isMobile ? <NavbarMobile /> : <Navbar className="" />);
 
-  // Define your cards data
-  const cards = [
+  // Image data with captions
+  const images = [
     {
       id: 1,
-      content: <SkeletonOne />,
-      className: "md:col-span-2",
-      thumbnail: "/n1.png",
+      src: "/n1.png",
+      alt: "JWST Session",
+      title: "JWST Session",
+      
     },
     {
       id: 2,
-      content: <SkeletonTwo />,
-      className: "col-span-1",
-      thumbnail: "/p2.png",
+      src: "/p2.png",
+      alt: "Moon Serenity",
+      title: "Moon Serenity",
     },
     {
       id: 3,
-      content: <SkeletonThree />,
-      className: "col-span-1",
-      thumbnail: "/p3.png",
+      src: "/p3.png",
+      alt: "Telescope Session",
+      title: "Telescope Session",
+      
     },
     {
       id: 4,
-      content: <SkeletonFour />,
-      className: "md:col-span-2",
-      thumbnail: "/n2.png",
+      src: "/n2.png",
+      alt: "JIGYASA 2023",
+      title: "JIGYASA 2023",
     },
     {
       id: 5,
-      content: <SkeletonFive />,
-      className: "col-span-1",
-      thumbnail: "/n5.png",
+      src: "/n5.png",
+      alt: "Treasure Hunt",
+      title: "Treasure Hunt",
     },
     {
       id: 6,
-      content: <SkeletonSix />,
-      className: "md:col-span-2",
-      thumbnail: "/n6.png",
+      src: "/n6.png",
+      alt: "Image Data Workshop",
+      title: "Image Data Workshop",
     },
     {
       id: 7,
-      content: <SkeletonSeven />,
-      className: "md:col-span-2",
-      thumbnail: "/n7.png",
+      src: "/n7.png",
+      alt: "Astro Quiz",
+      title: "Astro Quiz",
     },
     {
       id: 8,
-      content: <SkeletonEight />,
-      className: "col-span-1",
-      thumbnail: "/n8.png",
+      src: "/n8.png",
+      alt: "Mars Case Study",
+      title: "Mars Case Study",
     },
   ];
 
   return (
     <>
-    <div className="h-8 py-20 w-full mt-5">
-      {renderNavbar()}
-      {/* Header Text */}
-      <div className="text-center mb-4">
-        <h1 className="text-4xl font-bold text-white">APS Memories</h1>
-        <p className="text-lg text-neutral-300">Click on images to explore more.</p>
+      <div className="gallery-container min-h-screen w-full flex flex-col mt-5">
+        {renderNavbar()}
+        <div className="text-center mb-8 mt-20">
+          <h1 className="text-5xl font-bold text-white mb-8 mt-10">APS Memories</h1>
+          
+        </div>
+        <div className="gallery-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+          {images.map((image) => (
+            <div key={image.id} className="gallery-item relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+              <img src={image.src} alt={image.alt} className="gallery-image w-full h-full object-cover rounded-xl" />
+              <div className="caption absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-xl">
+                <p className="caption-title text-xl font-semibold">{image.title}</p>
+                
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      {/* Layout Grid */}
-      <LayoutGrid cards={cards} />
-    </div>
 
+      <style jsx>{`
+        .gallery-container {
+          max-width: 100%;
+          margin: 0 auto;
+          padding-bottom: 1rem;
+        }
 
+        .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr); /* Single column by default */
+          gap: 1.5rem;
+        }
 
+        .gallery-item {
+          position: relative;
+          overflow: hidden;
+          border-radius: 16px;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
+        .gallery-item:hover {
+          transform: scale(1.05);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
 
-    <div className="h-screen py-20 w-full">
-      {renderNavbar()}
-      <LayoutGrid cards={cards} />
-    </div>
+        .gallery-image {
+          width: 100%; /* Makes the image span the full width */
+          height: 200px; /* Keeps a uniform height */
+          object-fit: cover; /* Makes sure the image covers the whole area without stretching */
+          border-radius: 16px;
+        }
+
+        .caption {
+          padding: 1rem;
+          text-align: center;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.6);
+          border-bottom-left-radius: 16px;
+          border-bottom-right-radius: 16px;
+        }
+
+        .caption-title {
+          font-weight: bold;
+          font-size: 1.25rem;
+        }
+
+        .caption-description {
+          font-size: 0.875rem;
+          margin-top: 0.25rem;
+        }
+
+        /* Responsive grid for different screen sizes */
+        @media (min-width: 640px) {
+          .gallery-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+          }
+        }
+
+        @media (min-width: 768px) {
+          .gallery-grid {
+            grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .gallery-grid {
+            grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+          }
+        }
+      `}</style>
     </>
   );
 };

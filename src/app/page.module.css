@@ -41,7 +41,7 @@
   flex-direction: row;
   margin-top: 31%;
   /* margin-bottom: 6%; */
-  padding-bottom: 6rem;
+  padding-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

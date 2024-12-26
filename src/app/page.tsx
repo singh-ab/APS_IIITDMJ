@@ -75,7 +75,7 @@ export default function Home() {
     <main className={styles.main}>
 
 
-      <div className="landing mb-0">
+      <div className="landing mb-0 mt-0">
         <div className="relative w-full flex items-center justify-end top-2">
           {/* <Navbar className="top-2" /> */}
           {renderNavbar()}
@@ -87,8 +87,8 @@ export default function Home() {
         <Image src={backgroundImage} alt="" className={styles.background} width={3000} height={3000} />
 
         {/* landing text group */}
-        <div className={styles.landinggroup} style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
-          <div className="headingtext flex flex-col place-items-start">
+        <div className={styles.landinggroup  } style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }} >
+          <div className="headingtext flex flex-col place-items-start ">
             <h1 className="font-jetbrains-mono text-4xl text-white">
               ASTRONOMY AND <br />PHYSICS SOCIETY
             </h1>
@@ -155,7 +155,7 @@ export function TailwindcssButtons() {
 export const buttons = [
   {
     component: (
-      <button className="shadow-[0_0_0_3px_teal-400_inset] px-6 py-2 bg-transparent border border-teal-400 dark:border-teal-400 dark:text-teal-400 text-teal-400 font-bold transform hover:-translate-y-1 transition duration-400 hover:border-white hover:text-white">
+      <button className="shadow-[0_0_0_3px_teal-400_inset] px-6 py-2 bg-transparent border border-teal-400 dark:border-teal-400 dark:text-teal-400 text-teal-400 font-bold transform hover:-translate-y-1 transition duration-400 hover:border-white hover:text-white ">
         Be A Member
       </button>
     ),
