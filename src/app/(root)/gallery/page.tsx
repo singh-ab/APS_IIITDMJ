@@ -5,10 +5,12 @@ import { Navbar } from "@/components/ui/Navbar";
 import NavbarMobile from "../../../components/ui/navber-mobile";
 import { HoveredLink, Menu } from "../../../components/ui/navber-menu";
 import { cn } from "../../../utils/cn";
+import Image from 'next/image';
 
 // Main Gallery Component
 const Gallery = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<{ id: number; src: string; alt: string; title: string } | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,8 +32,9 @@ const Gallery = () => {
     {
       id: 1,
       src: "/n1.png",
-      alt: "JWST Session",
-      title: "JWST Session",
+      alt: "Astrophotography Session",
+      title: "Astrophotography Session",
+
     },
     {
       id: 2,
@@ -44,6 +47,7 @@ const Gallery = () => {
       src: "/p3.png",
       alt: "Telescope Session",
       title: "Telescope Session",
+
     },
     {
       id: 4,
@@ -78,120 +82,64 @@ const Gallery = () => {
   ];
 
   return (
-    <>
-      <div className="gallery-container min-h-screen w-full flex flex-col mt-5">
-        {renderNavbar()}
-        <div className="text-center mb-8 mt-20">
-          <h1 className="text-5xl font-bold text-white mb-8 mt-10">
-            APS Memories
-          </h1>
+    <div>
+      <div className="gallery-container min-h-screen w-full flex flex-col mt-5 max-w-full mx-auto pb-4">
+        <div className="relative w-full flex items-center justify-end">
+          {renderNavbar()}
         </div>
-        <div className="gallery-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+
+        <div className="logo relative -mt-5 z-10">
+          <Image src="/gallerybanner.jpg" alt="banner" width={1000} height={1000} layout="responsive" className="relative" />
+        </div>
+        <div className="gallery-flex flex flex-wrap justify-center gap-4 p-4 mt-16 mb-10">
           {images.map((image) => (
             <div
               key={image.id}
-              className="gallery-item relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+              className="gallery-item relative overflow-hidden rounded-md shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer"
+              onClick={() => setSelectedImage(image)}
+              style={{ width: '450px', height: '250px' }}
             >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="gallery-image w-full h-full object-cover rounded-xl"
-              />
-              <div className="caption absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-xl">
-                <p className="caption-title text-xl font-semibold">
+              <div className="hover-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="caption-title text-sm font-jetbrains-mono text-white">
                   {image.title}
                 </p>
               </div>
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="gallery-image w-full h-full object-cover"
+              />
             </div>
           ))}
         </div>
+
+        {selectedImage && (
+          <div className="fixed inset-0 bg-black bg-opacity-85  flex items-center justify-center z-50">
+            <div className="relative  p-4 rounded-lg max-w-3xl w-full">
+                <button
+                className="absolute top-4 right-4 text-white text-4xl"
+                onClick={() => setSelectedImage(null)}
+                >
+                &times;
+                </button>
+                <div className="flex justify-center">
+                <img
+                  src={selectedImage.src}
+                  alt={selectedImage.alt}
+                  className="w-5/6 object-contain"
+                />
+                </div>
+              <div className="text-center mt-4">
+                <h2 className="text-xl font-bold font-jetbrains-mono">{selectedImage.title}</h2>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
-
-      <style jsx>{`
-        .gallery-container {
-          max-width: 100%;
-          margin: 0 auto;
-          padding-bottom: 1rem;
-        }
-
-        .gallery-grid {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr); /* Single column by default */
-          gap: 1.5rem;
-        }
-
-        .gallery-item {
-          position: relative;
-          overflow: hidden;
-          border-radius: 16px;
-          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .gallery-item:hover {
-          transform: scale(1.05);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .gallery-image {
-          width: 100%; /* Makes the image span the full width */
-          height: 200px; /* Keeps a uniform height */
-          object-fit: cover; /* Makes sure the image covers the whole area without stretching */
-          border-radius: 16px;
-        }
-
-        .caption {
-          padding: 1rem;
-          text-align: center;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: rgba(0, 0, 0, 0.6);
-          border-bottom-left-radius: 16px;
-          border-bottom-right-radius: 16px;
-        }
-
-        .caption-title {
-          font-weight: bold;
-          font-size: 1.25rem;
-        }
-
-        .caption-description {
-          font-size: 0.875rem;
-          margin-top: 0.25rem;
-        }
-
-        /* Responsive grid for different screen sizes */
-        @media (min-width: 640px) {
-          .gallery-grid {
-            grid-template-columns: repeat(
-              2,
-              1fr
-            ); /* 2 columns for small screens */
-          }
-        }
-
-        @media (min-width: 768px) {
-          .gallery-grid {
-            grid-template-columns: repeat(
-              3,
-              1fr
-            ); /* 3 columns for medium screens */
-          }
-        }
-
-        @media (min-width: 1024px) {
-          .gallery-grid {
-            grid-template-columns: repeat(
-              4,
-              1fr
-            ); /* 4 columns for large screens */
-          }
-        }
-      `}</style>
-    </>
+    </div >
   );
 };
 
+
+// Export the Gallery component as default
 export default Gallery;
