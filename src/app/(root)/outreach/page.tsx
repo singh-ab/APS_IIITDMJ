@@ -121,7 +121,7 @@ const Outreach = () => {
           </div>
         </div>
 
-        <div className="pb-4 mt-20 mb-0 lg:ml-6  lg:mt-48 lg:mb-48 lg:mr-20 bg-teal-950 p-10 rounded-lg">
+        <div className="pb-4 mt-20  lg:ml-6  lg:mt-48  lg:mr-20 bg-teal-950 p-10 rounded-lg">
           <div className="block">
             <h1 className="font-jetbrains-mono text-4xl text-white">
               WHAT WE DO

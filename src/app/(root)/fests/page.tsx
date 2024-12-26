@@ -60,6 +60,28 @@ const Events = () => {
       </div>
 
 
+      <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
+          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+            <Image
+              className="mr-20"
+              src="/jwst.jpeg"
+              alt="about"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+            <h1 className="font-jetbrains-mono text-4xl text-white ">
+             IIT BHU - 2024
+            </h1>
+
+            <p className="mt-6 text-teal-400 text-balance">
+            • Secured first place in Astroquiz <br />
+            • Secured third place in Scientist of Utopia <br />
+            </p>
+          </div>
+        </div>
+
       <div className={styles.mainsection}>
         <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
           <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
