@@ -2,8 +2,6 @@
 
 Welcome to the APS Website repository! This project aims to create an intuitive, responsive website for the Astronomy and Physics Society, IIITDM Jabalpur. We also aim to make it an online platform for astronomy enthusiasts to connect, learn, and explore the wonders of the universe together. This website aims to provide resources, tools, and a space for members to engage in discussions, share observations, and participate in club activities.
 ##
-<div align="center">
-<img src="https://hacktoberfest.com/_next/static/media/opengraph.9dc60c9d.png" alt="HACKTOBERFEST" alt="Hacktoberfest 2024" width="80%"> </div>
 
 ## How to set up:
 

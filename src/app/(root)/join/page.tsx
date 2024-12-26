@@ -8,6 +8,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import { ButtonsCard } from "../../../components/ui/tailwindcss-buttons";
 import { Navbar } from '@/components/ui/Navbar';
+import Button from '@/components/button';
 
 const Forms = () => {
   const router = useRouter()
@@ -55,51 +56,10 @@ const Forms = () => {
       <div className="flex flex-col items-center justify-center h-full text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
         <h1 style={{ zIndex: 1 }} className='text-white  text-4xl md:text-4xl font-jetbrains-mono mb-1'>WANT TO BE  <br /> A MEMBER ??</h1>
         <h3 style={{ zIndex: 1 }} className='text-teal-300  text-m md:text-m mb-6'>Astronomy and Physics Society</h3>
-        <TailwindcssButtons/>
+        <Button onClick={()=>router.push('https://forms.gle/zx9KBwpZjsxb9Ku39')}>Join Us</Button>
       </div>
-
-
     </div>
-
   )
-
-  // const router = useRouter()
-
-  // useEffect(() => {
-  //   router.push('https://forms.gle/zx9KBwpZjsxb9Ku39') // Replace with the URL you want to redirect to
-  // }, [router])
-
-  // return null
 }
-
-//landing button component starts here
-export function TailwindcssButtons() {
-  const router = useRouter();
-
-  const handleJoinUsClick = () => {
-    router.push ('https://forms.gle/zx9KBwpZjsxb9Ku39');
-  };
-
-  return (
-    <div>
-      {buttons.map((button, idx) => (
-        <ButtonsCard key={idx}>
-          {React.cloneElement(button.component, { onClick: handleJoinUsClick })}
-        </ButtonsCard>
-      ))}
-    </div>
-  );
-}
-
-export const buttons = [
-  {
-    component: (
-      <button className="shadow-[0_0_0_3px_teal-400_inset] px-6 py-2 bg-transparent border border-teal-400 dark:border-teal-400 dark:text-teal-400 text-teal-400 font-bold transform hover:-translate-y-1 transition duration-400 hover:border-white hover:text-white">
-        Join Us
-      </button>
-    ),
-  },
-];
-//landing button component ends here
 
 export default Forms

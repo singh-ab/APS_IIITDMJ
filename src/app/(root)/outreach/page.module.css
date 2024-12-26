@@ -1,0 +1,48 @@
+.headingbox {
+  margin-left: 15vh;
+  margin-right: 30vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  margin-top: 0px;
+  padding-bottom: 3rem;
+}
+
+.aboutclub {
+  font-size: large;
+  margin-left: 15vh;
+  margin-right: 30vh;
+}
+
+.divider {
+  background-color: black;
+}
+
+.AboutSection {
+  background-color: #171d22;
+  margin-left: 15vh;
+}
+
+.databox {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.bottomsection {
+  margin-left: 15vh;
+  margin-right: 30vh;
+}
+
+.head {
+  font: "jetbrains-mono";
+  color: white;
+  font-size: 40px;
+  margin-top: 2rem;
+}

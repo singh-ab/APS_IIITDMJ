@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { cn } from "@/utils/cn";
 import { HoveredLink, Menu } from "./navber-menu";
 import { useState } from "react";
