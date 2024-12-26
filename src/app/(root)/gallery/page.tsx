@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { Navbar } from "@/components/ui/Navbar";
 import NavbarMobile from "../../../components/ui/navber-mobile";
 import { HoveredLink, Menu } from "../../../components/ui/navber-menu";
 import { cn } from "../../../utils/cn";
-import { Navbar } from "@/components/ui/Navbar";
 import Image from 'next/image';
 
 // Main Gallery Component
@@ -23,7 +23,9 @@ const Gallery = () => {
     };
   }, []);
 
-  const renderNavbar = () => (isMobile ? <NavbarMobile /> : <Navbar className="" />);
+  const renderNavbar = () => {
+    return isMobile ? <NavbarMobile /> : <Navbar />;
+  };
 
   // Image data with captions
   const images = [

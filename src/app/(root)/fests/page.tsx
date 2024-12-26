@@ -61,26 +61,26 @@ const Events = () => {
 
 
       <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
-            <Image
-              className="mr-20"
-              src="/jwst.jpeg"
-              alt="about"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
-            <h1 className="font-jetbrains-mono text-4xl text-white ">
-             IIT BHU - 2024
-            </h1>
+        <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+          <Image
+            className="mr-20"
+            src="/jwst.jpeg"
+            alt="about"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+        <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+          <h1 className="font-jetbrains-mono text-4xl text-white ">
+            IIT BHU - 2024
+          </h1>
 
-            <p className="mt-6 text-teal-400 text-balance">
+          <p className="mt-6 text-teal-400 text-balance">
             • Secured first place in Astroquiz <br />
             • Secured third place in Scientist of Utopia <br />
-            </p>
-          </div>
+          </p>
         </div>
+      </div>
 
       <div className={styles.mainsection}>
         <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
@@ -123,9 +123,9 @@ const Events = () => {
             </h1>
 
             <p className="mt-6 text-teal-400 text-balance">
-            • Secured all top 3 positions in Astro quiz <br />
-            • Secured first position in Observe, Analyse & Solve <br />
-            •  Secured 1st position in Egg Drop Challenge <br />
+              • Secured all top 3 positions in Astro quiz <br />
+              • Secured first position in Observe, Analyse & Solve <br />
+              •  Secured 1st position in Egg Drop Challenge <br />
             </p>
           </div>
         </div>
@@ -133,11 +133,11 @@ const Events = () => {
         <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
           <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
-            IIT KANPUR (TECHKRITI) - 2021
+              IIT KANPUR (TECHKRITI) - 2021
             </h1>
 
             <p className="mt-6 text-teal-400 text-balance">
-            •  Secured all top 3 positions in every Astronomy centered event
+              •  Secured all top 3 positions in every Astronomy centered event
             </p>
           </div>
 
@@ -165,11 +165,11 @@ const Events = () => {
           </div>
           <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
-            IIT INDORE - 2021
+              IIT INDORE - 2021
             </h1>
 
             <p className="mt-6 text-teal-400 text-balance">
-            • Won Astronomy Quiz <br />
+              • Won Astronomy Quiz <br />
             </p>
           </div>
         </div>
@@ -177,26 +177,26 @@ const Events = () => {
 
 
       <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
-            <h1 className="font-jetbrains-mono text-4xl text-white ">
+        <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+          <h1 className="font-jetbrains-mono text-4xl text-white ">
             IIT KANPUR (TECHKRITI) - 2019
-            </h1>
+          </h1>
 
-            <p className="mt-6 text-teal-400 text-balance">
+          <p className="mt-6 text-teal-400 text-balance">
             •  Won all events including Astro Hunt & Terraforming Competition
-            </p>
-          </div>
-
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
-            <Image
-              className="mr-20"
-              src="/astrophoto.jpg"
-              alt="about"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
+          </p>
         </div>
+
+        <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+          <Image
+            className="mr-20"
+            src="/astrophoto.jpg"
+            alt="about"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+      </div>
 
 
     </div>
