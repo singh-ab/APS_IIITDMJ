@@ -9,7 +9,7 @@ const NavbarMobile = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4">
+    <nav className="fixed top-0 left-0 w-full flex items-center justify-between p-4 z-50 bg-transparent pointer-events-auto">
       <div className="flex items-center">
         {/* <h1 className="text-white text-2xl">Logo</h1> */}
       </div>
