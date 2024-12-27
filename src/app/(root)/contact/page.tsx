@@ -100,8 +100,8 @@ const About = () => {
               awareness in the field of Astronomy and Space Research. All along
               the we have been promoting amateur astronomy through talks,
               competitions and shows. <br /> If you want to contact us, either
-              click the button or find the Coordinator/Co-Coordinator's contact
-              below.
+              click the button or find the Coordinator/Co-Coordinator&apos;s
+              contact below.
             </p>
             <div className="flex justify-start mt-3">
               <Button
