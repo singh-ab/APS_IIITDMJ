@@ -38,7 +38,6 @@ const Events = () => {
     return isMobile ? <NavbarMobile /> : <Navbar />;
   };
 
-
   return (
     <div className={styles.main}>
       {/* <div className="relative w-full flex items-center justify-end top-2"> */}
@@ -66,14 +65,20 @@ const Events = () => {
             </h1>
 
             <p className="mt-6 text-teal-400 text-balance">
-              Our Telescope Sessions are designed to ignite curiosity and fascination among astronomy enthusiasts. In these hands-on sessions, we guide students on how to locate and observe celestial objects such as the Moon, planets, and constellations using telescopes. Participants also get the incredible opportunity to view these breathtaking astronomical wonders up close, making it a truly unforgettable experience.
+              Our Telescope Sessions are designed to ignite curiosity and
+              fascination among astronomy enthusiasts. In these hands-on
+              sessions, we guide students on how to locate and observe celestial
+              objects such as the Moon, planets, and constellations using
+              telescopes. Participants also get the incredible opportunity to
+              view these breathtaking astronomical wonders up close, making it a
+              truly unforgettable experience.
             </p>
           </div>
           <div className="bg-cover flex align-middle relative w-full md:w-1/2">
             <Image
               className="mr-20"
               src="/telescope.jpeg"
-              alt="about"
+              alt="Telescope Session"
               layout="fill"
               objectFit="cover"
             />
@@ -84,8 +89,8 @@ const Events = () => {
           <div className="bg-cover flex align-middle relative w-full md:w-1/2">
             <Image
               className="mr-20"
-              src="/jwst.jpeg"
-              alt="about"
+              src="/jwst2.jpg"
+              alt="JWST Workshop"
               layout="fill"
               objectFit="cover"
             />
@@ -96,7 +101,12 @@ const Events = () => {
             </h1>
 
             <p className="mt-6 text-teal-400 text-balance">
-              Dive into the wonders of space imaging with our James Webb Space Telescope (JWST) workshops. In these sessions, students learn the art of processing and stacking raw images captured by the JWST. Using specialized tools, participants transform raw data into stunning, readable visuals, unraveling the secrets of the cosmos in the process.
+              Dive into the wonders of space imaging with our James Webb Space
+              Telescope (JWST) workshops. In these sessions, students learn the
+              art of processing and stacking raw images captured by the JWST.
+              Using specialized tools, participants transform raw data into
+              stunning, readable visuals, unraveling the secrets of the cosmos
+              in the process.
             </p>
           </div>
         </div>
@@ -108,7 +118,12 @@ const Events = () => {
             </h1>
 
             <p className="mt-6 text-teal-400 text-balance">
-              Unleash your creativity under the stars with our Astrophotography Sessions. Whether using a mobile phone, or a DSLR camera, participants learn to capture stunning images of celestial wonders directly from the night sky. These sessions provide a perfect blend of science and art, making astronomy a truly personal and visual experience.
+              In our Astrophotography Sessions, participants learn to capture
+              images of celestial objects using various equipment, from mobile
+              phones to DSLR cameras. From beginner tutorials to advanced
+              techniques, we teach everything in this workshop. These sessions
+              combine scientific techniques with artistic expression, offering a
+              unique way to explore and document the night sky.
             </p>
           </div>
 
@@ -123,8 +138,101 @@ const Events = () => {
           </div>
         </div>
 
+        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
+          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+            <Image
+              className="mr-20"
+              src="/elysium.jpeg"
+              alt="case study"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+            <h1 className="font-jetbrains-mono text-4xl text-white ">
+              Elysium - Case Study
+            </h1>
+
+            <p className="mt-6 text-teal-400 text-balance">
+              Our Mars Case Study delves into the fascinating exploration of the
+              Red Planet. Conducted by our club, this study involves analyzing
+              data from various Mars missions, including rover images, soil
+              samples, and atmospheric readings. Participants learn to interpret
+              scientific data, understand Mars&apos; geology and climate, and
+              discuss the potential for future human missions. This case study
+              provides a comprehensive understanding of Mars and its
+              significance in our quest to explore the solar system.
+            </p>
+          </div>
+        </div>
 
         <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
+          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+            <h1 className="font-jetbrains-mono text-4xl text-white ">
+              Telescope Workshop
+            </h1>
+
+            <p className="mt-6 text-teal-400 text-balance">
+              Our Telescope Workshop provided participants with hands-on
+              experience with telescopes. During the workshop, attendees learned
+              about the different types of telescopes, their components, and how
+              to set them up for optimal viewing. Our experts guided them
+              through the process of aligning and calibrating the telescope, as
+              well as shared tips and tricks for observing various celestial
+              objects. It was a perfect opportunity for enthusiasts to deepen
+              their understanding of telescopic observations.
+            </p>
+          </div>
+          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+            <Image
+              className="mr-20"
+              src="/telescope_wrk.JPG"
+              alt="Telescope Workshop"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        </div>
+
+        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
+          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+            <Image
+              className="mr-20"
+              src="/cosmic.JPG"
+              alt="JWST Workshop"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+            <h1 className="font-jetbrains-mono text-4xl text-white ">
+              Cosmic Showdown
+            </h1>
+
+            <p className="mt-6 text-teal-400 text-balance">
+              Cosmic Showdown is an exciting astronomy quiz event combined with
+              interactive games. Participants test their knowledge of the cosmos
+              through a series of challenging questions and engaging activities,
+              making learning about space both fun and competitive.
+            </p>
+          </div>
+        </div>
+
+        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
+          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+            <h1 className="font-jetbrains-mono text-4xl text-white ">
+              Treasure Hunt
+            </h1>
+
+            <p className="mt-6 text-teal-400 text-balance">
+              Embark on an adventurous journey with our Celestial Treasure Hunt!
+              In this event, participants navigate through locations renamed
+              after celestial bodies, solving astronomy-themed riddles and
+              puzzles along the way. It&apos;s a thrilling blend of fun and
+              learning, perfect for igniting curiosity and teamwork among space
+              enthusiasts.
+            </p>
+          </div>
           <div className="bg-cover flex align-middle relative w-full md:w-1/2">
             <Image
               className="mr-20"
@@ -134,21 +242,10 @@ const Events = () => {
               objectFit="cover"
             />
           </div>
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
-            <h1 className="font-jetbrains-mono text-4xl text-white ">
-              Treasure Hunt
-            </h1>
-
-            <p className="mt-6 text-teal-400 text-balance">
-              Embark on an adventurous journey with our Celestial Treasure Hunt! In this event, participants navigate through locations renamed after celestial bodies, solving astronomy-themed riddles and puzzles along the way. It’s a thrilling blend of fun and learning, perfect for igniting curiosity and teamwork among space enthusiasts.
-            </p>
-          </div>
         </div>
       </div>
     </div>
   );
 };
-
-
 
 export default Events;
