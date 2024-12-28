@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 import { HoveredLink, Menu, MenuItem } from "../components/ui/navber-menu";
 import { cn } from "../utils/cn";
-import styles from './page.module.css';
-import Image from 'next/image';
+import styles from "./page.module.css";
+import Image from "next/image";
 import { ButtonsCard } from "../components/ui/tailwindcss-buttons";
 import NavbarMobile from "src/components/ui/navber-mobile";
 import InfiniteMarquee from "src/components/ui/marquee";
@@ -43,10 +43,10 @@ export default function Home() {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -61,33 +61,43 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.landing} style={{ backgroundImage: `url(${backgroundImage})` }}>
-
-      <div className="flex flex-col justify-between h-full w-full">
-
-        <div className="realtive w-full flex items-center justify-end top-5">
-          {renderNavbar()}
-        </div>
-        
-        <div className={styles.landinggroup}>
-          <div className={styles.headingtext}>
-            <h1 className="font-jetbrains-mono text-4xl text-white text-balance">
-              ASTRONOMY AND <br /> PHYSICS SOCIETY
-            </h1>
-            <p className="text-xl text-teal-400 font-sans my-4 text-balance">Indian Institute of Information Technology, Design and Manufacturing Jabalpur</p>
-            <Button onClick={()=>router.push('./join')}>Be a Member</Button>
+      <div
+        className={styles.landing}
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
+        <div className="absolute inset-0 bg-black opacity-40"></div>{" "}
+        {/* Dark overlay for text visibility*/}
+        <div className="flex flex-col justify-between h-full w-full">
+          <div className="realtive w-full flex items-center justify-end top-5">
+            {renderNavbar()}
           </div>
-          <div className={styles.logo}>
-            <Image src="/logo1.png" alt="logo" width={300} height={300} />
+
+          <div className={styles.landinggroup}>
+            <div className={styles.headingtext}>
+              <h1 className="font-jetbrains-mono text-4xl text-white text-balance">
+                ASTRONOMY AND <br /> PHYSICS SOCIETY
+              </h1>
+              <p className="text-xl text-teal-400 font-sans my-4 text-balance">
+                Indian Institute of Information Technology, Design and
+                Manufacturing Jabalpur
+              </p>
+              <Button onClick={() => router.push("./join")}>Be a Member</Button>
+            </div>
+            <div className={styles.logo}>
+              <Image src="/logo1.png" alt="logo" width={300} height={300} />
+            </div>
           </div>
         </div>
-
       </div>
 
-      </div>
-      <div className="section1 pt-20 pb-10 pl-20 pr-20 mt-0" style={{
-        backgroundImage: `url("8.jpg")`, backgroundSize: 'cover', backgroundPosition: 'center'
-      }}>
+      <div
+        className="section1 pt-20 pb-10 px-12 md:px-20 mt-0"
+        style={{
+          backgroundImage: `url("8.jpg")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <h1 className="font-jetbrains-mono text-4xl text-white text-center">
           RECENT EVENTS
         </h1>
@@ -106,11 +116,28 @@ export default function Home() {
                 ABOUT US
               </h1>
               <p className="text-gray-400 font-normal mt-7">
-                The Astronomy and Physics Society is a student-run society under the Gymkhana of the IIITDM Jabalpur. The society aims to promote the knowledge of Astronomy and Physics among students and to provide a platform for students to showcase their talents and skills in these fields. The society organizes various events, workshops, and sessions throughout the year to help students learn and explore the wonders of the universe. The society also participates in various inter-college competitions and fests to represent the institute and showcase the talent of its members. The society is open to all students who have an interest in Astronomy and Physics and is a great place to meet like-minded individuals and learn new things.
+                The Astronomy and Physics Society is a student-run society under
+                the Gymkhana of the IIITDM Jabalpur. The society aims to promote
+                the knowledge of Astronomy and Physics among students and to
+                provide a platform for students to showcase their talents and
+                skills in these fields. The society organizes various events,
+                workshops, and sessions throughout the year to help students
+                learn and explore the wonders of the universe. The society also
+                participates in various inter-college competitions and fests to
+                represent the institute and showcase the talent of its members.
+                The society is open to all students who have an interest in
+                Astronomy and Physics and is a great place to meet like-minded
+                individuals and learn new things.
               </p>
             </div>
             <div className={styles.aboutimage}>
-              <Image className="rounded-md mt-5 mb-5 mr-20" src="/team.jpg" alt="about" width={4000} height={4000} />
+              <Image
+                className="rounded-md mt-5 mb-5 mr-20"
+                src="/team.jpg"
+                alt="about"
+                width={4000}
+                height={4000}
+              />
             </div>
           </div>
         </div>
@@ -161,31 +188,61 @@ export function BentoGridDemo() {
 
 const Skeletonone = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/trivia.jpeg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image
+      src="/trivia.jpeg"
+      alt="section image"
+      layout="fill"
+      objectFit="cover"
+      className="rounded-md"
+    />
   </div>
 );
 
 const Skeletontwo = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/telescope.jpeg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image
+      src="/telescope.jpeg"
+      alt="section image"
+      layout="fill"
+      objectFit="cover"
+      className="rounded-md"
+    />
   </div>
 );
 
 const Skeletonthree = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/astrophoto.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image
+      src="/astrophoto.jpg"
+      alt="section image"
+      layout="fill"
+      objectFit="cover"
+      className="rounded-md"
+    />
   </div>
 );
 
 const Skeletonfour = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/ath2.jpeg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image
+      src="/ath2.jpeg"
+      alt="section image"
+      layout="fill"
+      objectFit="cover"
+      className="rounded-md"
+    />
   </div>
 );
 
 const Skeletonfive = () => (
   <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-md bg-gradient-to-br from-gray-500 dark:from-neutral-900 dark:to-neutral-800 to-gray-500 relative overflow-hidden">
-    <Image src="/jwst.jpg" alt="section image" layout="fill" objectFit="cover" className="rounded-md" />
+    <Image
+      src="/jwst.jpg"
+      alt="section image"
+      layout="fill"
+      objectFit="cover"
+      className="rounded-md"
+    />
   </div>
 );
 
@@ -207,12 +264,14 @@ const items = [
   },
   {
     title: "The Astro Treasure Hunt",
-    description: "Embark on a journey to find the hidden treasures of the universe.",
+    description:
+      "Embark on a journey to find the hidden treasures of the universe.",
     header: <Skeletonfour />,
   },
   {
     title: "JWST Workshop",
-    description: "Learn to process and analyze data from the James Webb Space Telescope.",
+    description:
+      "Learn to process and analyze data from the James Webb Space Telescope.",
     header: <Skeletonfive />,
   },
 ];
