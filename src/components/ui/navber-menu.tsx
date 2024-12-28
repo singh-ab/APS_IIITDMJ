@@ -69,7 +69,7 @@ export const Menu = ({
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
       className="relative rounded-lg border border-white/[0.4] dark:border-white/[0.2] dark:bg-opacity-75 bg-white bg-opacity-10 shadow-input flex justify-center space-x-10
-             px-6 py-6 text-xs text-white"
+            px-6 py-6 text-xs text-white"
       style={{ backdropFilter: "blur(10px)" }} // Add glossy effect
     >
       {children}
@@ -86,7 +86,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
   );
 };
 
-// Navbar Component (Added if you need this)
+// Navbar Component 
 export const Navbar = ({ setActive }: { setActive: (item: string | null) => void }) => {
   return (
     <div className="flex justify-between p-4">
