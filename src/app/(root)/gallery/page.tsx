@@ -45,8 +45,8 @@ const Gallery = () => {
     {
       id: 3,
       src: "/p3.png",
-      alt: "Telescope Session",
-      title: "Telescope Session",
+      alt: "Saturn",
+      title: "Saturn",
 
     },
     {
@@ -105,7 +105,7 @@ const Gallery = () => {
     },
     {
       id: 13,
-      src: "/n13.jpeg",
+      src: "/n13.jpg",
       alt: "National Space Day",
       title: "National Space Day",
     },
