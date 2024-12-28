@@ -103,12 +103,12 @@ const About = () => {
               click the button or find the Coordinator/Co-Coordinator&apos;s
               contact below.
             </p>
-            <div className="flex justify-start mt-3">
+            <div className="flex justify-start mt-6">
               <Button
                 onClick={() =>
                   (window.location.href = "mailto:astronomy@iiitdmj.ac.in")
                 }
-                color="white"
+                
               >
                 Want to connect?
               </Button>
@@ -162,10 +162,10 @@ const About = () => {
             Physics, Germany among many others.
           </p>
 
-          <h1 className="text-lg md:text-xl text-gray-50 pt-5">
+          <h1 className="text-lg md:text-xl text-teal-400 font-jetbrains-mono pt-5">
             Are you an alumnus?
           </h1>
-          <div className="flex justify-start mt-3">
+          <div className="flex justify-start mt-6">
             <Button
               onClick={() =>
                 (window.location.href = "mailto:astronomy@iiitdmj.ac.in")
