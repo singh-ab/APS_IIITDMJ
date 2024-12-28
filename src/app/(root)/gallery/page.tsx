@@ -135,13 +135,13 @@ const Gallery = () => {
     },
     {
       id: 18,
-      src: "/n18.jpg",
+      src: "/n18.JPG",
       alt: "JWST Session",
       title: "JWST Session",
     },
     {
       id: 19,
-      src: "/n19.jpg",
+      src: "/n19.JPG",
       alt: "Cosmic Showdown",
       title: "Cosmic Showdown",
     },
@@ -153,7 +153,7 @@ const Gallery = () => {
     },
     {
       id: 21,
-      src: "/n21.jpg",
+      src: "/n21.JPG",
       alt: "Telescope Session",
       title: "Telescope Session",
     },
