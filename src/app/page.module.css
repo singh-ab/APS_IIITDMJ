@@ -20,11 +20,11 @@
 
 .landing {
   position: relative;
-  width: 100%;
-  height: 100vh; 
+  height: 100vh;
+  width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
   background-size: cover;
   background-position: center;
@@ -32,13 +32,13 @@
 
 .landinggroup {
   position: relative;
-  z-index: 1; 
+  z-index: 1;
   padding: 40px 100px 40px 100px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
   width: 100%;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 .headingtext {
@@ -60,22 +60,25 @@
   .landinggroup {
     flex-direction: column;
     align-items: left;
-    margin-left: 3vh;
-    margin-right: 3vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* margin-left: 3vw;
+    margin-right: 3vw; */
     /* margin-top: 30vh; */
     text-align: left;
     z-index: 10;
+    /* width: 100%; */
   }
 
   .logo {
-    order: -1; 
+    order: -1;
     justify-content: left;
-    width: 100%; 
+    width: 90%;
   }
 
   .headingtext {
-    width: 100%; 
-    align-items: left; 
+    width: 100%;
+    align-items: left;
   }
 }
 
@@ -176,4 +179,3 @@
   z-index: -1;
   filter: brightness(70%);
 }
-
