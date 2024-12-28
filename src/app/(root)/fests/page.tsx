@@ -209,8 +209,8 @@ const Events = () => {
               Our team rocked the astronomy events, grabbing all top three spots
               in every competition. This awesome feat shows how dedicated we
               are, how much we prepared, and how well we know our stuff. The
-              contests were tough, but our team's quick thinking and teamwork
-              helped us crush it and come out on top.
+              contests were tough, but our team&apos;s quick thinking and
+              teamwork helped us crush it and come out on top.
             </p>
           </div>
 
@@ -265,11 +265,11 @@ const Events = () => {
 
           <p className="mt-6 text-teal-400 text-balance">
             We excelled in all events, including Astro Hunt and the Terraforming
-            Competition. Our team's dedication and hard work were evident as we
-            tackled challenging tasks and demonstrated our astronomy expertise.
-            Despite the tough competition, our preparation and teamwork led us
-            to secure top positions and leave a significant mark at Techkriti
-            2019.
+            Competition. Our team&apos;s dedication and hard work were evident
+            as we tackled challenging tasks and demonstrated our astronomy
+            expertise. Despite the tough competition, our preparation and
+            teamwork led us to secure top positions and leave a significant mark
+            at Techkriti 2019.
           </p>
         </div>
 
