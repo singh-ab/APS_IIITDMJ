@@ -156,7 +156,9 @@ const Members = () => {
         <h1 className="font-jetbrains-mono text-4xl text-white text-center pb-10">
           THE CREW
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-4 md:ml-28 md:mr-28 pb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:ml-28 md:mr-28 pb-10">
+
+
           {members.map((member, index) => (
             <div
               key={index}

@@ -41,7 +41,7 @@ const About = () => {
   const members = [
     {
       name: "Abhay Singh",
-      description: "Overall Project Lead",
+      description: "Founding Software Developer",
       linkedin: "https://www.linkedin.com/in/singhabhay1/",
       // twitter: "https://x.com/THEBLACKEYES09",
       instagram: "http://instagram.com/mostlyastro",
@@ -59,7 +59,7 @@ const About = () => {
     },
     {
       name: "Abhinav Kumar",
-      description: "Backend and Optimisation",
+      description: "DevOps and Backend",
       linkedin: "https://www.linkedin.com/in/abhinav-kumar-8b6008247",
       // twitter: "https://twitter.com/johndoe",
       instagram: "https://www.instagram.com/i.g_abhinav",
