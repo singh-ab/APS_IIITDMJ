@@ -16,17 +16,6 @@ Welcome to the official website of the **Astronomy and Physics Society (APS)** a
 
 - **Educational Outreach**: Engage in activities aimed at promoting astronomy education in schools and communities. Volunteer for events such as public stargazing sessions and school presentations, and contribute to fostering a love for astronomy among young minds.
 
-## Connect with Us
-
-Stay connected and follow our activities through our social media channels:
-
-- **Instagram**: [@aps_iiitdmj](https://www.instagram.com/aps_iiitdmj?igsh=MXIwdzhhZWQ5MHFwbA==)
-
-Join us in exploring the wonders of the universe! 🌠
-
-<div align="center">
-<img src="https://hacktoberfest.com/_next/static/media/opengraph.9dc60c9d.png" alt="HACKTOBERFEST" alt="Hacktoberfest 2024" width="80%"> </div>
-
 ## How to set up:
 
 1. Clone this repository to your local machine using the following command: `git clone https://github.com/singh-ab/APS_IIITDMJ.git `
@@ -62,14 +51,8 @@ Join us in exploring the wonders of the universe! 🌠
 
 To contribute to the APS Website, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for detailed instructions.
 
-## License
-
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
-
 ## Contact
 
 Astronomy and Physics Society, IIITDM Jabalpur
 
-- **Email:** aps@iiitdmj.ac.in
-- **Website:** [APS IIITDMJ](https://aps.iiitdmj.ac.in)
-- **GitHub:** [https://github.com/singh-ab/APS_IIITDMJ](https://github.com/singh-ab/APS_IIITDMJ)
+- **Email:** astronomy@iiitdmj.ac.in
