@@ -23,7 +23,7 @@ const Events = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 720); // Set isMobile based on viewport width
+      setIsMobile(window.innerWidth <= 800); // Set isMobile based on viewport width
     };
 
     handleResize();
@@ -58,8 +58,8 @@ const Events = () => {
           className="relative"
         />
       </div>
-      <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-        <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+      <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+        <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
           <Image
             className="mr-20"
             src="/abhikalpan.JPG"
@@ -68,7 +68,7 @@ const Events = () => {
             objectFit="cover"
           />
         </div>
-        <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+        <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
           <h1 className="font-jetbrains-mono text-4xl text-white ">
             Abhikalpan
           </h1>
@@ -86,8 +86,8 @@ const Events = () => {
         </div>
       </div>
 
-      <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-        <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+      <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+        <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
           <h1 className="font-jetbrains-mono text-4xl text-white ">Invicta</h1>
           <p className="mt-6 text-teal-400 text-balance">
             INVICTA is the techno-cultural design fest of IIITDM Jabalpur,
@@ -100,7 +100,7 @@ const Events = () => {
           </p>
         </div>
 
-        <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+        <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
           <Image
             className="mr-20"
             src="/invicta.png"
@@ -110,8 +110,8 @@ const Events = () => {
           />
         </div>
       </div>
-      <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-        <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+      <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+        <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
           <Image
             className="mr-20"
             src="/iitbhu24.jpg"
@@ -120,7 +120,7 @@ const Events = () => {
             objectFit="cover"
           />
         </div>
-        <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+        <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
           <h1 className="font-jetbrains-mono text-4xl text-white ">
             IIT-BHU (Technex) - 2024
           </h1>
@@ -138,8 +138,8 @@ const Events = () => {
       </div>
 
       <div className={styles.mainsection}>
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               IIT-BHU (Technex) - 2023
             </h1>
@@ -157,7 +157,7 @@ const Events = () => {
               • Secured 3rd position in Astroquiz <br />
             </p>
           </div>
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <Image
               className="mr-20"
               src="/iitbhu23.jpg"
@@ -168,8 +168,8 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <Image
               className="mr-20"
               src="/iitk23.jpg"
@@ -178,7 +178,7 @@ const Events = () => {
               objectFit="cover"
             />
           </div>
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               IIT KANPUR (TECHKRITI) - 2023
             </h1>
@@ -199,8 +199,8 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               IIT KANPUR (TECHKRITI) - 2021
             </h1>
@@ -214,7 +214,7 @@ const Events = () => {
             </p>
           </div>
 
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <Image
               className="mr-20"
               src="/iitk21.jpg"
@@ -225,8 +225,8 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <a href="https://upload.wikimedia.org/">
               <Image
                 className="mr-20"
@@ -238,7 +238,7 @@ const Events = () => {
               />
             </a>
           </div>
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               IIT INDORE - 2021
             </h1>
@@ -257,8 +257,8 @@ const Events = () => {
         </div>
       </div>
 
-      <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-        <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+      <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+        <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
           <h1 className="font-jetbrains-mono text-4xl text-white ">
             IIT KANPUR (TECHKRITI) - 2019
           </h1>
@@ -273,7 +273,7 @@ const Events = () => {
           </p>
         </div>
 
-        <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+        <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
           <Image
             className="mr-20"
             src="/2019.jpg"

@@ -21,7 +21,7 @@ const Events = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 720);
+      setIsMobile(window.innerWidth <= 800);
     };
 
     handleResize();
@@ -58,8 +58,8 @@ const Events = () => {
       </div>
 
       <div className={styles.mainsection}>
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Telescope Session
             </h1>
@@ -74,7 +74,7 @@ const Events = () => {
               truly unforgettable experience.
             </p>
           </div>
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <Image
               className="mr-20"
               src="/telescope.jpeg"
@@ -85,8 +85,8 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <Image
               className="mr-20"
               src="/jwst2.jpg"
@@ -95,7 +95,7 @@ const Events = () => {
               objectFit="cover"
             />
           </div>
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               JWST Workshop
             </h1>
@@ -111,8 +111,8 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Astrophotography
             </h1>
@@ -127,7 +127,7 @@ const Events = () => {
             </p>
           </div>
 
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <Image
               className="mr-20"
               src="/astrophoto.jpg"
@@ -138,8 +138,8 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <Image
               className="mr-20"
               src="/elysium.jpeg"
@@ -148,7 +148,7 @@ const Events = () => {
               objectFit="cover"
             />
           </div>
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Elysium - Case Study
             </h1>
@@ -166,8 +166,8 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Telescope Workshop
             </h1>
@@ -183,7 +183,7 @@ const Events = () => {
               their understanding of telescopic observations.
             </p>
           </div>
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <Image
               className="mr-20"
               src="/telescope_wrk.JPG"
@@ -194,8 +194,8 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <Image
               className="mr-20"
               src="/cosmic.JPG"
@@ -204,7 +204,7 @@ const Events = () => {
               objectFit="cover"
             />
           </div>
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Cosmic Showdown
             </h1>
@@ -218,8 +218,8 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="abouttext bg-grey-600 flex flex-col md:flex-row justify-center">
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+        <div className="abouttext bg-grey-600 flex flex-col lg:flex-row justify-center">
+          <div className="pt-20 pb-20 px-4 pl-20 pr-20 lg:pl-32 lg:pr-32 lg:w-1/2">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               Treasure Hunt
             </h1>
@@ -233,7 +233,7 @@ const Events = () => {
               enthusiasts.
             </p>
           </div>
-          <div className="bg-cover flex align-middle relative w-full md:w-1/2">
+          <div className="bg-cover flex align-middle relative w-full lg:w-1/2">
             <Image
               className="mr-20"
               src="/treasurehunt.jpg"

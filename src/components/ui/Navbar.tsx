@@ -7,7 +7,7 @@ export const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("fixed top-5 inset-x-20 max-w-2xl mx-auto z-30", className)}
+      className={cn("fixed top-5 inset-x-20 max-w-3xl  mx-auto z-30", className)}
     >
       <Menu setActive={setActive}>
         <HoveredLink href="/">Home</HoveredLink>
