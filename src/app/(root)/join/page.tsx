@@ -21,7 +21,7 @@ const Forms = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 720); // Set isMobile based on viewport width
+      setIsMobile(window.innerWidth <= 800); // Set isMobile based on viewport width
     };
 
     handleResize();

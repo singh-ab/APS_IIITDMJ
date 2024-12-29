@@ -14,7 +14,7 @@ const Gallery = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 720);
+      setIsMobile(window.innerWidth <= 800);
     };
     handleResize();
     window.addEventListener("resize", handleResize);

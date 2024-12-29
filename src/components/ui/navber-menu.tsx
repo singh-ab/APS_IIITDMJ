@@ -39,15 +39,15 @@ export const MenuItem = ({
           transition={transition}
         >
           {active === item && (
-            <div className="absolute top-[calc(100%_+_1.7rem)] left-1/2 transform -translate-x-1/2">
+            <div className="absolute top-[calc(100%_+_1.7rem)] left-1/2 transform -translate-x-1/2 w-[200px]">
               <motion.div
-                transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
-                className="bg-gray-900 dark:bg-gray-900 bg-opacity-85 backdrop-blur-sm rounded-lg overflow-hidden border border-white/[0.3] dark:border-white/[0.2] shadow-xl"
+          transition={transition}
+          layoutId="active" // layoutId ensures smooth animation
+          className="bg-gray-900 dark:bg-gray-900 bg-opacity-85 backdrop-blur-sm rounded-lg overflow-hidden border border-white/[0.3] dark:border-white/[0.2] shadow-xl"
               >
-                <motion.div layout className="w-max h-full p-4">
-                  {children}
-                </motion.div>
+          <motion.div layout className="w-full h-full p-4">
+            {children}
+          </motion.div>
               </motion.div>
             </div>
           )}
@@ -87,18 +87,18 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 };
 
 // Navbar Component 
-export const Navbar = ({ setActive }: { setActive: (item: string | null) => void }) => {
-  return (
-    <div className="flex justify-between p-4">
-      <Menu setActive={setActive}>
-        <MenuItem item="Home" setActive={setActive} active={null}>
-          Home Content
-        </MenuItem>
-        <MenuItem item="About Us" setActive={setActive} active={null}>
-          About Content
-        </MenuItem>
-        {/* Add more MenuItem components as needed */}
-      </Menu>
-    </div>
-  );
-};
+// export const Navbar = ({ setActive }: { setActive: (item: string | null) => void }) => {
+//   return (
+//     <div className="flex justify-between p-4">
+//       <Menu setActive={setActive}>
+//         <MenuItem item="Home" setActive={setActive} active={null}>
+//           Home Content
+//         </MenuItem>
+//         <MenuItem item="About Us" setActive={setActive} active={null}>
+//           About Content
+//         </MenuItem>
+//         {/* Add more MenuItem components as needed */}
+//       </Menu>
+//     </div>
+//   );
+// };

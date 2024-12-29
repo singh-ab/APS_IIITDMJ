@@ -20,7 +20,7 @@ const Outreach = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 720); // Set isMobile based on viewport width
+      setIsMobile(window.innerWidth <= 800); // Set isMobile based on viewport width
     };
 
     handleResize();
@@ -72,7 +72,7 @@ const Outreach = () => {
         />
       </div>
 
-      <div className="flex flex-col lg:flex-row pb-16  ml-10 mr-10 md:ml-32 md:mr-20">
+      <div className="flex flex-col lg:flex-row pb-16  ml-10 mr-10 md:ml-32 md:mr-32">
         <div>
           <div className={styles.headingbox}>
             <div className="headingtext flex flex-col place-items-start">
@@ -121,7 +121,7 @@ const Outreach = () => {
           </div>
         </div>
 
-        <div className="pb-4 mt-20  lg:ml-6  lg:mt-48  lg:mr-20 bg-teal-950 p-10 rounded-lg">
+        <div className="pb-4 mt-20  lg:ml-6  lg:mt-48  lg:mr-10 bg-teal-950 p-10 rounded-lg">
           <div className="block">
             <h1 className="font-jetbrains-mono text-4xl text-white">
               WHAT WE DO

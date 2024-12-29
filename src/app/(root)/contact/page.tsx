@@ -21,7 +21,7 @@ const About = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 720); // Set isMobile based on viewport width
+      setIsMobile(window.innerWidth <= 800); // Set isMobile based on viewport width
     };
 
     handleResize();
@@ -89,7 +89,7 @@ const About = () => {
 
       <div className="mainsection">
         <div className="abouttext bg-teal-900 flex flex-col md:flex-row justify-center pr-8 pl-8 md:p-0">
-          <div className="pt-20 pb-20 px-4 md:pl-32 md:pr-32 md:w-1/2">
+          <div className="pt-20 pb-20 px-4 md:pl-12 md:pr-12 md:w-1/2 lg:pr-32 lg:pl-32">
             <h1 className="font-jetbrains-mono text-4xl text-white ">
               THE ASTRONOMY AND PHYSICS SOCIETY
             </h1>
@@ -99,7 +99,7 @@ const About = () => {
               IIITDM Jabalpur. Here, we attempt to bring about an interest and
               awareness in the field of Astronomy and Space Research. All along
               the we have been promoting amateur astronomy through talks,
-              competitions and shows. <br /> If you want to contact us, either
+              competitions and shows. <br /> <br /> If you want to contact us, either
               click the button or find the Coordinator/Co-Coordinator&apos;s
               contact below.
             </p>
