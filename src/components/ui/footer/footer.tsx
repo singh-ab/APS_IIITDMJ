@@ -11,7 +11,7 @@ const Footer = () => {
             <h3 className="text-2xl font-jetbrains-mono font-bold text-white">
               Contact Us
             </h3>
-            <p className="mt-4 font-normal text-teal-400">
+            <p className="mt-4 font-normal text-green-400">
               <Link
                 href="https://maps.app.goo.gl/GVEDYDkzZV77PiNw7"
                 target="_blank"
@@ -25,7 +25,7 @@ const Footer = () => {
             <p className="pt-4">
               <Link
                 href="mailto:astronomy@iiitdmj.ac.in"
-                className="text-teal-400 hover:text-teal-200 transition duration-300"
+                className="text-green-400 hover:text-teal-200 transition duration-300"
               >
                 Email: astronomy@iiitdmj.ac.in
               </Link>
