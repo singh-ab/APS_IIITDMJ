@@ -39,15 +39,15 @@ export const MenuItem = ({
           transition={transition}
         >
           {active === item && (
-            <div className="absolute top-[calc(100%_+_1.7rem)] left-1/2 transform -translate-x-1/2">
+            <div className="absolute top-[calc(100%_+_1.7rem)] left-1/2 transform -translate-x-1/2 w-[200px]">
               <motion.div
-                transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
-                className="bg-gray-900 dark:bg-gray-900 bg-opacity-85 backdrop-blur-sm rounded-lg overflow-hidden border border-white/[0.3] dark:border-white/[0.2] shadow-xl"
+          transition={transition}
+          layoutId="active" // layoutId ensures smooth animation
+          className="bg-gray-900 dark:bg-gray-900 bg-opacity-85 backdrop-blur-sm rounded-lg overflow-hidden border border-white/[0.3] dark:border-white/[0.2] shadow-xl"
               >
-                <motion.div layout className="w-max h-full p-4">
-                  {children}
-                </motion.div>
+          <motion.div layout className="w-full h-full p-4">
+            {children}
+          </motion.div>
               </motion.div>
             </div>
           )}
@@ -69,7 +69,7 @@ export const Menu = ({
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
       className="relative rounded-lg border border-white/[0.4] dark:border-white/[0.2] dark:bg-opacity-75 bg-white bg-opacity-10 shadow-input flex justify-center space-x-10
-             px-6 py-6 text-xs text-white"
+            px-6 py-6 text-xs text-white"
       style={{ backdropFilter: "blur(10px)" }} // Add glossy effect
     >
       {children}
@@ -86,19 +86,19 @@ export const HoveredLink = ({ children, ...rest }: any) => {
   );
 };
 
-// Navbar Component (Added if you need this)
-export const Navbar = ({ setActive }: { setActive: (item: string | null) => void }) => {
-  return (
-    <div className="flex justify-between p-4">
-      <Menu setActive={setActive}>
-        <MenuItem item="Home" setActive={setActive} active={null}>
-          Home Content
-        </MenuItem>
-        <MenuItem item="About Us" setActive={setActive} active={null}>
-          About Content
-        </MenuItem>
-        {/* Add more MenuItem components as needed */}
-      </Menu>
-    </div>
-  );
-};
+// Navbar Component 
+// export const Navbar = ({ setActive }: { setActive: (item: string | null) => void }) => {
+//   return (
+//     <div className="flex justify-between p-4">
+//       <Menu setActive={setActive}>
+//         <MenuItem item="Home" setActive={setActive} active={null}>
+//           Home Content
+//         </MenuItem>
+//         <MenuItem item="About Us" setActive={setActive} active={null}>
+//           About Content
+//         </MenuItem>
+//         {/* Add more MenuItem components as needed */}
+//       </Menu>
+//     </div>
+//   );
+// };

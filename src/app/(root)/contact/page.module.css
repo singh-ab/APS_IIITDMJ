@@ -1,0 +1,28 @@
+.StickyScrollRevealDemo {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    scroll-snap-type: y mandatory;
+    scroll-snap-destination: 0% 0%;
+}
+
+.rotate {
+    animation: rotate 4s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .mainsection {
+      margin-left: 3vh;
+      margin-right: 3vh;
+    }
+  }
