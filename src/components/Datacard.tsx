@@ -11,12 +11,9 @@ function Datacard(props: {
     <div className={styles.datacard}>
       <div>
         <p className={styles.namestyle}>{props.name}</p>
-        <p>
-          Designation: {props.designation}
-          
-        </p>
+        <p>Designation: {props.designation}</p>
         <p>Email: {props.email}</p>
-        <p>Phone: {props.phonenumber}</p>
+        {/* <p>Phone: {props.phonenumber}</p> */}
       </div>
     </div>
   );
